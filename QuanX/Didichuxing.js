@@ -1,5 +1,6 @@
 #!name = 滴滴出行
 #!author = 怎么肥事
+#!source=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js
 #!update = 2023-12-15 22:40
 #! ps = 需要分流禁用掉 gwp.xiaojukeji.com
 
