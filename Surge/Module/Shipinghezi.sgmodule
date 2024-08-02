@@ -1,0 +1,10 @@
+#!name=视频盒子@Baby
+#!desc=解锁内购会员和视频导出等功能
+#!source=https://raw.githubusercontent.com/Yu9191/Rewrite/main/sphz.js
+#!source-hub=http://script.hub/file/_start_/https://raw.githubusercontent.com/Yu9191/Rewrite/main/sphz.js/_end_/sphz.sgmodule?n=%E2%9C%A8%E8%A7%86%E9%A2%91%E7%9B%92%E5%AD%90%40Baby%2B%E8%A7%A3%E9%94%81%E5%86%85%E8%B4%AD%E4%BC%9A%E5%91%98%E5%92%8C%E8%A7%86%E9%A2%91%E5%AF%BC%E5%87%BA%E7%AD%89%E5%8A%9F%E8%83%BD&type=qx-rewrite&target=surge-module&del=true
+
+[Script]
+sphz = type=http-response, pattern=https://revenue.ezboti.com/api/v1/server/customer.info, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/sphz.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% revenue.ezboti.com
