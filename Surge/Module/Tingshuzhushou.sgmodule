@@ -1,0 +1,10 @@
+#!name=听书助手@Yu9191
+#!desc=解锁内购会员，使用高级功能
+#!source=https://raw.githubusercontent.com/Yu9191/Rewrite/main/tingshuzhushou.js
+#!source-hub=http://script.hub/file/_start_/https://raw.githubusercontent.com/Yu9191/Rewrite/main/tingshuzhushou.js/_end_/tingshuzhushou.sgmodule.txt?n=✨听书助手%40Yu9191%2B解锁内购会员，使用高级功能&type=qx-rewrite&target=surge-module&del=true
+
+[Script]
+tingshuzhushou = type=http-response, pattern=https:\/\/www\.huojiwangluo.cn\/ting\/user\/(get|anonylogin), script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/tingshuzhushou.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% www.huojiwangluo.cn
