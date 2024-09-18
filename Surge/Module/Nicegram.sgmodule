@@ -1,0 +1,11 @@
+#!name=Nicegram解锁会员@ddgksf2013
+#!desc=解锁会员，使用高级功能
+#!source=https://raw.githubusercontent.com/ddgksf2013/MoYu/master/NicegramProCrack.js
+#!source-hub=http://script.hub/file/_start_/https://raw.githubusercontent.com/ddgksf2013/MoYu/master/NicegramProCrack.js/_end_/NicegramProCrack.sgmodule?n=%E2%9C%A8Nicegram%E8%A7%A3%E9%94%81%E4%BC%9A%E5%91%98%40ddgksf2013%2B%E8%A7%A3%E9%94%81%E4%BC%9A%E5%91%98%EF%BC%8C%E4%BD%BF%E7%94%A8%E9%AB%98%E7%BA%A7%E5%8A%9F%E8%83%BD&type=qx-rewrite&target=surge-module&del=true
+
+[Script]
+# > Nicegram☆解锁会员权限（2024-02-24）@ddgksf2013
+NicegramProCrack = type=http-response, pattern=^https?:\/\/nicegram\.cloud\/api\/v\d\/(ai-assistant\/purchase-list|user\/info|telegram\/auth), script-path=https://github.com/ddgksf2013/MoYu/raw/master/NicegramProCrack.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% nicegram.cloud

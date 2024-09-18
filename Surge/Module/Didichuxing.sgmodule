@@ -1,0 +1,41 @@
+#!name=滴滴出行@怎么肥事
+#!desc=滴滴出行净化/去广告
+#!author=怎么肥事
+#!source=https://raw.githubusercontent.com/baiitang/Sakura/main/QuanX/Didichuxing.js
+#!source-hub=http://script.hub/file/_start_/https://raw.githubusercontent.com/unusuad/Baitangbot/main/QuanX/Didichuxing.js/_end_/Didichuxing.sgmodule?n=%E2%9C%A8%E6%BB%B4%E6%BB%B4%E5%87%BA%E8%A1%8C%20%E5%87%80%E5%8C%96%5B%E5%8D%B8%E8%BD%BD%E9%87%8D%E8%A3%85%5D%40%E6%80%8E%E4%B9%88%E8%82%A5%E4%BA%8B%2B%E5%87%80%E5%8C%96%E7%95%8C%E9%9D%A2%20%E5%8E%BB%E9%99%A4%E5%B9%BF%E5%91%8A&type=qx-rewrite&target=surge-module&del=true
+#!update=2024-08-2 00:01
+#!ps=需要分流禁用掉 
+#!ip-cidr, 123.207.209.39/32, reject
+#!ip-cidr, 123.207.209.60/32, reject
+#!ip-cidr, 139.199.240.12/32, reject
+#!群友EDDA分享
+#!ip-cidr, 139.199.240.15/32, reject
+
+[Map Local]
+^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/xpget data-type=text data="{}" status-code=200
+
+^https:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds data-type=text data="{}" status-code=200
+
+^https:\/\/daijia\.kuaidadi\.com\/gateway data-type=text data="{}" status-code=200
+
+^https:\/\/freight\.xiaojukeji\.com\/gateway data-type=text data="{}" status-code=200
+
+^https:\/\/daijia\.kuaidadi\.com:443\/gateway data-type=text data="{}" status-code=200
+
+^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget data-type=text data="{}" status-code=200
+
+^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/other\/fast data-type=text data="{}" status-code=200
+
+^https:\/\/conf\.diditaxi\.com\.cn\/dynamic\/conf data-type=text data="{}" status-code=200
+
+[Script]
+Didichuxing = type=http-response, pattern=^https:\/\/common\.diditaxi\.com\.cn\/common\/v\d\/usercenter\/me, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js, requires-body=true, max-size=-1, timeout=60
+
+Didichuxing = type=http-response, pattern=^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/core, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js, requires-body=true, max-size=-1, timeout=60
+
+Didichuxing = type=http-response, pattern=^https:\/\/api\.udache\.com\/gulfstream\/pre-sale\/v1\/other\/pGetSceneList, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js, requires-body=true, max-size=-1, timeout=60
+
+Didichuxing = type=http-response, pattern=^https:\/\/conf\.diditaxi\.com\.cn\/ota\/na\/yuantu\/infoList, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% common.diditaxi.com.cn, freight.xiaojukeji.com, daijia.kuaidadi.com, ct.xiaojukeji.com, res.xiaojukeji.com, conf.diditaxi.com.cn, api.udache.com, 123.207.209.*, 112.53.55.225, 120.241.142.*, 120.241.143.*, 116.85.2.*, 139.199.240.84

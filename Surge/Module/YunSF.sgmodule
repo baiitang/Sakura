@@ -1,0 +1,17 @@
+#!name=云闪付净化@RuCu6
+#!desc=去除广告，净化相关页面，注:需解除软件MITM限制
+#!descs=适合解除SSL证书锁定的app。不会注入不建议启用此重写。第三方库仓库: https://github.com/NyaMisty/ssl-kill-switch3
+#!author=https://t.me/Aa28413761/1227
+#!update=2023-12-07 17:55
+##!source=https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/breakssl.snippet
+
+[Script]
+# 云闪付
+breakssl = type=http-response, pattern=^https:\/\/account\.95516\.com\/fortune\/inApp\/common\/, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/breakssl.js, requires-body=true, max-size=-1, timeout=60
+
+breakssl = type=http-response, pattern=^https:\/\/base\.95516\.com\/app\/inApp\/sys\/appShowGroup\/, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/breakssl.js, requires-body=true, max-size=-1, timeout=60
+
+breakssl = type=http-response, pattern=^https:\/\/content\.95516\.com\/koala-pre\/koala\/(recommend\/hotList|right\/queryAllRights), script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/breakssl.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% *.95516.com

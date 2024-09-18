@@ -1,0 +1,10 @@
+#!name=百度网盘会员@LnnFen
+#!desc=解除限速，实现会员速度
+#!source=https://gist.githubusercontent.com/InnFen/c5c679081ec4c0a8e43a2ed02d298f31/raw/b76aed57ae44f48ed25f6faabca69d45a25529cc/Pan.js
+#!source-hub=http://script.hub/file/_start_/https://gist.githubusercontent.com/InnFen/c5c679081ec4c0a8e43a2ed02d298f31/raw/b76aed57ae44f48ed25f6faabca69d45a25529cc/Pan.js/_end_/Pan.sgmodule?n=%E2%9C%A8%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%BC%9A%E5%91%98%40LnnFen%2B%E8%A7%A3%E9%99%A4%E9%99%90%E9%80%9F%EF%BC%8C%E5%AE%9E%E7%8E%B0%E4%BC%9A%E5%91%98%E9%80%9F%E5%BA%A6&type=qx-rewrite&target=surge-module&del=true
+
+[Script]
+Pan = type=http-response, pattern=^https:\/\/d\.pcs\.baidu\.com\/rest\/2\.0\/pcs\/file\?, script-path=https://gist.githubusercontent.com/InnFen/c5c679081ec4c0a8e43a2ed02d298f31/raw/c529f9e3eac065ca7d167ecad123bee76a9357e5/Pan.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% d.pcs.baidu.com

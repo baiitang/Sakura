@@ -1,0 +1,5 @@
+# > 原神抽卡抓包的分流
+DOMAIN-SUFFIX,webstatic.mihoyo.com
+DOMAIN-SUFFIX,webstatic-sea.hoyoverse.com
+DOMAIN-SUFFIX,hk4e-api.mihoyo.com
+DOMAIN-SUFFIX,mihoyo.com

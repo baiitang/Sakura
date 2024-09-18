@@ -1,0 +1,17 @@
+#!name=系统更新屏蔽
+#!desc=屏蔽 iOS/iPadOS 系统更新
+#!system=ios
+#!arguments=iOS:DOMAIN,iPadOS:hostname
+#!arguments-desc=可自定义参数：默认启用，输入#关闭系统更新屏蔽
+#!可单独关闭iOS／iPadOS系统屏蔽
+#!source=https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Module/Block/SoftwareUpdate.sgmodule
+
+[Rule]
+{{{DOMAIN}}},gdmf.apple.com,REJECT
+
+[URL Rewrite]
+# iPadOS
+^https:\/\/mesu\.apple\.com\/assets\/com_apple_MobileAsset_SoftwareUpdate\/com_apple_MobileAsset_SoftwareUpdate\.xml - reject
+
+[MITM]
+{{{iPadOS}}} = %APPEND% mesu.apple.com

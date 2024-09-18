@@ -1,0 +1,14 @@
+#!name=彩云天气@chxm1023
+#!desc=净化界面 解锁SVIP
+#!source=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js
+#!source-hub=http://script.hub/file/_start_/https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js/_end_/caiyun.sgmodule?n=%E2%9C%A8%E5%BD%A9%E4%BA%91%E5%A4%A9%E6%B0%94%40chxm1023%2B%E5%87%80%E5%8C%96%E7%95%8C%E9%9D%A2%20%E8%A7%A3%E9%94%81SVIP&type=qx-rewrite&target=surge-module&del=true
+
+[Script]
+# VIP信息
+caiyun = type=http-response, pattern=^https?:\/\/(biz|wrapper|starplucker)\.(cyapi|caiyunapp)\.(cn|com)\/(.+\/(user\?app_name|activity\?app_name|visitors|operation\/banners|ai\/weather|operation\/homefeatures)|p\/v\d\/(vip_info|user_info|entries|privileges)), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js, requires-body=true, max-size=-1, timeout=60
+
+# SVIP地图-48小时预报(方法来源:苍井灰灰)
+caiyun = type=http-request, pattern=^https?:\/\/(api|wrapper)\.(cyapi|caiyunapp)\.(cn|com)\/v\d\/(satellite|nafp\/origin_images), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js, timeout=60
+
+[MITM]
+hostname = %APPEND% *.cyapi.cn, *.caiyunapp.com

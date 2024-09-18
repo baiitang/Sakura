@@ -1,0 +1,4 @@
+#小米运动健康登录分流
+#建议每天调试次数不能超过五次，因为会检查登录ip拉黑，或者把下面登录域名走代理切换ip无限制
+DOMAIN,api-user.huami.com
+DOMAIN,account.huami.com

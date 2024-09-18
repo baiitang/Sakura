@@ -1,0 +1,8 @@
+#!name=WPS解锁会员@chxm1023
+#!desc=解锁WPS会员，使用高级服务
+
+[Script]
+WPS = type=http-response, pattern=^https?:\/\/(vas|account|drive)\.wps\.cn\/(query\/api\/.+\/list_purchase_info|api\/(v\d\/spaces|users\/.+\/overview)), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/WPS.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% *.wps.cn

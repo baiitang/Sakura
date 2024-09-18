@@ -1,0 +1,22 @@
+#!name=最右去广告@可莉
+#!desc=移除开屏广告、信息流广告和广告轮播图。
+#!source=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/ZuiYou_remove_ads.plugin
+#!source-hub=http://script.hub/file/_start_/https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/ZuiYou_remove_ads.plugin/_end_/ZuiYou_remove_ads.sgmodule?type=loon-plugin&target=surge-module&del=true
+#!date=2024-07-01 23:32:47
+
+[Rule]
+# 其他广告
+DOMAIN,adapi.izuiyou.com,REJECT
+# 信息流广告
+URL-REGEX,^http:\/\/mercury-gateway\.ixiaochuan\.cn\/mercury\/v1\/ad\/,REJECT-TINYGIF
+
+[URL Rewrite]
+# 其他广告
+^https?:\/\/api\.izuiyou\.com\/ad\/ - reject
+
+[Map Local]
+# 轮播图广告
+^https?:\/\/api\.izuiyou\.com\/config\/get_banner data-type=text data="{}" status-code=200
+
+[MITM]
+hostname = %APPEND% api.izuiyou.com

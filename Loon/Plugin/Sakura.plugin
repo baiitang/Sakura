@@ -1,0 +1,33 @@
+#!name = 获取Cookie合集
+#!desc = 白糖自用获取Cookie信息
+#!openUrl = 
+#!author = baitang
+#!homepage = https://t.me/Siakiura
+#!icon = https://raw.githubusercontent.com/baiitang/Sakura/main/Avatar/Sakura.JPG
+
+[Script]
+# 阿里云盘签到获取token@lowking
+http-response https:\/\/auth.aliyundrive.com\/v2\/account\/token script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js, requires-body=true, timeout=60, tag=阿里云盘签到cookie, img-url=https://raw.githubusercontent.com/chxm1023/Task/main/icon/alwp.png
+
+# 阿里云盘签到获取token@Sliverkiss
+http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, requires-body=true, timeout=60, tag=aliyun
+
+# 获取雨晨ios签到需要的各项参数@Sliverkiss
+http-request ^https:\/\/yuchen.tonghuaios.com\/users\?.+ script-path=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/yuchenios.js, timeout=60, tag=ios游戏迷获取token
+
+# 定时任务及Cookie获取@MartinsKing
+http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(APP)
+http-request ^https?:\/\/m.bilibili.com/$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(网页)
+
+# 米其林轮胎签到@Sliverkiss
+http-request ^https:\/\/ulp\.michelin\.com\.cn\/bff\/profile script-path=https://gist.githubusercontent.com/Sliverkiss/49c5d5176cad6e47919ffe058606ed0d/raw/michelin.js, timeout=10, tag=米其林俱乐部token
+
+# 蜜雪冰城小程序签到@Sliverkiss
+http-response ^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js, requires-body=true, timeout=60, tag=蜜雪冰城获取token
+
+# 获取微信小程序cookie@Sliverkiss
+http-request ^https:\/\/(webapi|qmwebapi)\.qmai\.cn\/web\/(catering|catering2-apiserver)\/crm\/points-info script-path=https://gist.githubusercontent.com/Sliverkiss/4984f7f34d6df8bcdd1e13ecac4bba51/raw/bwcj.js, timeout=10, tag=霸王茶姬获取token
+
+
+[MITM]
+hostname = auth.aliyundrive.com, yuchen.tonghuaios.com, app.bilibili.com, m.bilibili.com, ulp.michelin.com.cn, mxsa.mxbc.net, qmwebapi.qmai.cn, webapi.qmai.cn

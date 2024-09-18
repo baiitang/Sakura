@@ -1,0 +1,38 @@
+#!name=爱阅跳广告@白糖
+#!desc=卡广告直接领奖励
+#!source=https://gist.githubusercontent.com/Mattraks/cf41ab5f29271cbfc13922075c54523e/raw/iFreeTime.plugin
+#!source-hub=http://script.hub/file/_start_/https://gist.githubusercontent.com/Mattraks/cf41ab5f29271cbfc13922075c54523e/raw/iFreeTime.plugin/_end_/iFreeTime.sgmodule?n=%E2%9C%A8%E7%88%B1%E9%98%85%E8%B7%B3%E5%B9%BF%E5%91%8A%40%E7%99%BD%E7%B3%96%2B%E5%8D%A1%E5%B9%BF%E5%91%8A%E7%9B%B4%E6%8E%A5%E9%A2%86%E5%A5%96%E5%8A%B1&type=loon-plugin&target=surge-module&del=true
+#!openUrl=https://t.me/aiyueshuxiangy
+#!homepage=https://t.me/aiyueshuxiangy
+#!date=2024-01-13 18:00:00
+
+[General]
+skip-proxy = %APPEND% api-access.pangolin-sdk-toutiao.com
+
+[Rule]
+DOMAIN,api-access.pangolin-sdk-toutiao.com,DIRECT
+DOMAIN,open.e.kuaishou.com,REJECT-NO-DROP
+DOMAIN,video-dsp.pddpic.com,REJECT-NO-DROP
+DOMAIN,log-api.pangolin-sdk-toutiao.com,REJECT-NO-DROP
+DOMAIN,log-api.pangolin-sdk-toutiao-b.com,REJECT-NO-DROP
+DOMAIN,ether-pack.pangolin-sdk-toutiao.com,REJECT-NO-DROP
+DOMAIN,mssdk-bu.bytedance.com,REJECT-NO-DROP
+DOMAIN,images.pinduoduo.com,REJECT-NO-DROP
+DOMAIN,ic.snssdk.com,REJECT-NO-DROP
+DOMAIN,log.snssdk.com,REJECT-NO-DROP
+DOMAIN,log-hl.snssdk.com,REJECT-NO-DROP
+DOMAIN,tnc3-aliec2.snssdk.com,REJECT-NO-DROP
+DOMAIN-SUFFIX,gdt.qq.com,REJECT-NO-DROP
+DOMAIN-SUFFIX,app-measurement.com,REJECT-NO-DROP
+DOMAIN-SUFFIX,umeng.com,REJECT-NO-DROP
+DOMAIN-SUFFIX,umengcloud.com,REJECT-NO-DROP
+DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT-NO-DROP
+DOMAIN-SUFFIX,ctobsnssdk.com,REJECT-NO-DROP
+DOMAIN-SUFFIX,ugdtimg.com,REJECT-NO-DROP
+DOMAIN-SUFFIX,doubleclick.net,REJECT-NO-DROP
+
+[Script]
+爱阅跳广告直接领取 = type=http-response, pattern=^https:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads.+, script-path=https://gist.githubusercontent.com/Mattraks/cf41ab5f29271cbfc13922075c54523e/raw/kp.js, requires-body=true
+
+[MITM]
+hostname = %APPEND% api-access.pangolin-sdk-toutiao.com

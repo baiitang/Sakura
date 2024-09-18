@@ -1,0 +1,24 @@
+#!name=百度网盘解锁@ddgksf2013
+#!desc=百度网盘SVIP（解锁倍速超清会员权益）去开屏广告 通用广告
+#!source=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js
+#!source-hub=http://script.hub/file/_start_/https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js/_end_/baiduCloud.sgmodule?n=%E2%9C%A8%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E8%A7%A3%E9%94%81%40ddgksf2013%2B%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98SVIP%EF%BC%88%E8%A7%A3%E9%94%81%E5%80%8D%E9%80%9F%E8%B6%85%E6%B8%85%E4%BC%9A%E5%91%98%E6%9D%83%E7%9B%8A%EF%BC%89%E5%8E%BB%E5%BC%80%E5%B1%8F%E5%B9%BF%E5%91%8A%20%E9%80%9A%E7%94%A8%E5%B9%BF%E5%91%8A&type=qx-rewrite&target=surge-module&del=true
+
+[Map Local]
+# > 百度网盘_设置信息流@ddgksf2013
+^https?:\/\/pan\.baidu\.com\/act\/v\d\/(bchannel|welfare)\/list data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+# > 百度网盘_通用广告@ddgksf2013
+^https?:\/\/pan\.baidu\.com\/rest\/.*\/pcs\/ad data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+# > 百度网盘_活动推广@ddgksf2013
+^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+[Script]
+# > 百度网盘_开屏广告@ddgksf2013
+baiduCloud.vip = type=http-response, pattern=^https?:\/\/pan\.baidu\.com\/api\/getsyscfg, script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js, requires-body=true, max-size=-1, timeout=60
+
+# > 百度网盘_会员权益@ddgksf2013
+baiduCloud.vip = type=http-response, pattern=^https:\/\/pan\.baidu\.com\/rest\/.*\/membership\/user\?app_id, script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% pan.baidu.com

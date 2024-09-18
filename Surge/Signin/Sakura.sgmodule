@@ -1,0 +1,48 @@
+#!name=获取Cookie合集
+#!desc=白糖自用获取Cookie信息\n阿里云盘 雨晨 米其林 蜜雪 霸王茶姬 B站 烟花 酷狗
+
+#!author=Baitang
+#!update=2024-08-21 16:25
+
+#!arguments=白糖阿里云盘:#,樱花阿里云盘:#
+#!arguments-desc=白糖阿里云盘@Lowking        樱花阿里云盘@Sliverkiss
+
+#按下面配置完之后，打开相应的APP或小程序、网址获取token（如获取不到，等一段时间再打开），下面配置只验证过surge的，其他的自行测试
+#⚠️只测试过surge没有其他app自行测试
+
+#************************
+#Surge 4.2.0+ 脚本配置(其他APP自行转换配置):
+#************************
+
+[Script]
+# 阿里云盘签到获取token@lowking
+https://auth.alipan.com/v2/account/token
+{{{白糖阿里云盘}}} = requires-body=1,type=http-response,pattern=https:\/\/auth.(aliyundrive|alipan).com\/v2\/account\/token,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
+
+# 阿里云盘签到获取token@Sliverkiss
+{{{樱花阿里云盘}}} = type=http-request, pattern=^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token, script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, requires-body=true, max-size=-1, timeout=60
+
+# 获取雨晨ios签到需要的各项参数@Sliverkiss
+yuchenios = type=http-request, pattern=^https:\/\/yuchen.tonghuaios.com\/users\?.+, script-path=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/yuchenios.js, timeout=60
+
+# 定时任务及Cookie获取@MartinsKing
+B站Cookie(APP) = type=http-request,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/domain\?,script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js,requires-body=0
+B站Cookie(网页) = type=http-request,pattern=^https?:\/\/m\.bilibili\.com/$,script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js,requires-body=0
+
+# 米其林轮胎签到@Sliverkiss
+米其林俱乐部token = type=http-request, pattern=^https:\/\/ulp\.michelin\.com\.cn\/bff\/profile, script-path=https://gist.githubusercontent.com/Sliverkiss/49c5d5176cad6e47919ffe058606ed0d/raw/michelin.js, timeout=10
+
+# 蜜雪冰城小程序签到@Sliverkiss
+蜜雪冰城获取token = type=http-response, pattern=^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info, script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js, requires-body=true, timeout=60
+
+# 获取微信小程序cookie@Sliverkiss
+霸王茶姬获取token = type=http-request, pattern=^https:\/\/(webapi|qmwebapi)\.qmai\.cn\/web\/(catering|catering2-apiserver)\/crm\/points-info, script-path=https://gist.githubusercontent.com/Sliverkiss/4984f7f34d6df8bcdd1e13ecac4bba51/raw/bwcj.js, timeout=10
+
+# 获取松鼠的cook@Sliverkiss
+sxios = type=http-request, pattern=^https\:\/\/iios\.songshuyouxi\.com\/user, script-path=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/sxios.js, timeout=60
+
+# 酷狗每日签到领VIP
+酷狗Cookie数据获取 = type=http-request,pattern=https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/(recharge/receive_vip_listen_song|activity/get_month_vip_record).*,requires-body=0,script-path=https://gist.githubusercontent.com/Alex0510/1c389019c264a7d3ddbe4dbcf77d4295/raw/kugou.js
+
+[MITM]
+hostname = %APPEND% auth.alipan.com, auth.aliyundrive.com, yuchen.tonghuaios.com, app.bilibili.com, m.bilibili.com, ulp.michelin.com.cn, mxsa.mxbc.net, qmwebapi.qmai.cn, webapi.qmai.cn, iios.songshuyouxi.com, .kugou.com

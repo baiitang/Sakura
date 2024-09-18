@@ -1,0 +1,10 @@
+#!name=微信读书@Sliverkiss
+#!desc=点击订阅人数, 解锁下架书籍
+#!source=https://gist.githubusercontent.com/Sliverkiss/027bdc166e2e96d66c9f1a48e30db25a/raw/wxread.js
+#!source-hub=http://script.hub/file/_start_/https://gist.githubusercontent.com/Sliverkiss/027bdc166e2e96d66c9f1a48e30db25a/raw/wxread.js/_end_/wxread.sgmodule?n=%E2%9C%A8%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%40Sliverkiss%2B%E7%82%B9%E5%87%BB%E8%AE%A2%E9%98%85%E4%BA%BA%E6%95%B0%2C%20%E8%A7%A3%E9%94%81%E4%B8%8B%E6%9E%B6%E4%B9%A6%E7%B1%8D&type=qx-rewrite&target=surge-module&del=true
+
+[Script]
+微信读书获取书籍 = type=http-request, pattern=^https:\/\/i\.weread\.qq\.com\/subscription\/users\?bookId=.+, script-path=https://gist.githubusercontent.com/Sliverkiss/027bdc166e2e96d66c9f1a48e30db25a/raw/wxread.js, requires-body=true, timeout=60
+
+[MITM]
+hostname = %APPEND% i.weread.qq.com

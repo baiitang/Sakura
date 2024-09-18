@@ -1,0 +1,157 @@
+#!name=脚本合集@Baitang
+#!desc=更新时间 2024-04-20 12:30\nSpotify VVebo WPS B站 小红书 彩云 贴吧 Fimo 阿里云盘 音流
+#!致谢 此模块的内容来着各位大佬的无偿分享，本人为了方便整理而引用，如果介意请联系我删除，谢谢
+
+#!使用声明：作者并未参与任何形式的金钱交易，仅限测试和学习，请勿转载与贩卖，下载使用后24小时请删除
+
+
+
+[URL Rewrite]
+# 贴吧去广告(>=iOS15)
+RULE-SET,https://raw.githubusercontent.com/app2smile/rules/master/rule/tieba-ad.list,REJECT-DROP
+# BiliBili_哔哩哔哩_屏蔽IP请求@ddgksf2013
+^https?:\/\/app\.bilibili\.com\/x\/resource\/ip - reject
+# BiliBili_哔哩哔哩_屏蔽DefaultWord@ddgksf2013
+^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.interface\.v1\.Search\/Default - reject
+# 阿里云盘@ddgksf2013
+^https?:\/\/member\.(aliyundrive|alipan)\.com\/v1\/users\/onboard_list - reject
+^https?:\/\/api\.(aliyundrive|alipan)\.com\/adrive\/v2\/backup\/device - reject
+
+[Map Local]
+# BiliBili_哔哩哔哩_屏蔽广告浮窗@ddgksf2013
+^https?:\/\/api\.bilibili\.com\/pgc\/activity\/deliver\/material\/receive data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+# BiliBili_哔哩哔哩_Material_Ad@ddgksf2013
+^https?:\/\/api\.bilibili\.com\/x\/vip\/ads\/material\/report data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+# BiliBili_哔哩哔哩_小卡片广告@ddgksf2013
+^https://api.bilibili.com/pgc/season/player/cards data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+# BiliBili_哔哩哔哩_点击追番Card@ddgksf2013
+^https?:\/\/api\.bilibili\.com\/pgc\/season\/player\/ogv\/cards data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+# BiliBili_哔哩哔哩_应用开屏去广告@bm7
+^https://app.bilibili.com/x/v2/splash/show data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+# BiliBili_哔哩哔哩_漫画去广告@ddgksf2013
+^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/(Flash|ListFlash|GetActivityTab) data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+# 小红书_通用广告请求@ddgksf2013
+^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/v\d\/(tag\/)?ads data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+# 小红书_隐私屏蔽@ddgksf2013
+^https?:\/\/referee\.xiaohongshu\.com\/v\d\/stateReport data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+# 小红书_Switches@ddgksf2013
+^https?:\/\/pages\.xiaohongshu\.com\/data\/native\/matrix_switches data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+# 小红书_青少年请求@ddgksf2013
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/user\/teenager\/status data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+# 小红书_启动引导@ddgksf2013
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/guide\/home_guide data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+
+[Script]
+# Spotify音乐VIP[音质≤高]@app2smile
+# hostname = %APPEND% spclient.wg.spotify.com
+# 部分解锁premium 音质不能设置为超高
+spotify-proto = type=http-response, pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js, requires-body=true, binary-body-mode=true, max-size=-1, timeout=60
+spotify-json = type=http-request, pattern=^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js, timeout=60
+
+#************************************#
+# VVebo@suiyuran
+# hostname = %APPEND% api.weibo.cn
+# 修复vvebo 失效的用户时间线和我的页面
+# https://raw.githubusercontent.com/baiitang/Baitangbot/main/Surge/Module/VVebo.sgmodule
+修复时间线 = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/users\/show\?, script-path=https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/VVebo/VVebo_repair.js
+修复时间线 = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/statuses\/user_timeline\?, script-path=https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/VVebo/VVebo_repair.js
+修复时间线 = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/remind\/unread_count\?, script-path=https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/VVebo/VVebo_repair.js
+修复时间线 = type=http-response, pattern=^https:\/\/api\.weibo\.cn\/2\/profile\/statuses\/tab\?, script-path=https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/VVebo/VVebo_repair.js, requires-body=true
+修复我的页面 = type=http-response, pattern=^https:\/\/api\.weibo\.cn\/2\/cardlist\?, script-path=https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/VVebo/VVebo_repair.js, requires-body=true
+
+#************************************#
+# WPS解锁会员@chxm1023
+# hostname = %APPEND% *.wps.cn
+# 解锁WPS会员，使用高级服务
+# https://raw.githubusercontent.com/baiitang/Baitangbot/main/Surge/Module/WPS.sgmodule
+WPS = type=http-response, pattern=^https?:\/\/(vas|account|drive)\.wps\.cn\/(query\/api\/.+\/list_purchase_info|api\/(v\d\/spaces|users\/.+\/overview)), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/WPS.js, requires-body=true, max-size=-1, timeout=60
+
+#************************************#
+# 哔哩哔哩净化@ddgksf2013
+# hostname = %APPEND% -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net, app.bilibili.com, api.live.bilibili.com, *.bilibili.com, *.bili*.*, *.bilibili.*, grpc.biliapi.net, *biliapi.net
+# B站去广告 解锁1080P高码率
+bilibili_json = type=http-response, pattern=^https?:\/\/api\.bili(api|bili)\.(net|com)\/pgc\/season\/app\/related\/recommend\?, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, max-size=-1, timeout=60
+bilibili_json = type=http-response, pattern=^https?:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v\d\/ecommerce-user\/get_shopping_info\?, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, max-size=-1, timeout=60
+bilibili_json = type=http-response, pattern=^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, max-size=-1, timeout=60
+bilibili_json = type=http-response, pattern=^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/list, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, max-size=-1, timeout=60
+bilibili_json = type=http-response, pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, max-size=-1, timeout=60
+bilibili_json = type=http-response, pattern=^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-interface\/v2\/index\/feed, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, max-size=-1, timeout=60
+bilibili_json = type=http-response, pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, max-size=-1, timeout=60
+bilibili_json = type=http-response, pattern=^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/bangumi, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, max-size=-1, timeout=60
+bilibili_json = type=http-response, pattern=^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\/tab\?, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, max-size=-1, timeout=60
+bilibili_json = type=http-response, pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, max-size=-1, timeout=60
+bilibili_json = type=http-response, pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, max-size=-1, timeout=60
+bilibili_json = type=http-response, pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, max-size=-1, timeout=60
+bilibili_json = type=http-response, pattern=^https://app.bilibili.com/x/v2/search/square, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, max-size=-1, timeout=60
+bilibili_proto_beta = type=http-response, pattern=^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.polymer\.app\.search\.v1\.Search\/SearchAll$, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_proto_beta.js, requires-body=true, binary-body-mode=true, max-size=-1, timeout=60
+bilibili_proto_beta = type=http-response, pattern=^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.community\.service\.dm\.v1\.DM\/(DmView|DmSegMobile), script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_proto_beta.js, requires-body=true, binary-body-mode=true, max-size=-1, timeout=60
+bilibili_proto_beta = type=http-response, pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.interface\.v1\.Teenagers\/ModeStatus, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_proto_beta.js, requires-body=true, binary-body-mode=true, max-size=-1, timeout=60
+bilibili_proto_beta = type=http-response, pattern=^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.(view|viewunite)\.v1\.View\/(View|TFInfo)$, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_proto_beta.js, requires-body=true, binary-body-mode=true, max-size=-1, timeout=60
+bilibili_proto_beta = type=http-response, pattern=^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.dynamic\.v2\.Dynamic\/Dyn(All|Video)$, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_proto_beta.js, requires-body=true, binary-body-mode=true, max-size=-1, timeout=60
+
+#************************************#
+# 小红书@ddgksf2013
+# hostname = %APPEND% edith.xiaohongshu.com, www.xiaohongshu.com, pages.xiaohongshu.com, referee.xiaohongshu.com
+# 净化界面 去除图片水印
+# https://raw.githubusercontent.com/baiitang/Baitangbot/main/Surge/Module/Xiaohongshu.sgmodule
+redbook_json = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/widgets, script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js, requires-body=true, max-size=-1, timeout=60
+redbook_json = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/redtube\?, script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js, requires-body=true, max-size=-1, timeout=60
+redbook_json = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/videofeed\?, script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js, requires-body=true, max-size=-1, timeout=60
+redbook_json = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/feed\?, script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js, requires-body=true, max-size=-1, timeout=60
+redbook_json = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/splash_config, script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js, requires-body=true, max-size=-1, timeout=60
+redbook_json = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/homefeed\?, script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js, requires-body=true, max-size=-1, timeout=60
+redbook_json = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/config\?, script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js, requires-body=true, max-size=-1, timeout=60
+redbook_json = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/hot_list, script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js, requires-body=true, max-size=-1, timeout=60
+redbook_json = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/hint, script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js, requires-body=true, max-size=-1, timeout=60
+redbook_json = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/homefeed\/categories, script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js, requires-body=true, max-size=-1, timeout=60
+redbook_json = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/trending, script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js, requires-body=true, max-size=-1, timeout=60
+
+#************************************#
+# 彩云天气@chxm1023
+# hostname = %APPEND% *.cyapi.cn, *.caiyunapp.com
+# 净化界面 解锁SVIP
+# https://raw.githubusercontent.com/baiitang/Baitangbot/main/Surge/Module/Caiyun.sgmodule
+caiyun = type=http-response, pattern=^https?:\/\/(biz|wrapper|starplucker)\.(cyapi|caiyunapp)\.(cn|com)\/(.+\/(user\?app_name|activity\?app_name|visitors|operation\/banners|ai\/weather|operation\/homefeatures)|p\/v\d\/(vip_info|user_info|entries|privileges)), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js, requires-body=true, max-size=-1, timeout=60
+caiyun = type=http-request, pattern=^https?:\/\/(api|wrapper)\.(cyapi|caiyunapp)\.(cn|com)\/v\d\/(satellite|nafp\/origin_images), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js, timeout=60
+
+#************************************#
+# 贴吧去广告(>=iOS15)
+# hostname = %APPEND% tiebac.baidu.com
+# https://raw.githubusercontent.com/app2smile/rules/master/module/tieba.sgmodule
+贴吧json = type=http-response,pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/(s\/sync|f\/(frs\/(page|threadlist|generalTabList)|pb\/(pic)?page|excellent\/personalized))$|tiebaads\/commonbatch\?),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js,script-update-interval=0
+贴吧proto = type=http-response,pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js,script-update-interval=0
+
+#************************************#
+# Fimo-复古胶片相机@chxm1023
+# hostname = %APPEND% server.*.com
+# 解锁Vip 恢复胶卷
+# https://raw.githubusercontent.com/baiitang/Baitangbot/main/Surge/Module/Fimo.sgmodule
+fimo = type=http-response, pattern=^https:\/\/server\.(yoyiapp|zbisq)\.com, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js, requires-body=true, max-size=-1, timeout=60
+
+#************************************#
+# 阿里云盘@ddgksf2013
+# hostname = %APPEND% api.alipan.com, member.aliyundrive.com, member.alipan.com, api.aliyundrive.com
+# 净化界面 解锁本地会员功能[倍速、码率]
+# https://raw.githubusercontent.com/baiitang/Sakura/main/Surge/Module/Alicloud.sgmodule
+alicloud = type=http-response, pattern=^https?:\/\/api\.(aliyundrive|alipan)\.com\/business\/v1\.1\/users\/me\/vip\/info, script-path=https://gist.githubusercontent.com/ddgksf2013/f4752e632fd3375ea2811985c5b635dc/raw/alicloud.js, requires-body=true, max-size=-1, timeout=60
+alicloud = type=http-response, pattern=^https?:\/\/member\.(aliyundrive|alipan)\.com\/v1\/users\/tools, script-path=https://gist.githubusercontent.com/ddgksf2013/f4752e632fd3375ea2811985c5b635dc/raw/alicloud.js, requires-body=true, max-size=-1, timeout=60
+alicloud = type=http-response, pattern=^https?:\/\/member\.(aliyundrive|alipan)\.com\/v1\/users\/me, script-path=https://gist.githubusercontent.com/ddgksf2013/f4752e632fd3375ea2811985c5b635dc/raw/alicloud.js, requires-body=true, max-size=-1, timeout=60
+alicloud = type=http-response, pattern=^https?:\/\/api\.(aliyundrive|alipan)\.com\/business\/v1\.0\/users\/vip\/info, script-path=https://gist.githubusercontent.com/ddgksf2013/f4752e632fd3375ea2811985c5b635dc/raw/alicloud.js, requires-body=true, max-size=-1, timeout=60
+alicloud = type=http-response, pattern=^https?:\/\/api\.(aliyundrive|alipan)\.com\/business\/v1\.0\/users\/feature\/list, script-path=https://gist.githubusercontent.com/ddgksf2013/f4752e632fd3375ea2811985c5b635dc/raw/alicloud.js, requires-body=true, max-size=-1, timeout=60
+alicloud = type=http-response, pattern=^https?:\/\/api\.(aliyundrive|alipan)\.com\/apps\/v2\/users\/home\/widgets, script-path=https://gist.githubusercontent.com/ddgksf2013/f4752e632fd3375ea2811985c5b635dc/raw/alicloud.js, requires-body=true, max-size=-1, timeout=60
+alicloud = type=http-response, pattern=^https?:\/\/user\.(aliyundrive|alipan)\.com\/v2\/user\/get, script-path=https://gist.githubusercontent.com/ddgksf2013/f4752e632fd3375ea2811985c5b635dc/raw/alicloud.js, requires-body=true, max-size=-1, timeout=60
+alicloud = type=http-response, pattern=^https?:\/\/member\.(aliyundrive|alipan)\.com\/v2\/activity\/sign_in_info, script-path=https://gist.githubusercontent.com/ddgksf2013/f4752e632fd3375ea2811985c5b635dc/raw/alicloud.js, requires-body=true, max-size=-1, timeout=60
+
+#************************************#
+# 音流@osinx
+# hostname = %APPEND% pay.aqzscn.cn
+# 永久解锁VIP，支付宝订单号任意输入恢复购买
+# https://raw.githubusercontent.com/baiitang/Baitangbot/main/Surge/Module/Yinliu.sgmodule
+音流解锁VIP = type=http-response, pattern=^https:\/\/pay\.aqzscn\.cn\/api\/v1\/payments\/, script-path=https://raw.githubusercontent.com/osinx/Script/main/vip/streamMusic.js, requires-body=true
+
+#************************************#
+
+[MITM]
+hostname = %APPEND% spclient.wg.spotify.com, api.weibo.cn, *.wps.cn, -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net, app.bilibili.com, api.live.bilibili.com, *.bilibili.com, *.bili*.*, *.bilibili.*, grpc.biliapi.net, *biliapi.net, tiebac.baidu.com, edith.xiaohongshu.com, www.xiaohongshu.com, pages.xiaohongshu.com, referee.xiaohongshu.com, server.*.com, *.cyapi.cn, *.caiyunapp.com, api.alipan.com, member.aliyundrive.com, member.alipan.com, api.aliyundrive.com, pay.aqzscn.cn
