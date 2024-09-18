@@ -1,0 +1,10 @@
+#!name= Google搜索重定向@白糖
+#!desc= 将Google搜索重定向至.com域名，如遇频繁跳转请禁用本插件
+
+
+[URL Rewrite]
+^https?://(www.)?g.cn https://www.google.com 302
+^https?://(www.)?google.cn https://www.google.com 302
+
+[MITM]
+hostname = %APPEND% www.google.cn, www.g.cn
