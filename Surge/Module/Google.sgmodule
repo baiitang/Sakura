@@ -1,5 +1,5 @@
 #!name= Google搜索重定向@白糖
-#!desc= 将Google搜索重定向至.com域名，如遇频繁跳转请禁用本插件
+#!desc= 将Google搜索重定向至.com域名
 
 
 [URL Rewrite]
