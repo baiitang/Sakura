@@ -1,5 +1,5 @@
 #!name= 网易云音乐@key
-#!desc= 音乐可不是用来看广告的，全面净化
+#!desc= 全面净化，音乐可不是用来看广告的
 #!source=https://raw.githubusercontent.com/Keywos/rule/main/script/wy/wy.sgmodule
 #!arguments= 推荐:1,发现:1,漫游:0,动态:0,以下为首页卡片板块:--,问候语:0,每日推荐:1,推荐歌单:1,最近常听:1,音乐合伙人:1,雷达歌单:0,排行榜:0,推荐专属歌单:0,你的专属歌单:0,脚本伪vip:#
 #!arguments-desc= 将 # 改成任意名称即可开启对应脚本\n\n不隐藏为:1  隐藏为:0
