@@ -1,7 +1,7 @@
-#!name=哔哩哔哩共享
-#!desc=哔哩哔哩会员共享，可使用会员画质和看会员番剧
+#!name=哔哩哔哩会员共享
+#!desc=哔哩哔哩会员共享，可使用会员画质和看会员番剧，使用方法请看注释
 #!source=https://gist.githubusercontent.com/Sliverkiss/479ecf770801bb8d3efa514c56a699e7/raw/bilibiliCrack.js
-#!openUrl = https://apps.apple.com/cn/app/id736536022
+#!openUrl = https://apps.apple.com/app/id736536022
 #!author = Sliverkiss[https://t.me/sliverkiss]
 #!tag = 增强
 #!system = 
