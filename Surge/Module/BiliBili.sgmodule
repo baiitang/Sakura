@@ -3,7 +3,7 @@
 #!openUrl=http://boxjs.com/#/app/BiliBili.ADBlock
 #!source=https://raw.githubusercontent.com/BiliUniverse/ADBlock/main/modules/BiliBili.ADBlock.sgmodule
 #!arguments=启用屏蔽活动:默认开启, 启用画质解锁:默认开启
-#!arguments-desc=活动是指右上角消息旁边的活动图标/n画质解锁仅限于粉色哔哩哔哩7.65.0以下版本
+#!arguments-desc=活动是指右上角消息旁边的活动图标\n画质解锁仅限于粉色哔哩哔哩7.65.0以下版本
 #!boxjs=https://github.com/BiliUniverse/BoxJs/raw/main/BiliBili.boxjs.json
 
 # 8.24
