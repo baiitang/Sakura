@@ -1,5 +1,6 @@
 #!name = 音流
-#!desc =  永久解锁VIP
+#!desc =  永久解锁VIP，解锁方法：购买会员-通过支付宝订单号恢复购买-任意输入确认即可
+#!source = https://raw.githubusercontent.com/osinx/Script/main/vip/streamMusic.plugin
 #!openUrl = https://apps.apple.com/app/id6449966496
 #!author = osinx[https://github.com/osinx]
 #!tag = 增强
