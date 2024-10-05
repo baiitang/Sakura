@@ -1,7 +1,7 @@
 #!name = Spotify歌词翻译
-#!desc = Spotify非中文歌词翻译 Surge和Loon需要>=iOS15
+#!desc = Spotify非中文歌词翻译 Surge和Loon需要>=iOS15。相关数据请去boxjs填写，详情请看注释。
 #!source = https://raw.githubusercontent.com/dompling/Script/master/spotify/spotify-lyric.search.js
-#!openUrl = https://apps.apple.com/cn/app/id324684580
+#!openUrl = https://apps.apple.com/app/id324684580
 #!author = dompling[https://github.com/dompling]
 #!tag = 增强
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Spotify.png
