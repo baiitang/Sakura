@@ -2,6 +2,9 @@
 #!desc=BiliBili去广告，需要搭配boxjs使用
 #!openUrl=http://boxjs.com/#/app/BiliBili.ADBlock
 #!source=https://raw.githubusercontent.com/BiliUniverse/ADBlock/main/modules/BiliBili.ADBlock.sgmodule
+#!arguments=启用屏蔽活动:默认开启, 启用画质解锁:默认开启
+#!arguments-desc=活动是指右上角消息旁边的活动图标/n画质解锁仅限于粉色哔哩哔哩7.65.0以下版本
+#!boxjs=https://github.com/BiliUniverse/BoxJs/raw/main/BiliBili.boxjs.json
 
 # 8.24
 
@@ -45,6 +48,12 @@ BiliBili.ADBlock.response.grpc = type=http-response, pattern=^https?:\/\/(grpc\.
 BiliBili.ADBlock.response.grpc = type=http-response, pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.community\.service\.dm\.v1\.DM\/(DmView|DmSegMobile), requires-body=1, binary-body-mode=1, engine=webview, script-path=https://raw.githubusercontent.com/BiliUniverse/ADBlock/main/js/BiliBili.ADBlock.response.js
 BiliBili.ADBlock.response.grpc = type=http-response, pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.interface\.v1\.Teenagers\/ModeStatus, requires-body=1, binary-body-mode=1, engine=webview, script-path=https://raw.githubusercontent.com/BiliUniverse/ADBlock/main/js/BiliBili.ADBlock.response.js
 BiliBili.ADBlock.response.grpc = type=http-response, pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.main\.community\.reply\.v1\.Reply\/MainList, requires-body=1, binary-body-mode=1, engine=webview, script-path=https://raw.githubusercontent.com/BiliUniverse/ADBlock/main/js/BiliBili.ADBlock.response.js
+
+#!自行启用
+#!屏蔽首页右上活动@ddgksf2013
+{{{启用屏蔽活动}}}bilibili = type=http-response, pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, max-size=-1, timeout=60
+#!哔哩哔哩7.65.0版本以下-1080P高码率+4K画质[番剧和影视除外]@ddgksf2013
+{{{启用画质解锁}}}bilibili = type=http-response, pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
 hostname = %APPEND% manga.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, app.bilibili.com, app.biliapi.net, api.bilibili.com, api.biliapi.net, grpc.biliapi.net
