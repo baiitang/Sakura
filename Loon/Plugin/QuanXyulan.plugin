@@ -1,0 +1,18 @@
+#!name=预览qx一键导入资源
+#!desc=将qx的一键导入链接复制到Safari打开可以预览
+#!source = https://raw.githubusercontent.com/chengkongyiban/shadowrocket/main/scripts/qx-resource-preview.js
+#!author = Chengkongyiban[https://github.com/chengkongyiban]
+#!openUrl = https://apps.apple.com/app/id1443988620
+#!icon = 
+#!tag = 增强
+#!system = 
+#!system_version = 15
+#!loon_version = 3.2.1(749)
+#!homepage = https://github.com/chengkongyiban/rule
+#!date = 2024-10-07 02:20
+
+Script]
+http-request ^https:\/\/quantumult\.app\/x\/open-app\/add-resource\?remote-resource= script-path=https://github.com/chengkongyiban/shadowrocket/raw/main/scripts/qx-resource-preview.js, requires-body=true, timeout=60, tag=qx-resource-preview
+
+[MITM]
+hostname = quantumult.app
