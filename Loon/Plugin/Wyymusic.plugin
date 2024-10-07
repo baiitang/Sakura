@@ -4,7 +4,14 @@
 #!author = Keywos[https://github.com/Keywos], RuCu6[https://github.com/RuCu6]
 #!openUrl = https://apps.apple.com/app/id590338362
 #!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/cloudmusic.png
+#!tag = 增强
+#!system = 
+#!system_version = 15
+#!loon_version = 3.2.1(749)
+#!homepage = https://github.com/Keywos/rule
 #!date = 2024-10-07 02:20
+
+
 #!input = RuCu6_Music163_Cookie
 #!input = RuCu6_Music163_MConfigInfo
 #!input = RuCu6_Music163_UserAgent
