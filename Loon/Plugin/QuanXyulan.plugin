@@ -11,7 +11,7 @@
 #!homepage = https://github.com/chengkongyiban/rule
 #!date = 2024-10-07 02:20
 
-Script]
+[Script]
 http-request ^https:\/\/quantumult\.app\/x\/open-app\/add-resource\?remote-resource= script-path=https://github.com/chengkongyiban/shadowrocket/raw/main/scripts/qx-resource-preview.js, requires-body=true, timeout=60, tag=qx-resource-preview
 
 [MITM]
