@@ -1,5 +1,5 @@
 #!name=预览qx一键导入资源
-#!desc=将qx的一键导入链接复制到Safari打开可以预览
+#!desc=将qx的一键导入链接复制到Safari打开预览
 #!source = https://raw.githubusercontent.com/chengkongyiban/shadowrocket/main/scripts/qx-resource-preview.js
 #!author = Chengkongyiban[https://github.com/chengkongyiban]
 #!openUrl = https://apps.apple.com/app/id1443988620
