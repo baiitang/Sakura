@@ -1,0 +1,20 @@
+#!name = Emby内购解锁
+#!desc = 解锁 Emby Premium权益，非一次性解锁。
+#!source = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Plugin/Emby.plugin
+#!author = RuCu6[https://github.com/RuCu6], Rartv[https://github.com/Rartv]
+#!openUrl = https://apps.apple.com/app/id992180193
+#!icon = https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/softlyx/Emby1.png
+#!tag = 增强
+#!system = 
+#!system_version = 15
+#!loon_version = 3.2.1(749)
+#!homepage = https://github.com/RuCu6/rule
+#!date = 2024-10-07 02:20
+
+
+[Script]
+# 播放解锁
+http-response ^https:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice\? script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/emby/unlock.js, requires-body=true, timeout=60, tag=unlock
+
+[MITM]
+hostname = mb3admin.com
