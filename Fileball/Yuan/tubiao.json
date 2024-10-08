@@ -72,6 +72,8 @@
 	{"name":"Dolphin", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Dolphin.png"},
 	{"name":"Dv", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Dv.png"},
 	{"name":"DxzEmby", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/DxzEmby.png"},
+	    
+	{"name":"DVYY", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/DVYY.png"},
 
 	{"name":"ElevenPlus", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/ElevenPlus.png"},
 	{"name":"EmbyClub", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/EmbyClub.png"},
@@ -297,10 +299,10 @@
 	{"name":"Infuse", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Infuse.png"},
 	{"name":"Music", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Music.png"},
 
-	    
-	{"name":"NiceDuckJMS", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/NiceDuckDPX.png"},
-	{"name":"NiceDuck1111", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/NiceDuck1111.png"},
+
 	{"name":"NiceDuckJMS", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/NiceDuckJMS.png"},
+	{"name":"NiceDuckJMS", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/NiceDuckDPX.png"},
+	{"name":"NiceDuck1111", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/NiceDuck1111.png"}
 	
     ]
 }
