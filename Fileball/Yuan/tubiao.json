@@ -291,6 +291,9 @@
         
 	{"name":"Nplayer", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Nplayer.png"},
 	{"name":"Infuse", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Infuse.png"},
-	{"name":"Music", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Music.png"}
+	{"name":"Music", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Music.png"},
+
+	    
+	{"name":"NiceDuckJMS", "url":"https://raw.githubusercontent.com/baiitang/Sakura/Fileball/Yuan/icon/NiceDuckJMS.png"}
     ]
 }
