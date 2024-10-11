@@ -1,0 +1,13 @@
+#!name=WPS签到@NobyDa
+#!desc=登录账号后重进app抓包，仅测试suge和loon不支持qx
+#!arguments=AK:null,SK:null,MAX_RETRIES:5,TIMEOUT:120,CRONEXP: 0 8 * * *,WPS_Cookie:#默认关闭,WPS_MITM:#默认关闭
+#!arguments-desc=百度API\nAK - API Key\nSK - Secret Key\nMAX_RETRIES - 最大运行次数\n获取Cookie时，请将最后两个输入“启用”
+
+[Script]
+WPS_checkin = type=cron,cronexp={{{CRONEXP}}},wake-system=1,timeout={{{TIMEOUT}}},debug=1,script-path=WPS_checkin.js,argument="AK={{{AK}}}&SK={{{SK}}}&MAX_RETRIES={{{MAX_RETRIES}}}"
+
+{{{WPS_Cookie}}} = type=http-request,pattern=https://moapi.wps.cn/app/ios/v1/app,requires-body=1,max-size=0,binary-body-mode=0,script-path=WPS_checkin.js
+
+
+[MITM]
+{{{WPS_MITM}}}hostname = %APPEND% moapi.wps.cn
