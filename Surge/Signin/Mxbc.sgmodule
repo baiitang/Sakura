@@ -1,5 +1,6 @@
 #!name=蜜雪冰城签到@Sliverkiss
 #!desc=蜜雪冰城小程序小程序Cookie获取并签到
+#!category=签到模块
 #!arguments=蜜雪冰城签到:默认启用,蜜雪冰城Cookie获取:默认启用,签到Cron设置:22 8 * * *,MITM:hostname
 #!arguments-desc=Cookie和MITM默认启用，输入#即可关闭\n成功获取Cookie后，请关闭获取Cookie脚本，防止产生不必要的mitm
 
