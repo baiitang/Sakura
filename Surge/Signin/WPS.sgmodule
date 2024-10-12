@@ -1,5 +1,6 @@
 #!name=WPS签到@NobyDa
 #!desc=登录账号后重进WPS客户端即可自动获取Cookie并签到
+#!category=签到模块
 #!arguments=AK:null,SK:null,MAX_RETRIES:5,TIMEOUT:120,CRONEXP: 0 8 * * *,WPS_checkin:默认开启,WPS_Cookie:默认开启,WPS_MITM:hostname
 #!arguments-desc=百度API\nAK - API Key\nSK - Secret Key\nMAX_RETRIES - 最大运行次数\n不需要获取Cookie时，请将Cookie和MITM输入“#”关闭
 
