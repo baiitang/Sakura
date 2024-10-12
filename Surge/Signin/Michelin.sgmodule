@@ -1,0 +1,18 @@
+#!name=米其林轮胎签到@Sliverkiss
+#!desc=米其林轮胎小程序Cookie获取并签到
+#!arguments=米其林俱乐部签到:默认启用,米其林俱乐部Cookie获取:默认启用,签到Cron设置:10 0 * * *,MITM:hostname
+#!arguments-desc=不需要获取Cookie时，请将Cookie和MITM输入“#”关闭
+
+#!注意事项
+#!微信小程序 米其林会员俱乐部 v2.0.1 每月能跑积分1500+ 积分兑换实物
+#!捕捉ulp.michelin.com.cn域名任意包下的Authorization,填写到michelin_data中，多账号用#号连接
+#!打开微信小程序,点击探索+获取
+
+[Script]
+{{{米其林俱乐部签到}}} = type=cron,cronexp={{{签到cron设置}}},script-path=https://gist.githubusercontent.com/Sliverkiss/7773f83eb14a98c8e24a41f883fca591/raw/michelinV2.js
+
+{{{米其林俱乐部token获取}}} = type=http-response, pattern=^https:\/\/ulp\.michelin\.com\.cn\/bff\/wechat\/login, script-path=https://gist.githubusercontent.com/Sliverkiss/7773f83eb14a98c8e24a41f883fca591/raw/michelinV2.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+{{{MITM}}} = %APPEND% ulp.michelin.com.cn
+
