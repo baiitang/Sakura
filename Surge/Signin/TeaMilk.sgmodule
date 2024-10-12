@@ -1,0 +1,26 @@
+#!name=奶茶多合一签到@Sliverkiss
+#!desc=支持霸王茶姬、沪上阿姨、益禾堂等小程序Cookie获取并签到，
+#!category=签到模块
+#!arguments=奶茶多合一签到:默认启用,签到Cookie获取:默认启用,签到Cron设置:25 8 * * *,MITM:hostname
+#!arguments-desc=Cookie和MITM默认启用，输入#即可关闭\n成功获取Cookie后，请关闭获取Cookie脚本，防止产生不必要的mitm
+
+#!签到脚本使用教程
+#!单账号&多账号：
+#!1.将签到脚本拉取到本地
+#!2.打开小程序，收录小程序任务或更新Cookie，手动完成一次签到，收录活动id，提示获取成功则可以使用该脚本
+#!3.关闭获取cookie脚本，防止产生不必要的mitm
+
+#!自动清除无效任务默认关闭，可在boxjs打开
+#!适用于所有企迈小程序，具体名单可查阅https://www.qmai.cn/Case.Html
+
+
+
+[Script]
+{{{奶茶多合一签到}}} = type=cron,cronexp={{{签到cron设置}}},script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js
+
+{{{签到Cookie获取}}} = type=http-response, pattern=^https:\/\/(webapi|webapi2)\.qmai\.cn\/web\/seller\/(oauth\/flash-sale-login|account\/login-minp), script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, requires-body=true, timeout=60
+
+{{{签到Cookie获取}}} = type=http-request, pattern=^https:\/\/(webapi|webapi2|qmwebapi)\.qmai\.cn\/web\/(catering\/integral|cmk-center)\/sign\/(signIn|takePartInSign), script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, requires-body=true, timeout=60
+
+[MITM]
+{{{hostname}}} = %APPEND% webapi2.qmai.cn, webapi.qmai.cn, qmwebapi.qmai.cn
