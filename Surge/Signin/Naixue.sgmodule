@@ -1,0 +1,19 @@
+#!name=奈雪点单签到@Sliverkiss
+#!desc=奈雪点单小程序Cookie获取并签到
+#!category=签到模块
+#!arguments=奈雪点单签到:默认启用,签到Cookie获取:默认启用,签到Cron设置:23 8 * * *,MITM:hostname
+#!arguments-desc=Cookie和MITM默认启用，输入#即可关闭\n成功获取Cookie后，请关闭获取Cookie脚本，防止产生不必要的mitm
+
+#!签到脚本使用教程
+#!单账号&多账号：
+#!1.将签到脚本拉取到本地
+#!2.打开小程序，随便逛逛，提示获取cookie成功则可以使用该脚本
+#!3.关闭获取cookie脚本，防止产生不必要的mitm
+
+[Script]
+{{{奈雪点单签到}}} = type=cron,cronexp={{{签到cron设置}}},script-path=https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js
+
+{{{签到Cookie获取}}} = type=http-request, pattern=^https:\/\/tm-web\.pin-dao\.cn\/user\/base-userinfo, script-path=https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js, requires-body=true, timeout=60
+
+[MITM]
+{{{签到Cookie获取}}} = %APPEND% tm-web.pin-dao.cn
