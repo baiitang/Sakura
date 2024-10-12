@@ -1,0 +1,17 @@
+#!name=阿里云盘签到
+#!desc=阿里云盘签到获取token@Sliverkiss
+#!category=签到模块
+#!arguments=阿里云盘签到:默认启用,签到Cookie获取:默认启用,签到Cron设置:5 0 * * *,MITM:hostname
+#!arguments-desc=Cookie和MITM默认启用，输入#即可关闭\n成功获取Cookie后，请关闭获取Cookie脚本，防止产生不必要的mitm
+
+#!注意事项
+#!登录阿里云盘，退出后台重新打开，提示获取cookie成功则可以使用该脚本
+
+[Script]
+{{{阿里云盘签到}}} = type=cron,cronexp={{{签到cron设置}}},script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js
+
+# 获取阿里云盘签到需要的各项参数
+{{{签到Cookie获取}}} = type=http-request, pattern=^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token, script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+{{{MITM}}} = %APPEND% auth.alipan.com, auth.aliyundrive.com
