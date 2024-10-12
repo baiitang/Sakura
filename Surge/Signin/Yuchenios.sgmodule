@@ -1,0 +1,19 @@
+#!name=雨晨ios游戏迷签到@Sliverkiss
+#!desc=雨晨ios游戏迷Cookie获取并签到
+#!category=签到模块
+#!arguments=雨晨ios游戏迷签到:默认启用,签到Cookie获取:默认启用,签到Cron设置:14 10 * * *,MITM:hostname
+#!arguments-desc=Cookie和MITM默认启用，输入#即可关闭\n成功获取Cookie后，请关闭获取Cookie脚本，防止产生不必要的mitm
+
+#!签到脚本使用教程
+#!1.将签到脚本拉取到本地
+#!2.雨晨ios游戏迷 https://yuchen.tonghuaios.com
+#!2.打开雨晨ios游戏迷，登录后点击订单，提示获取cookie成功则可以使用该脚本
+#!3.关闭获取cookie脚本，防止产生不必要的mitm
+
+[Script]
+{{{雨晨ios游戏迷签到}}} = type=cron, cronexp={{{签到cron设置}}}, script-path=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/yuchenios.js, timeout=300
+
+{{{签到Cookie获取}}} = type=http-request, pattern=^https:\/\/yuchen.tonghuaios.com\/users\?.+, script-path=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/yuchenios.js, timeout=10
+
+[MITM]
+{{{MITM}}} = %APPEND% yuchen.tonghuaios.com
