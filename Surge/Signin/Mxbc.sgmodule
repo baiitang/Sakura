@@ -1,0 +1,18 @@
+#!name=蜜雪冰城签到@Sliverkiss
+#!desc=蜜雪冰城小程序小程序Cookie获取并签到
+#!arguments=蜜雪冰城签到:默认启用,蜜雪冰城Cookie获取:默认启用,签到Cron设置:22 8 * * *,MITM:hostname
+#!arguments-desc=不需要获取Cookie时，请将Cookie和MITM输入“#”关闭
+
+#!签到脚本使用教程
+#!单账号&多账号：
+#!1.将签到脚本拉取到本地
+#!2.打开小程序，随便逛逛，提示获取cookie成功则可以使用该脚本
+#!3.关闭获取cookie脚本，防止产生不必要的mitm
+
+[Script]
+{{{蜜雪冰城签到}}} = type=cron,cronexp={{{签到cron设置}}},script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js
+
+{{{蜜雪冰城Cookie获取}}} = type=http-response, pattern=^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info, script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js, requires-body=true, timeout=60
+
+[MITM]
+{{{MITM}}} = %APPEND% mxsa.mxbc.net
