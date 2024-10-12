@@ -15,4 +15,4 @@
 {{{签到Cookie获取}}} = type=http-request, pattern=^https:\/\/tm-web\.pin-dao\.cn\/user\/base-userinfo, script-path=https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js, requires-body=true, timeout=60
 
 [MITM]
-{{{签到Cookie获取}}} = %APPEND% tm-web.pin-dao.cn
+{{{MITM}}} = %APPEND% tm-web.pin-dao.cn
