@@ -1,7 +1,7 @@
 #!name=蜜雪冰城签到@Sliverkiss
-#!desc=蜜雪冰城小程序小程序Cookie获取并签到
+#!desc=蜜雪冰城小程序Cookie获取并签到
 #!category=签到模块
-#!arguments=蜜雪冰城签到:默认启用,蜜雪冰城Cookie获取:默认启用,签到Cron设置:22 8 * * *,MITM:hostname
+#!arguments=蜜雪冰城签到:默认启用,签到Cookie获取:默认启用,签到Cron设置:22 8 * * *,MITM:hostname
 #!arguments-desc=Cookie和MITM默认启用，输入#即可关闭\n成功获取Cookie后，请关闭获取Cookie脚本，防止产生不必要的mitm
 
 #!签到脚本使用教程
@@ -13,7 +13,7 @@
 [Script]
 {{{蜜雪冰城签到}}} = type=cron,cronexp={{{签到cron设置}}},script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js
 
-{{{蜜雪冰城Cookie获取}}} = type=http-response, pattern=^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info, script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js, requires-body=true, timeout=60
+{{{签到Cookie获取}}} = type=http-response, pattern=^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info, script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js, requires-body=true, timeout=60
 
 [MITM]
 {{{MITM}}} = %APPEND% mxsa.mxbc.net
