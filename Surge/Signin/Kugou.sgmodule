@@ -1,5 +1,5 @@
 #!name=酷狗概念版@Eric
-#!desc=每日凌晨0点10分自动领取VIP，去除启动广告
+#!desc=每日自动签到领取VIP，去除启动广告
 #!source=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Module/kugou.sgmodule
 #!category=签到模块
 #!arguments=酷狗领取VIP:默认启用,签到cron设置:10 0 * * *,酷狗Cookie数据获取:默认启用
