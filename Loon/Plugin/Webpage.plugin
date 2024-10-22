@@ -1,0 +1,34 @@
+#!name = WebPage
+#!desc = 移除网页广告。
+#!author = RuCu6[https://github.com/RuCu6]
+#!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/webpage.png
+#!date = 2024-10-04 01:25
+
+[Rewrite]
+# 桌面端请使用 https://google.com/ncr
+# 谷歌服务重定向 //*.google.cn
+^https?:\/\/www\.google\.cn 302 https://www.google.com
+^https?:\/\/translate\.google\.cn 302 https://translate.google.com
+
+# Avple 跳转弹窗 //asserts.avple.tv
+^https:\/\/asserts\.avple\.tv\/file\/avple-images\/ad\.js reject
+
+# PornHub (https://cn.pornhub.com/) //*.pornhub.com
+^https:\/\/(?:cn|www)\.pornhub\.com\/_xa\/ads(_batch)?\? reject
+
+[Script]
+# ======= 普通网页 ====== #
+## 百度 //boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com
+## 百度防跳转
+http-request ^https:\/\/boxer\.baidu\.com\/scheme\?scheme script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/baidu/baiduNoRedirect.js, tag = bd_boxer
+## 百度首页
+http-response ^https:\/\/(?:www|m)\.baidu\.com(\/|\/\?(tn=&)?from=\d+\w)?$ script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/webpage/baidu-index.js, requires-body = true, tag = bd_hello
+## 百度知道
+http-response ^https:\/\/zhidao\.baidu\.com\/(?:question|index|\?fr|\?word) script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/webpage/baidu-zhidao.js, requires-body = true, tag = bd_zhidao
+
+# ======= ooxx ====== #
+# JavDB //javdb.com
+http-response ^https:\/\/javdb\.com\/(?!over18\?) script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/webpage/javdb.js, requires-body = true, tag = jav_web
+
+[MITM]
+hostname = boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com, *.google.cn, asserts.avple.tv, javdb.com, *.pornhub.com

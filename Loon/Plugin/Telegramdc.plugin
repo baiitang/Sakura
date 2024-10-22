@@ -1,0 +1,14 @@
+#!name = Telegram DC
+#!desc = 电报数据中心分流。
+#!author = RuCu6[https://github.com/RuCu6]
+#!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/telegram.png
+#!date = 2024-04-29 23:55
+
+[Rule]
+IP-ASN, 62014, 狮城节点, no-resolve
+IP-ASN, 62041, 欧盟节点, no-resolve
+IP-ASN, 44907, 欧盟节点, no-resolve
+IP-ASN, 59930, 美国节点, no-resolve
+IP-ASN, 211157, 美国节点, no-resolve
+IP-CIDR, 5.28.192.0/18, 欧盟节点, no-resolve
+IP-CIDR, 109.239.140.0/24, 欧盟节点, no-resolve

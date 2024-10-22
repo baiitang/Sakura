@@ -1,0 +1,17 @@
+#!name = 一言
+#!desc = 解锁本地会员, 下载保存无水印。
+#!author = RuCu6[https://github.com/RuCu6]
+#!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/yiyan.png
+#!date = 2024-10-01 15:35
+
+[Rewrite]
+# 开屏广告
+^https:\/\/app\.yiyan\.art\/yiyan\/getsplashscreen\? reject-dict
+
+[Script]
+http-response ^https:\/\/app\.yiyan\.art\/yiyan\/(?:checkpro|getuserinfoandbooklist|getvipproduct) script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/break/yiyan.js, requires-body=true, binary-body-mode = false, timeout=10, tag = 解锁本地会员
+
+http-response ^https:\/\/app\.yiyan\.art\/yiyan\/(?:getalltextcard|getuserinfoandbooklist) script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/break/yiyan.js, requires-body=true, binary-body-mode = false, timeout=10, tag = 移除会员横幅
+
+[MITM]
+hostname = app.yiyan.art

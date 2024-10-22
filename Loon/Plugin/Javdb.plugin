@@ -1,0 +1,18 @@
+#!name = JavDB
+#!desc = 看个片而已，别让广告扫兴。
+#!author = RuCu6[https://github.com/RuCu6]
+#!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/javdb.png
+#!date = 2024-09-24 01:50
+
+[Rule]
+DOMAIN, api.liquidlink.cn, REJECT
+
+[Script]
+# 会员部分
+# http-request ^https:\/\/api\.hechuangxinxi\.xyz\/api\/v1\/movies\/\w+\/play\? script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/break/javdb.js, tag = jav_vip
+
+# 广告部分
+http-response ^https:\/\/api\.hechuangxinxi\.xyz\/api\/(v1\/(ads|startup|users)|v4\/movies\/\w+) script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/myBlockAds.js, requires-body = true, tag = jav_splash
+
+[MITM]
+hostname = api.hechuangxinxi.xyz

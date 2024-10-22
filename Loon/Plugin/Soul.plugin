@@ -1,0 +1,40 @@
+#!name = Soul
+#!desc = 灵魂有趣，自在相遇。
+#!author = ZenmoFeiShi[https://github.com/ZenmoFeiShi], RuCu6[https://github.com/RuCu6], 可莉🅥[https://gitlab.com/lodepuly/vpn_tool]
+#!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/soul.png
+#!date = 2024-10-15 10:20
+
+[Rule]
+# 地理位置 - 影响注册账号时的属地判断
+DOMAIN-SUFFIX, soulapp.cn, DIRECT
+IP-CIDR, 8.210.3.170/32, DIRECT, no-resolve
+IP-CIDR, 47.75.72.47/32, DIRECT, no-resolve
+
+# 广告下发
+DOMAIN, ad-h5-cdn.soulapp.cn, REJECT
+DOMAIN, ad-h5-station-cdn.soulapp.cn, REJECT
+DOMAIN, ad-r.soulapp.cn, REJECT
+DOMAIN, soul-ad.soulapp.cn, REJECT
+
+# 广告域名IP查询
+IP-CIDR, 47.56.131.76/32, REJECT, no-resolve
+IP-CIDR, 47.97.215.55/32, REJECT, no-resolve
+IP-CIDR, 47.99.42.29/32, REJECT, no-resolve
+IP-CIDR, 47.110.187.87/32, REJECT, no-resolve
+IP-CIDR, 47.243.147.125/32, REJECT, no-resolve
+IP-CIDR, 120.27.235.201/32, REJECT, no-resolve
+IP-CIDR, 121.196.197.147/32, REJECT, no-resolve
+
+[Rewrite]
+# 开屏广告
+^https:\/\/ssp\.soulapp\.cn\/api\/q reject-dict
+^https:\/\/chat-live\.soulapp\.cn\/live\/planet\/recListV2 reject-dict
+
+# 页面内容
+^https:\/\/(?:api-\w+|gateway-mobile-gray|post)\.soulapp\.cn\/(?:furion\/position\/content|hot\/soul\/rank|mobile\/app\/version\/queryIos|official\/scene\/module|teenager\/config|v2\/post\/gift\/list|v\d\/post\/homepage\/guide\/card) response-body-json-del data
+
+[Script]
+http-response ^https:\/\/(?:api-\w+|chat-live|post)\.soulapp\.cn\/(?:chat\/limitInfo|chatroom\/chatClassifyRoomList|homepage\/diamond\/position\/info|v2\/post\/recSquare\/subTabs|v6\/planet\/config) script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/soul.js, requires-body = true, tag = 移除Soul广告
+
+[MITM]
+hostname = api*.soulapp.cn, gateway-mobile-gray.soulapp.cn, post.soulapp.cn, ssp.soulapp.cn
