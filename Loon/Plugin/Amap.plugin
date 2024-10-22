@@ -1,7 +1,7 @@
 #!name = 高德地图
 #!desc = 缺德地图有治了，使用前请卸载高德地图，挂载脚本然后使用
 #!author = RuCu6[https://github.com/RuCu6], kokoryh[https://github.com/kokoryh]
-!openUrl = https://apps.apple.com/app/id461703208
+#!openUrl = https://apps.apple.com/app/id461703208
 #!icon = https://raw.githubusercontent.com/baiitang/Sakura/main/Loon/Icons/Plugin/Amap.png
 #!tag = 净化
 #!system = 
