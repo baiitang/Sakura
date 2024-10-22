@@ -1,6 +1,13 @@
 #!name = 百度地图
-#!desc = 移除广告
+#!desc = 移除广告，使用前请卸载百度地图，挂载脚本然后使用
 #!author = RuCu6[https://github.com/RuCu6]
+#!openUrl = https://apps.apple.com/app/id452186370
+#!icon = https://raw.githubusercontent.com/baiitang/Sakura/main/Loon/Icons/Plugin/Bdmap.png
+#!tag = 净化
+#!system = 
+#!system_version = 15
+#!loon_version = 3.2.1(749)
+#!homepage = https://github.com/RuCu6/rule
 #!date = 2023-05-05 18:35
 
 [Rule]
@@ -31,10 +38,10 @@ DOMAIN, lc.map.baidu.com, REJECT
 
 [Script]
 # 组件包
-http-response ^https:\/\/newclient\.map\.baidu\.com\/client\/imap\/dl\/s\/UpdateInfo\.php\? script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/bdmap.js, tag = 组件包
+http-response ^https:\/\/newclient\.map\.baidu\.com\/client\/imap\/dl\/s\/UpdateInfo\.php\? script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Amap.js, tag = 组件包
 
 # 我的页面
-http-response ^https:\/\/newclient\.map\.baidu\.com\/client\/usersystem\/mine\/page\? script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/bdmap.js, tag = 我的页面
+http-response ^https:\/\/newclient\.map\.baidu\.com\/client\/usersystem\/mine\/page\? script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Amap.js, tag = 我的页面
 
 [MITM]
 hostname = newclient.map.baidu.com, yongche.baidu.com
