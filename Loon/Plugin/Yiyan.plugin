@@ -9,9 +9,9 @@
 ^https:\/\/app\.yiyan\.art\/yiyan\/getsplashscreen\? reject-dict
 
 [Script]
-http-response ^https:\/\/app\.yiyan\.art\/yiyan\/(?:checkpro|getuserinfoandbooklist|getvipproduct) script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/break/yiyan.js, requires-body=true, binary-body-mode = false, timeout=10, tag = 解锁本地会员
+http-response ^https:\/\/app\.yiyan\.art\/yiyan\/(?:checkpro|getuserinfoandbooklist|getvipproduct) script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Break/Yiyan.js, requires-body=true, binary-body-mode = false, timeout=10, tag = 解锁本地会员
 
-http-response ^https:\/\/app\.yiyan\.art\/yiyan\/(?:getalltextcard|getuserinfoandbooklist) script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/break/yiyan.js, requires-body=true, binary-body-mode = false, timeout=10, tag = 移除会员横幅
+http-response ^https:\/\/app\.yiyan\.art\/yiyan\/(?:getalltextcard|getuserinfoandbooklist) script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Break/Yiyan.js, requires-body=true, binary-body-mode = false, timeout=10, tag = 移除会员横幅
 
 [MITM]
 hostname = app.yiyan.art
