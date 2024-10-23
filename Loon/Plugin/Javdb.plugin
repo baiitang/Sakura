@@ -9,10 +9,10 @@ DOMAIN, api.liquidlink.cn, REJECT
 
 [Script]
 # 会员部分
-# http-request ^https:\/\/api\.hechuangxinxi\.xyz\/api\/v1\/movies\/\w+\/play\? script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/break/javdb.js, tag = jav_vip
+# http-request ^https:\/\/api\.hechuangxinxi\.xyz\/api\/v1\/movies\/\w+\/play\? script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Javdb.js, tag = jav_vip
 
 # 广告部分
-http-response ^https:\/\/api\.hechuangxinxi\.xyz\/api\/(v1\/(ads|startup|users)|v4\/movies\/\w+) script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/myBlockAds.js, requires-body = true, tag = jav_splash
+http-response ^https:\/\/api\.hechuangxinxi\.xyz\/api\/(v1\/(ads|startup|users)|v4\/movies\/\w+) script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/MyBlockAds.js, requires-body = true, tag = jav_splash
 
 [MITM]
 hostname = api.hechuangxinxi.xyz
