@@ -1,7 +1,13 @@
 #!name = 哔哩哔哩
 #!desc = 没有广告的哔哩哔哩更值得干杯。
 #!author = Maasea[https://github.com/Maasea], RuCu6[https://github.com/RuCu6], kokoryh[https://github.com/kokoryh], 可莉🅥[https://gitlab.com/lodepuly/vpn_tool]
-#!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/bilibili.png
+#!openUrl = https://apps.apple.com/app/id736536022
+#!icon = https://raw.githubusercontent.com/baiitang/Sakura/main/Loon/Icons/Plugin/Bilibili.png
+#!tag = 净化
+#!system = 
+#!system_version = 15
+#!loon_version = 3.2.1(749)
+#!homepage = https://github.com/RuCu6/rule
 #!date = 2024-10-15 22:45
 
 [General]
