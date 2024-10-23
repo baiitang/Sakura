@@ -19,10 +19,10 @@ AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
 
 [Script]
 # 请求体
-http-request ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(?:browse|next|player|reel\/reel_watch_sequence|get_watch) script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/youtube/request.js, requires-body = true, binary-body-mode = true, tag = YouTube请求
+http-request ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(?:browse|next|player|reel\/reel_watch_sequence|get_watch) script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Youtube/Request.js, requires-body = true, binary-body-mode = true, tag = YouTube请求
 
 # 响应体
-http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(?:browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch) script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/youtube/response.js, requires-body = true, binary-body-mode = true, tag = YouTube响应
+http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(?:browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch) script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Youtube/Response.js, requires-body = true, binary-body-mode = true, tag = YouTube响应
 
 [MITM]
 hostname = rr*.googlevideo.com, youtubei.googleapis.com
