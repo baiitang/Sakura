@@ -1,7 +1,13 @@
 #!name = 知乎
 #!desc = 上逼乎, 与世界分享你的装逼故事。
 #!author = RuCu6[https://github.com/RuCu6], blackmatrix7[https://github.com/blackmatrix7]
-#!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/zhihu.png
+#!openUrl = https://apps.apple.com/app/id432274380
+#!icon = https://raw.githubusercontent.com/baiitang/Sakura/main/Loon/Icons/App/Zhihu.png
+#!tag = 净化
+#!system = 
+#!system_version = 15
+#!loon_version = 3.2.1(749)
+#!homepage = https://github.com/RuCu6/rule
 #!date = 2024-10-15 10:50
 
 [Rule]
