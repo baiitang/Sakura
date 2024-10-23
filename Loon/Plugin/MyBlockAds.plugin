@@ -101,68 +101,68 @@
 
 [Script]
 # 12306 开屏广告 //ad.12306.cn
-http-request ^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/12306.js, requires-body=true, timeout=60, tag=12306
+http-request ^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/12306.js, requires-body=true, timeout=60, tag=12306
 
 # amdc
-http-response ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$ script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/header.js, timeout=60, tag=header
+http-response ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$ script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Header.js, timeout=60, tag=header
 
-http-response ^https:\/\/api\.alipan\.com\/apps\/v2\/users\/home\/(news|widgets) script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/adrive.js, requires-body=true, timeout=60, tag=adrive
+http-response ^https:\/\/api\.alipan\.com\/apps\/v2\/users\/home\/(news|widgets) script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Adrive.js, requires-body=true, timeout=60, tag=adrive
 
-http-response ^https:\/\/member\.alipan\.com\/v1\/users\/onboard_list script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/adrive.js, requires-body=true, timeout=60, tag=adrive
+http-response ^https:\/\/member\.alipan\.com\/v1\/users\/onboard_list script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Adrive.js, requires-body=true, timeout=60, tag=adrive
 
-http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cainiao.js, requires-body=true, timeout=60, tag=cainiao
+http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Cainiao.js, requires-body=true, timeout=60, tag=cainiao
 
-http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get) script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js, requires-body=true, timeout=60, tag=myBlockAds
+http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get) script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/MyBlockAds.js, requires-body=true, timeout=60, tag=myBlockAds
 
-http-response ^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.json script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js, requires-body=true, timeout=60, tag=myBlockAds
+http-response ^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.json script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/MyBlockAds.js, requires-body=true, timeout=60, tag=myBlockAds
 
-http-response ^https:\/\/pan\.baidu\.com\/api\/getsyscfg\? script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/baiduCloud.js, requires-body=true, timeout=60, tag=baiduCloud
+http-response ^https:\/\/pan\.baidu\.com\/api\/getsyscfg\? script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Baidu/BaiduCloud.js, requires-body=true, timeout=60, tag=baiduCloud
 
-http-response ^https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/baiduCloud.js, requires-body=true, timeout=60, tag=baiduCloud
+http-response ^https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Baidu/BaiduCloud.js, requires-body=true, timeout=60, tag=baiduCloud
 
 # JavDB //api.hechuangxinxi.xyz, jdforrepam.com
-http-response ^https:\/\/(api\.hechuangxinxi\.xyz|jdforrepam\.com)\/api\/(v1\/(ads|startup|users)|v4\/movies\/\w+) script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js, requires-body=true, timeout=60, tag=myBlockAds
+http-response ^https:\/\/(api\.hechuangxinxi\.xyz|jdforrepam\.com)\/api\/(v1\/(ads|startup|users)|v4\/movies\/\w+) script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/MyBlockAds.js, requires-body=true, timeout=60, tag=myBlockAds
 
-http-request ^https:\/\/(api\.hechuangxinxi\.xyz|jdforrepam\.com)\/api\/v1\/movies\/\w+\/play\? script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/javdb.js, timeout=60, tag=javdb
+http-request ^https:\/\/(api\.hechuangxinxi\.xyz|jdforrepam\.com)\/api\/v1\/movies\/\w+\/play\? script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Break/Javdb.js, timeout=60, tag=javdb
 
 # 简书跳过重定向页面以直接访问 //links.jianshu.com, www.jianshu.com
-http-request ^https:\/\/links\.jianshu\.com\/go\?to= script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/noRedirect.js, timeout=60, tag=noRedirect
+http-request ^https:\/\/links\.jianshu\.com\/go\?to= script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/NoRedirect.js, timeout=60, tag=noRedirect
 
-http-request ^https:\/\/www\.jianshu\.com\/go-wild\?ac=\d&url= script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/noRedirect.js, timeout=60, tag=noRedirect
+http-request ^https:\/\/www\.jianshu\.com\/go-wild\?ac=\d&url= script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/NoRedirect.js, timeout=60, tag=noRedirect
 
-http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome) script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/jingdong.js, requires-body=true, timeout=60, tag=jingdong
+http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome) script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Jingdong.js, requires-body=true, timeout=60, tag=jingdong
 
 # 京东极速版 //api.m.jd.com
 http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/replace-body.js, requires-body=true, timeout=30, tag=replaceBody, argument="jdLiteAdvertisingVO->rucu6"
 
 # 酷安 //api.coolapk.com
-http-response ^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)\? script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js, requires-body=true, timeout=60, tag=coolapk
+http-response ^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)\? script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Coolapk.js, requires-body=true, timeout=60, tag=coolapk
 
-http-response ^https:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8|init) script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js, requires-body=true, timeout=60, tag=coolapk
+http-response ^https:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8|init) script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Coolapk.js, requires-body=true, timeout=60, tag=coolapk
 
-http-response ^https:\/\/api\.coolapk\.com\/v6\/page\/dataList\? script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js, requires-body=true, timeout=60, tag=coolapk
+http-response ^https:\/\/api\.coolapk\.com\/v6\/page\/dataList\? script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Coolapk.js, requires-body=true, timeout=60, tag=coolapk
 
 # 贴吧全面去广告 //tiebac.baidu.com
-http-response ^http:\/\/c\.tieba\.baidu\.com\/c\/f\/(excellent\/personalized|frs\/(generalTabList|page|threadlist)|pb\/(pic)?page)$ script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaJson.js, requires-body=true, timeout=60, tag=tiebaJson
+http-response ^http:\/\/c\.tieba\.baidu\.com\/c\/f\/(excellent\/personalized|frs\/(generalTabList|page|threadlist)|pb\/(pic)?page)$ script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Baidu/TiebaJson.js, requires-body=true, timeout=60, tag=tiebaJson
 
-http-response ^http:\/\/c\.tieba\.baidu\.com\/c\/f\/(excellent\/personalized|frs\/(generalTabList|page|threadlist)|pb\/(pic)?page)\?cmd script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaProto.js, requires-body=true, binary-body-mode=true, timeout=60, tag=tiebaProto
+http-response ^http:\/\/c\.tieba\.baidu\.com\/c\/f\/(excellent\/personalized|frs\/(generalTabList|page|threadlist)|pb\/(pic)?page)\?cmd script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Baidu/TiebaProto.js, requires-body=true, binary-body-mode=true, timeout=60, tag=tiebaProto
 
-http-response ^http:\/\/c\.tieba\.baidu\.com\/c\/s\/sync$ script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaJson.js, requires-body=true, timeout=60, tag=tiebaJson
+http-response ^http:\/\/c\.tieba\.baidu\.com\/c\/s\/sync$ script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Baidu/TiebaJson.js, requires-body=true, timeout=60, tag=tiebaJson
 
-http-response ^https:\/\/tiebac\.baidu\.com\/tiebaads\/commonbatch\? script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaJson.js, requires-body=true, timeout=60, tag=tiebaJson
+http-response ^https:\/\/tiebac\.baidu\.com\/tiebaads\/commonbatch\? script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Baidu/TiebaJson.js, requires-body=true, timeout=60, tag=tiebaJson
 
 # 网易新闻 //gw.m.163.com, nex.163.com
-http-response ^https:\/\/gw\.m\.163\.com\/nc\/api\/v1\/feed\/dynamic\/headline-list\? script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/news163.js, requires-body=true, timeout=60, tag=news163
+http-response ^https:\/\/gw\.m\.163\.com\/nc\/api\/v1\/feed\/dynamic\/headline-list\? script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/News163.js, requires-body=true, timeout=60, tag=news163
 
-http-response ^https:\/\/nex\.163\.com\/q script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/news163.js, requires-body=true, timeout=60, tag=news163
+http-response ^https:\/\/nex\.163\.com\/q script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/News163.js, requires-body=true, timeout=60, tag=news163
 
-http-response ^https:\/\/gw\.m\.163\.com\/nc\/api\/v1\/search\/hot-word script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/news163.js, requires-body=true, timeout=60, tag=news163
+http-response ^https:\/\/gw\.m\.163\.com\/nc\/api\/v1\/search\/hot-word script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/News163.js, requires-body=true, timeout=60, tag=news163
 
 # 微信封禁页面 //weixin110.qq.com, security.wechat.com
-http-response ^https\:\/\/(weixin110\.qq|security\.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\? script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/wechat/wechat110.js, requires-body=true, timeout=60, tag=wechat110
+http-response ^https\:\/\/(weixin110\.qq|security\.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\? script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Wechat/Wechat110.js, requires-body=true, timeout=60, tag=wechat110
 
 ## 开屏广告
-http-response ^https:\/\/api\.m\.mi\.com\/v1\/(app\/start|order\/expressView) script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js, requires-body=true, timeout=60, tag=myBlockAds
+http-response ^https:\/\/api\.m\.mi\.com\/v1\/(app\/start|order\/expressView) script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/MyBlockAds.js, requires-body=true, timeout=60, tag=myBlockAds
 
 [MITM]
 hostname = ad.12306.cn, *.58cdn.com.cn, app.58.com, pic?.ajkimg.com, gw.aihuishou.com, list-app-m.i4.cn, api.alipan.com, member.alipan.com, acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com, pan.baidu.com, update.pan.baidu.com, api.chelaile.net.cn, web.chelaile.net.cn, app-gw.csdn.net, api.douban.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, api.hechuangxinxi.xyz, jdforrepam.com, links.jianshu.com, www.jianshu.com, api.m.jd.com, gab.122.gov.cn, res.kfc.com.cn, api.coolapk.com, flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, ssp.soulapp.cn, tiebac.baidu.com, gw.m.163.com, nex.163.com, mp.weixin.qq.com, weixin110.qq.com, security.wechat.com, api.m.mi.com, api.jr.mi.com, home.mi.com, shop-api.retail.mi.com, wallet.95516.com, client.app.coc.10086.cn
