@@ -20,15 +20,15 @@
 # ======= 普通网页 ====== #
 ## 百度 //boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com
 ## 百度防跳转
-http-request ^https:\/\/boxer\.baidu\.com\/scheme\?scheme script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/baidu/baiduNoRedirect.js, tag = bd_boxer
+http-request ^https:\/\/boxer\.baidu\.com\/scheme\?scheme script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Baidu/BaiduNoRedirect.js, tag = bd_boxer
 ## 百度首页
-http-response ^https:\/\/(?:www|m)\.baidu\.com(\/|\/\?(tn=&)?from=\d+\w)?$ script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/webpage/baidu-index.js, requires-body = true, tag = bd_hello
+http-response ^https:\/\/(?:www|m)\.baidu\.com(\/|\/\?(tn=&)?from=\d+\w)?$ script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Webpage/Baidu-index.js, requires-body = true, tag = bd_hello
 ## 百度知道
-http-response ^https:\/\/zhidao\.baidu\.com\/(?:question|index|\?fr|\?word) script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/webpage/baidu-zhidao.js, requires-body = true, tag = bd_zhidao
+http-response ^https:\/\/zhidao\.baidu\.com\/(?:question|index|\?fr|\?word) script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Webpage/Baidu-zhidao.js, requires-body = true, tag = bd_zhidao
 
 # ======= ooxx ====== #
 # JavDB //javdb.com
-http-response ^https:\/\/javdb\.com\/(?!over18\?) script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/webpage/javdb.js, requires-body = true, tag = jav_web
+http-response ^https:\/\/javdb\.com\/(?!over18\?) script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Javdb.js, requires-body = true, tag = jav_web
 
 [MITM]
 hostname = boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com, *.google.cn, asserts.avple.tv, javdb.com, *.pornhub.com
