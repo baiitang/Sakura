@@ -1,7 +1,13 @@
 #!name = 菜鸟
 #!desc = 过滤菜鸟广告。
 #!author = RuCu6[https://github.com/RuCu6]
-#!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/cainiao.png
+#!openUrl = https://apps.apple.com/app/id951610982
+#!icon = https://raw.githubusercontent.com/baiitang/Sakura/main/Loon/Icons/Plugin/Cainiao.png
+#!tag = 净化
+#!system = 
+#!system_version = 15
+#!loon_version = 3.2.1(749)
+#!homepage = https://github.com/RuCu6/rule
 #!date = 2024-09-27 11:50
 
 [Rule]
