@@ -4,8 +4,13 @@
 #!name=MyBlockAds
 #!desc=去广告合集，以下app请使用单独配置文件：高德地图,哔哩哔哩,网易云音乐,微博,YouTube,知乎
 #!author=RuCu6
+#!icon = https://raw.githubusercontent.com/baiitang/Sakura/main/Loon/Icons/App/Myblockads.png
+#!tag = 净化
+#!system = 
+#!system_version = 15
+#!loon_version = 3.2.1(749)
+#!homepage = https://github.com/RuCu6/rule
 #!update=2024-01-21 08:50
-#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1065.png
 
 [Rewrite]
 # 58同城 //*.58cdn.com.cn, app.58.com, pic?.ajkimg.com
