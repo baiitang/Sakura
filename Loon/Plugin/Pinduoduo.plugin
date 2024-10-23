@@ -1,7 +1,13 @@
 #!name = 拼多多
 #!desc = 广告就不用拼着看了吧。
 #!author = ZenmoFeiShi[https://github.com/ZenmoFeiShi], 可莉🅥[https://gitlab.com/lodepuly/vpn_tool], RuCu6[https://github.com/RuCu6]
-#!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/pinduoduo.png
+#!openUrl = https://apps.apple.com/app/id1044283059
+#!icon = https://raw.githubusercontent.com/baiitang/Sakura/main/Loon/Icons/App/Pinduoduo.png
+#!tag = 净化
+#!system = 
+#!system_version = 15
+#!loon_version = 3.2.1(749)
+#!homepage = https://github.com/RuCu6/rule
 #!date = 2024-10-18 10:25
 
 [Rule]
