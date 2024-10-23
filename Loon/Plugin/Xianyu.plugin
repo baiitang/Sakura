@@ -1,7 +1,13 @@
 #!name = 闲鱼
 #!desc = 闲不住也不会去看广告的。
 #!author = 可莉🅥[https://gitlab.com/lodepuly/vpn_tool], ZenMoFiShi[https://github.com/ZenmoFeiShi], RuCu6[https://github.com/RuCu6]
-#!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/xianyu.png
+#!openUrl = https://apps.apple.com/app/id510909506
+#!icon = https://raw.githubusercontent.com/baiitang/Sakura/main/Loon/Icons/App/Xianyu.png
+#!tag = 净化
+#!system = 
+#!system_version = 15
+#!loon_version = 3.2.1(749)
+#!homepage = https://github.com/RuCu6/rule
 #!date = 2024-10-12 12:50
 
 [Rule]
