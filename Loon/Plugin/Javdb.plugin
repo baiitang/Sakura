@@ -1,7 +1,12 @@
 #!name = JavDB
 #!desc = 看个片而已，别让广告扫兴。
 #!author = RuCu6[https://github.com/RuCu6]
-#!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/javdb.png
+#!icon = https://raw.githubusercontent.com/baiitang/Sakura/main/Loon/Icons/Plugin/Javdb.png
+#!tag = 净化
+#!system = 
+#!system_version = 15
+#!loon_version = 3.2.1(749)
+#!homepage = https://github.com/RuCu6/rule
 #!date = 2024-09-24 01:50
 
 [Rule]
