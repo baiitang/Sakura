@@ -1,7 +1,13 @@
 #!name = 一言
 #!desc = 解锁本地会员, 下载保存无水印。
 #!author = RuCu6[https://github.com/RuCu6]
-#!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/yiyan.png
+#!openUrl = https://apps.apple.com/app/id1010174792
+#!icon = https://raw.githubusercontent.com/baiitang/Sakura/main/Loon/Icons/App/Yiyan.png
+#!tag = 增强
+#!system = 
+#!system_version = 15
+#!loon_version = 3.2.1(749)
+#!homepage = https://github.com/RuCu6/rule
 #!date = 2024-10-01 15:35
 
 [Rewrite]
