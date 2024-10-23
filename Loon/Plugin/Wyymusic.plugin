@@ -56,47 +56,47 @@ DOMAIN, ipv6.music.163.com, REJECT
 [Script]
 # 会员解锁
 # 播放会员歌曲
-http-request ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:v1\/artist\/top\/song|v3\/discovery\/recommend\/songs) script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/break/header.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = ne_vip
-http-request ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/v3\/song\/detail script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/break/header.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = ne_vip
-http-request ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/song\/(?:chorus|enhance\/|play\/|type\/detail\/get) script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/break/header.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = ne_vip
+http-request ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:v1\/artist\/top\/song|v3\/discovery\/recommend\/songs) script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Break/Header.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = ne_vip
+http-request ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/v3\/song\/detail script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Break/Header.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = ne_vip
+http-request ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/song\/(?:chorus|enhance\/|play\/|type\/detail\/get) script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Break/Header.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = ne_vip
 
 # 播放器会员皮肤
-http-request ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/playermode\/ script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/break/header.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = ne_vip
+http-request ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/playermode\/ script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Break/Header.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = ne_vip
 
 # 搜索结果会员歌曲
-http-request ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/search\/(?:complex\/page|complex\/rec\/song\/get|song\/list\/page) script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/break/header.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = ne_vip
+http-request ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/search\/(?:complex\/page|complex\/rec\/song\/get|song\/list\/page) script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Break/Header.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = ne_vip
 
 # 侧边栏会员等级
-http-request ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/vipnewcenter\/app\/resource\/newaccountpage script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/break/header.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = ne_vip
+http-request ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/vipnewcenter\/app\/resource\/newaccountpage script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Break/Header.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = ne_vip
 
 # 歌单列表会员认证
-http-request ^https?:\/\/interface\d?\.music\.163\.com\/w?e?api\/(homepage\/|v6\/)?playlist\/(?!(?:delete|subscribe|unsubscribe)) script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/break/header.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = ne_vip
+http-request ^https?:\/\/interface\d?\.music\.163\.com\/w?e?api\/(homepage\/|v6\/)?playlist\/(?!(?:delete|subscribe|unsubscribe)) script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Break/Header.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = ne_vip
 
 # 会员认证
-http-request ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/vipauth\/app\/auth\/(soundquality\/)?query script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/break/header.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = ne_vip
+http-request ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/vipauth\/app\/auth\/(soundquality\/)?query script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Break/Header.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = ne_vip
 
 # 以下为非会员部分
 
 # 热推,有话想说,分享一下,歌曲下的祝福等小提示,评论区,乐迷,星评等级,关注等图标
-http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:batch|v2\/resource\/comment\/floor\/get) script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/music163.js, requires-body = true, binary-body-mode = true, timeout = 20, tag = ne_mian
+http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:batch|v2\/resource\/comment\/floor\/get) script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Music163.js, requires-body = true, binary-body-mode = true, timeout = 20, tag = ne_mian
 
 # 推荐,home,主页
-http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:homepage\/block\/page|link\/page\/rcmd\/(?:block\/resource\/multi\/refresh|resource\/show)) script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/music163.js, requires-body = true, binary-body-mode = true, timeout = 20, tag = ne_home
+http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:homepage\/block\/page|link\/page\/rcmd\/(?:block\/resource\/multi\/refresh|resource\/show)) script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Music163.js, requires-body = true, binary-body-mode = true, timeout = 20, tag = ne_home
 
 # 底部tab
-http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/link\/home\/framework\/tab script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/music163.js, requires-body = true, binary-body-mode = true, timeout = 20, tag = ne_tab
+http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/link\/home\/framework\/tab script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Music163.js, requires-body = true, binary-body-mode = true, timeout = 20, tag = ne_tab
 
 # 发现
-http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/link\/page\/discovery\/resource\/show script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/music163.js, requires-body = true, binary-body-mode = true, timeout = 20, tag = ne_fx
+http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/link\/page\/discovery\/resource\/show script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Music163.js, requires-body = true, binary-body-mode = true, timeout = 20, tag = ne_fx
 
 # 播放音效
-# http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/song\/play\/more\/list\/ script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/music163.js, requires-body = true, binary-body-mode = true, timeout = 20, tag = ne_effect
+# http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/song\/play\/more\/list\/ script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Music163.js, requires-body = true, binary-body-mode = true, timeout = 20, tag = ne_effect
 
 # 我的页面
-http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/link\/position\/show\/resource script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/music163.js, requires-body = true, binary-body-mode = true, timeout = 20, tag = ne_mybarad
+http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/link\/position\/show\/resource script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Music163.js, requires-body = true, binary-body-mode = true, timeout = 20, tag = ne_mybarad
 
 # 显示未关注你
-http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/user\/follow\/users\/mixed\/get script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/music163.js, requires-body = true, binary-body-mode = true, timeout = 20, tag = ne_foll
+http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/user\/follow\/users\/mixed\/get script-path = https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Music163.js, requires-body = true, binary-body-mode = true, timeout = 20, tag = ne_foll
 
 [MITM]
 hostname = interface*.music.163.com
