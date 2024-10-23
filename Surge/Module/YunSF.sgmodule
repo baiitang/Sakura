@@ -5,13 +5,22 @@
 #!update=2023-12-07 17:55
 ##!source=https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/breakssl.snippet
 
+[Rule]
+# 开屏广告
+DOMAIN,ads.95516.com,REJECT
+DOMAIN,switch.cup.com.cn,REJECT
+DOMAIN,tysdk.95516.com,REJECT
+
+[URL Rewrite]
+^https:\/\/wallet\.95516\.com(:10533)?\/s\/wl\/icon\/large\/1 - reject
+
 [Script]
 # 云闪付
-breakssl = type=http-response, pattern=^https:\/\/account\.95516\.com\/fortune\/inApp\/common\/, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/breakssl.js, requires-body=true, max-size=-1, timeout=60
+移除云闪付推广 = type=http-response, pattern=^https:\/\/base\.95516\.com\/app\/inApp\/sys\/appShowGroup\/, script-path=https://kelee.one/Resource/Script/UnionPay/UnionPay_remove_ads_with_ssl_unpinning.js, requires-body=true
 
-breakssl = type=http-response, pattern=^https:\/\/base\.95516\.com\/app\/inApp\/sys\/appShowGroup\/, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/breakssl.js, requires-body=true, max-size=-1, timeout=60
+移除云闪付推广 = type=http-response, pattern=^https:\/\/account\.95516\.com\/fortune\/inApp\/common\/, script-path=https://kelee.one/Resource/Script/UnionPay/UnionPay_remove_ads_with_ssl_unpinning.js, requires-body=true
 
-breakssl = type=http-response, pattern=^https:\/\/content\.95516\.com\/koala-pre\/koala\/(recommend\/hotList|right\/queryAllRights), script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/breakssl.js, requires-body=true, max-size=-1, timeout=60
+移除云闪付推广 = type=http-response, pattern=^https:\/\/content\.95516\.com\/koala-pre\/koala\/(recommend\/hotList|right\/queryAllRights), script-path=https://kelee.one/Resource/Script/UnionPay/UnionPay_remove_ads_with_ssl_unpinning.js, requires-body=true
 
 [MITM]
-hostname = %APPEND% *.95516.com
+hostname = %APPEND% account.95516.com, base.95516.com, content.95516.com
