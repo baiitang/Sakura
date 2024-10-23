@@ -1,7 +1,13 @@
 #!name = 微博
 #!desc = 随时随地刷纯粹的信息流。
 #!author = RuCu6[https://github.com/RuCu6], zmqcherish[https://github.com/zmqcherish]
-#!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/weibo.png
+#!openUrl = https://apps.apple.com/app/id350962117
+#!icon = https://raw.githubusercontent.com/baiitang/Sakura/main/Loon/Icons/App/Weibo.png
+#!tag = 净化
+#!system = 
+#!system_version = 15
+#!loon_version = 3.2.1(749)
+#!homepage = https://github.com/RuCu6/rule
 #!date = 2024-08-28 08:25:20
 
 [Rule]
