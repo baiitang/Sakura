@@ -1,7 +1,13 @@
 #!name = Soul
 #!desc = 灵魂有趣，自在相遇。
 #!author = ZenmoFeiShi[https://github.com/ZenmoFeiShi], RuCu6[https://github.com/RuCu6], 可莉🅥[https://gitlab.com/lodepuly/vpn_tool]
-#!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/soul.png
+#!openUrl = https://apps.apple.com/app/id1032287195
+#!icon = https://raw.githubusercontent.com/baiitang/Sakura/main/Loon/Icons/App/soul.png
+#!tag = 净化
+#!system = 
+#!system_version = 15
+#!loon_version = 3.2.1(749)
+#!homepage = https://github.com/RuCu6/rule
 #!date = 2024-10-15 10:20
 
 [Rule]
