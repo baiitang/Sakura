@@ -1,7 +1,13 @@
 #!name = WebPage
 #!desc = 移除网页广告。
 #!author = RuCu6[https://github.com/RuCu6]
-#!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/webpage.png
+#!openUrl = https://apps.apple.com/app/id350962117
+#!icon = https://raw.githubusercontent.com/baiitang/Sakura/main/Loon/Icons/App/Webpage.png
+#!tag = 净化
+#!system = 
+#!system_version = 15
+#!loon_version = 3.2.1(749)
+#!homepage = https://github.com/RuCu6/rule
 #!date = 2024-10-04 01:25
 
 [Rewrite]
