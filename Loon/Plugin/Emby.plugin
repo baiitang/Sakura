@@ -14,7 +14,7 @@
 
 [Script]
 # 播放解锁
-http-response ^https:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice\? script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/emby/unlock.js, requires-body=true, timeout=60, tag=unlock
+http-response ^https:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice\? script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Emby/Unlock.js, requires-body=true, timeout=60, tag=unlock
 
 [MITM]
 hostname = mb3admin.com
