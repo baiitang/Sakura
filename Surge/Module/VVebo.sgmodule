@@ -1,22 +1,23 @@
 #!name=VVebo@suiyuran
 #!desc=修复vvebo 失效的用户时间线和我的页面
-#!source=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/VVebo_repair.plugin
-#!source-hub=http://script.hub/file/_start_/https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/VVebo_repair.plugin/_end_/VVebo_repair.sgmodule?n=%E2%9C%A8VVebo%40suiyuran%2B%E4%BF%AE%E5%A4%8Dvvebo%20%E5%A4%B1%E6%95%88%E7%9A%84%E7%94%A8%E6%88%B7%E6%97%B6%E9%97%B4%E7%BA%BF%E5%92%8C%E6%88%91%E7%9A%84%E9%A1%B5%E9%9D%A2&type=loon-plugin&target=surge-module&del=true
+#!source=https://kelee.one/Tool/Loon/Plugin/VVebo_repair.plugin
 #!author=suiyuran androidcn
 #!icon=https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/VVebo.png
 #!homepage=https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!date=2024-01-19 22:25:07
 
 [Script]
-修复时间线 = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/users\/show\?, script-path=https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/VVebo/VVebo_repair.js
+[Script]
+修复时间线 = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/users\/show\?, script-path=https://kelee.one/Resource/Script/VVebo/VVebo_repair.js
 
-修复时间线 = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/statuses\/user_timeline\?, script-path=https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/VVebo/VVebo_repair.js
+修复时间线 = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/statuses\/user_timeline\?, script-path=https://kelee.one/Resource/Script/VVebo/VVebo_repair.js
 
-修复时间线 = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/remind\/unread_count\?, script-path=https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/VVebo/VVebo_repair.js
+修复时间线 = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/remind\/unread_count\?, script-path=https://kelee.one/Resource/Script/VVebo/VVebo_repair.js
 
-修复时间线 = type=http-response, pattern=^https:\/\/api\.weibo\.cn\/2\/profile\/statuses\/tab\?, script-path=https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/VVebo/VVebo_repair.js, requires-body=true
+修复时间线 = type=http-response, pattern=^https:\/\/api\.weibo\.cn\/2\/profile\/statuses\/tab\?, script-path=https://kelee.one/Resource/Script/VVebo/VVebo_repair.js, requires-body=true
 
-修复我的页面 = type=http-response, pattern=^https:\/\/api\.weibo\.cn\/2\/cardlist\?, script-path=https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/VVebo/VVebo_repair.js, requires-body=true
+修复我的页面 = type=http-response, pattern=^https:\/\/api\.weibo\.cn\/2\/cardlist\?, script-path=https://kelee.one/Resource/Script/VVebo/VVebo_repair.js, requires-body=true
 
 [MITM]
 hostname = %APPEND% api.weibo.cn
+
