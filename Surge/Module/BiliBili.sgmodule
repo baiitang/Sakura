@@ -3,10 +3,10 @@
 #!openUrl=http://boxjs.com/#/app/BiliBili.ADBlock
 #!source=https://raw.githubusercontent.com/BiliUniverse/ADBlock/main/modules/BiliBili.ADBlock.sgmodule
 #!arguments=启用广告屏蔽:默认开启, 启用首页设置:默认开启, 启用屏蔽活动:默认开启, 启用画质解锁:默认开启, 启用皮肤切换:默认启用, 启用会员伪装:默认开启, B站每日任务签到:#默认关闭, B站Cookie(APP):#默认关闭, B站Cookie(网页):#默认关闭, 签到Cron设置:10 9 * *
-#!arguments-desc=活动是指右上角消息旁边的活动图标\n画质解锁仅限于粉色哔哩哔哩7.65.0以下版本＼nB站每日签到任务默认关闭，请自行输入“任意文字”启用
+#!arguments-desc=活动是指右上角消息旁边的活动图标\n画质解锁仅限于粉色哔哩哔哩7.65.0以下版本\nB站每日签到任务默认关闭，请自行输入“任意文字”启用
 
 #需要搭配Boxjs使用
-#!🛡️ ADBlock 和 ⚙ Enhanced的Boxjs
+#!🛡️ ADBlock 和 ⚙ Enhanced的Boxjs @整点薯条
 #!boxjs=https://github.com/BiliUniverse/BoxJs/raw/main/BiliBili.boxjs.json
 #!👘 Modified 和 B站每日任务签到的Boxjs @MartinsKing
 #!boxjs=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/boxjs/BiliBili.boxjs.json
