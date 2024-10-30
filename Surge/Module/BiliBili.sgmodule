@@ -10,7 +10,15 @@
 #!boxjs=https://github.com/BiliUniverse/BoxJs/raw/main/BiliBili.boxjs.json
 #!👘 Modified 和 B站每日任务签到的Boxjs @MartinsKing
 #!boxjs=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/boxjs/BiliBili.boxjs.json
-# 8.24
+
+#!来源的相关模块
+#!使用大会员皮肤
+#!https://raw.githubusercontent.com/ClydeTime/BiliBili/refs/heads/main/modules/BiliBili.Modified.sgmodule
+#!伪装大会员，点亮大会员标志
+#!https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/BiliBili/biliSkin.sgmodule
+#!解锁大会员画质（限7.65.0版本以下）
+#!https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Bilibili.conf
+# 8.24  10.30
 
 [URL Rewrite]
 #!📺 BiliBili: 🛡️ ADBlock
