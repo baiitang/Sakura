@@ -11,7 +11,6 @@
 [URL Rewrite]
 #!📺 BiliBili: 🛡️ ADBlock
 # 去除搜索中的默认关键词
-# 去除搜索中的默认关键词
 ^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.interface\.v1\.Search\/DefaultWords$ - reject
 
 [Map Local]
@@ -30,9 +29,7 @@
 
 # BiliBili漫画去广告
 ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash data-type=text data="{}" header="application/json"
-
 ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/ListFlash data-type=text data="{}" header="application/json"
-
 ^https?:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v1\/ecommerce-user\/get_shopping_info\? data-type=text data="{}" header="application/json"
 
 [Script]
