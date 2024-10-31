@@ -10,5 +10,9 @@
 #!icon = https://raw.githubusercontent.com/baiitang/Sakura/main/Loon/Icons/Plugin/Bilibili.png
 #!date = 2024-10-31 22:29:37
 
-#!BiliBili_哔哩哔哩_1080P高码率+4K画质[番剧和影视除外]@ddgksf2013
+[Script]
+#!BiliBili_哔哩哔哩_1080P高码率+4K画质[番剧和影视除外]
 http-response ^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, timeout=60, tag=bilibili_json
+
+[MITM]
+hostname = ap*.bilibili.com, grpc.biliapi.net, www.bilibili.com, m.bilibili.com, *live.bilibili.com
