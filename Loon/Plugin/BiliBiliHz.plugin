@@ -1,0 +1,14 @@
+#!name = 哔哩哔哩解锁会员画质
+#!desc = 启用此插件后，可以播放4K画质，最高仅支持7.65.0版。
+#!openUrl = https://apps.apple.com/app/id736536022
+#!author = Ddgksf2013[https://github.com/ddgksf2013]
+#!tag = 增强
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.1(749)
+#!homepage = https://gitlab.com/isous/loonresource/-/blob/main/README.md
+#!icon = https://raw.githubusercontent.com/baiitang/Sakura/main/Loon/Icons/Plugin/Bilibili.png
+#!date = 2024-10-31 22:29:37
+
+#!BiliBili_哔哩哔哩_1080P高码率+4K画质[番剧和影视除外]@ddgksf2013
+http-response ^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, timeout=60, tag=bilibili_json
