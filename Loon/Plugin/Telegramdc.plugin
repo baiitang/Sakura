@@ -12,10 +12,10 @@
 #!date = 2024-04-29 23:55
 
 [Rule]
-IP-ASN, 62014, 狮城节点, no-resolve, PROXY
-IP-ASN, 62041, 欧盟节点, no-resolve, PROXY
-IP-ASN, 44907, 欧盟节点, no-resolve
-IP-ASN, 59930, 美国节点, no-resolve
-IP-ASN, 211157, 美国节点, no-resolve
-IP-CIDR, 5.28.192.0/18, 欧盟节点, no-resolve
-IP-CIDR, 109.239.140.0/24, 欧盟节点, no-resolve
+IP-ASN, 62014, PROXY, no-resolve
+IP-ASN, 62041, PROXY, no-resolve
+IP-ASN, 44907, PROXY, no-resolve
+IP-ASN, 59930, PROXY, no-resolve
+IP-ASN, 211157, PROXY, no-resolve
+IP-CIDR, 5.28.192.0/18, PROXY, no-resolve
+IP-CIDR, 109.239.140.0/24, PROXY, no-resolve
