@@ -7,7 +7,7 @@
 
 
 [Rule]
-DOMAIN-SUFFIX, jsdelivr.net, PROXY
+
 
 [Script]
 
