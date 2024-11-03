@@ -24,8 +24,8 @@
 #!📺 BiliBili: 🛡️ ADBlock
 # 去除搜索中的默认关键词
 ^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.interface\.v1\.Search\/DefaultWords$ - reject
-
-^https:\/\/i[0-9]\.hdslb\.com\/bfs\/activity-plat\/static data-type=text data=" " status-code=200
+#!移除观影页广告（含左上角云视听小电视）
+^https:\/\/i\d\.hdslb\.com\/bfs\/activity-plat\/static\/\w+ - reject
 
 [Map Local]
 #!📺 BiliBili: 🛡️ ADBlock
@@ -72,10 +72,6 @@
 {{{启用屏蔽活动}}}bilibili = type=http-response, pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, max-size=-1, timeout=60
 #!哔哩哔哩7.65.0版本以下-1080P高码率+4K画质[番剧和影视除外]@ddgksf2013
 {{{启用画质解锁}}}bilibili = type=http-response, pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, max-size=-1, timeout=60
-
-#!自行启用
-#!移除观影页广告（含左上角云视听小电视）@可莉
-{{{移除观影页广告}}} = type=http-response, pattern=^https:\/\/api\.bilibili\.com\/pgc\/page\/(?:bangumi|cinema\/tab), script-path=https://kelee.one/Resource/Script/Bilibili/Bilibili_remove_ads.js, requires-body=true
 
 #!自行启用
 #!📺 BiliBili: 👘 Modified @MartinsKing
