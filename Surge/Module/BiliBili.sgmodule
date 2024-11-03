@@ -25,6 +25,8 @@
 # 去除搜索中的默认关键词
 ^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.interface\.v1\.Search\/DefaultWords$ - reject
 
+^https:\/\/i[0-9]\.hdslb\.com\/bfs\/activity-plat\/static data-type=text data=" " status-code=200
+
 [Map Local]
 #!📺 BiliBili: 🛡️ ADBlock
 # 去除搜索中的大家都在搜
