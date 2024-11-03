@@ -93,5 +93,5 @@
 
 
 [MITM]
-hostname = %APPEND% manga.bilibili.com, live.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, www.bilibili.com, app.bilibili.com, app.biliapi.net, api.bilibili.com, api.biliapi.net, grpc.biliapi.net, m.bilibili.com
+hostname = %APPEND% manga.bilibili.com, live.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, www.bilibili.com, app.bilibili.com, app.biliapi.net, api.bilibili.com, api.biliapi.net, grpc.biliapi.net, m.bilibili.com, i?.hdslb.com
 h2 = true
