@@ -2,7 +2,7 @@
 #!desc=BiliBili去广告，需要搭配boxjs使用
 #!openUrl=http://boxjs.com/#/app/BiliBili.ADBlock
 #!source=https://raw.githubusercontent.com/BiliUniverse/ADBlock/main/modules/BiliBili.ADBlock.sgmodule
-#!arguments=启用广告屏蔽:默认开启, 启用首页设置:默认开启, 启用屏蔽活动:默认开启, 启用画质解锁:默认开启, 启用皮肤切换:默认启用, 启用会员伪装:默认开启, B站每日任务签到:#默认关闭, B站Cookie(APP):#默认关闭, B站Cookie(网页):#默认关闭, 签到Cron设置:10 9 * *
+#!arguments=启用广告屏蔽:默认开启, 启用首页设置:默认开启, 启用屏蔽活动:默认开启, 启用画质解锁:默认开启, 启用皮肤切换:#默认关闭, 启用会员伪装:#默认关闭, B站每日任务签到:#默认关闭, B站Cookie(APP):#默认关闭, B站Cookie(网页):#默认关闭, 签到Cron设置:10 9 * *
 #!arguments-desc=活动是指右上角消息旁边的活动图标\n画质解锁仅限于粉色哔哩哔哩7.65.0以下版本\nB站每日签到任务默认关闭，请自行输入“任意文字”启用
 
 #需要搭配Boxjs使用
@@ -80,7 +80,7 @@
 {{{启用皮肤切换}}} = type=http-response, pattern=^https:\/\/app\.bilibili\.com\/x\/v2\/(account\/(myinfo|mine)|space), requires-body=1, script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBili.Modified.response.js, argument=
 {{{启用皮肤切换}}} = type=http-response, pattern=^https:\/\/api\.bilibili\.com\/x\/vip\/(web\/vip_center\/combine|price\/panel\/lexi|top_panel_info), requires-body=1, script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBili.Modified.response.js, argument=
 #!伪装大会员，点亮大会员标志，不能使用大会员功能（紫薇）
-{{{启用伪装会员}}} = type=http-request,requires-body=0,pattern=^https?:\/\/ap(i|p)\.bilibili\.com\/bilibili(.*)\/(View|Play(URL|View|Conf|erOnline)|MainList|ViewProgress)$,script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/BiliBili/biliCrack.js
+{{{启用会员伪装}}} = type=http-request,requires-body=0,pattern=^https?:\/\/ap(i|p)\.bilibili\.com\/bilibili(.*)\/(View|Play(URL|View|Conf|erOnline)|MainList|ViewProgress)$,script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/BiliBili/biliCrack.js
 
 #!自行启用
 {{{B站每日任务签到}}} = type=cron,cronexp={{{签到cron设置}}},script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js,wake-system=1,timeout=15
