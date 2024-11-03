@@ -9,8 +9,6 @@
 # ～ BiliBili_哔哩哔哩_屏蔽DefaultWord@ddgksf2013
 ^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.interface\.v1\.Search\/Default - reject
 
-^https:\/\/i[0-9]\.hdslb\.com\/bfs\/activity-plat\/static - reject-200
-
 [Map Local]
 # ～ BiliBili_哔哩哔哩_屏蔽广告浮窗@ddgksf2013
 ^https?:\/\/api\.bilibili\.com\/pgc\/activity\/deliver\/material\/receive data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
