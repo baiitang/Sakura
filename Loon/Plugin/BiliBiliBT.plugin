@@ -1,0 +1,87 @@
+#!name=哔哩哔哩净化@整点薯条
+#!desc=BiliBili去广告，需要搭配boxjs使用
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1003.png
+#!openUrl=http://boxjs.com/#/app/BiliBili.ADBlock
+#!source=https://raw.githubusercontent.com/BiliUniverse/ADBlock/main/modules/BiliBili.ADBlock.sgmodule
+#!arguments=启用广告屏蔽:默认开启, 启用首页设置:默认开启, 启用屏蔽活动:默认开启, 启用画质解锁:默认开启, 启用皮肤切换:#默认关闭, 启用会员伪装:#默认关闭, B站每日任务签到:#默认关闭, B站Cookie(APP):#默认关闭, B站Cookie(网页):#默认关闭, 签到Cron设置:10 9 * *
+#!arguments-desc=活动是指右上角消息旁边的活动图标\n画质解锁仅限于粉色哔哩哔哩7.65.0以下版本\nB站每日签到任务默认关闭，请自行输入“任意文字”启用
+#!boxjs=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/boxjs/BiliBili.boxjs.json
+
+#需要搭配Boxjs使用
+#!🛡️ ADBlock 和 ⚙ Enhanced的Boxjs @整点薯条
+#!boxjs=https://github.com/BiliUniverse/BoxJs/raw/main/BiliBili.boxjs.json
+#!👘 Modified 和 B站每日任务签到的Boxjs @MartinsKing
+#!boxjs=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/boxjs/BiliBili.boxjs.json
+
+#!来源的相关模块
+#!使用大会员皮肤
+#!https://raw.githubusercontent.com/ClydeTime/BiliBili/refs/heads/main/modules/BiliBili.Modified.sgmodule
+#!伪装大会员，点亮大会员标志
+#!https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/BiliBili/biliSkin.sgmodule
+#!解锁大会员画质（限7.65.0版本以下）
+#!https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Bilibili.conf
+# 8.24  10.30  11.3 11.6
+
+[Rewrite]
+#!📺 BiliBili: 🛡️ ADBlock
+# 去除搜索中的默认关键词
+^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.interface\.v1\.Search\/DefaultWords$ - reject
+#!移除观影页广告（含左上角云视听小电视）
+^https:\/\/i\d\.hdslb\.com\/bfs\/activity-plat\/static\/\w+ - reject
+
+# 去除搜索中的大家都在搜
+^https?:\/\/api\.vc\.bilibili\.com\/search_svr\/v\d\/Search\/recommend_words mock-response-body data-type=text data="{}"
+# 去除动态中的话题
+^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr mock-response-body data-type=text data="{}"
+# 去除动态中的最常访问
+^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/mix_uplist mock-response-body data-type=text data="{}"
+# 可能的一些推广(beta)
+^https?:\/\/api\.bili(bili\.com|api\.net)\/pgc\/season\/app\/related\/recommend\? mock-response-body data-type=text data="{}"
+# BiliBili漫画去广告
+^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash mock-response-body data-type=text data="{}"
+^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/ListFlash mock-response-body data-type=text data="{}"
+^https?:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v1\/ecommerce-user\/get_shopping_info\? mock-response-body data-type=text data="{}"
+
+[Script]
+#!📺 BiliBili: ⚙ Enhanced
+http-response ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/resource\/show\/tab\/v2\? script-path=https://github.com/BiliUniverse/Enhanced/releases/download/v0.5.3/response.bundle.js, requires-body=true, tag=默认开启
+http-response ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/account\/mine(\/ipad)?\? script-path=https://github.com/BiliUniverse/Enhanced/releases/download/v0.5.3/response.bundle.js, requires-body=true, tag=默认开启
+http-response ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/region\/index\? script-path=https://github.com/BiliUniverse/Enhanced/releases/download/v0.5.3/response.bundle.js, requires-body=true, tag=默认开启
+http-response ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/channel\/region\/list\? script-path=https://github.com/BiliUniverse/Enhanced/releases/download/v0.5.3/response.bundle.js, requires-body=true, tag=默认开启
+
+#!📺 BiliBili: 🛡️ ADBlock
+http-request ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/feed\/index\? script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.7/request.bundle.js, tag=默认开启
+http-response ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/(splash\/(brand\/list|event\/list2|list|show)|feed\/index(\/story)?|search\/square) script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.7/request.bundle.js, requires-body=true, tag=默认开启
+http-response ^https?:\/\/api\.bilibili\.com\/x\/web-interface\/wbi\/index\/top\/feed\/rcmd\? script-path=https://raw.https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.7/request.bundle.js, requires-body=true, tag=默认开启
+http-response ^https?:\/\/api\.bili(bili\.com|api\.net)\/pgc\/page\/(bangumi|cinema\/tab\?) script-path=https://raw.https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.7/request.bundle.js, requires-body=true, tag=默认开启
+http-response ^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.7/request.bundle.js, requires-body=true, tag=默认开启
+http-response ^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.(view|viewunite)\.v1\.View\/(View|TFInfo)$ script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.7/request.bundle.js, requires-body=true, binary-body-mode=true, tag=默认开启
+http-response ^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.dynamic\.v2\.Dynamic\/Dyn(All|Video)$ script-path=https://raw.https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.7/request.bundle.js, requires-body=true, binary-body-mode=true, tag=默认开启
+http-response ^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.playurl\.v1\.PlayURL\/PlayView$ script-path=https://raw.https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.7/request.bundle.js, requires-body=true, binary-body-mode=true, tag=默认开启
+http-response ^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.polymer\.app\.search\.v1\.Search\/SearchAll$ script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.7/request.bundle.js, requires-body=true, binary-body-mode=true, tag=默认开启
+http-response ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.community\.service\.dm\.v1\.DM\/(DmView|DmSegMobile) script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.7/request.bundle.js, requires-body=true, binary-body-mode=true, tag=默认开启
+http-response ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.interface\.v1\.Teenagers\/ModeStatus script-path=https://raw.https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.7/request.bundle.js, requires-body=true, binary-body-mode=true, tag=默认开启
+http-response ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.main\.community\.reply\.v1\.Reply\/MainList script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.7/request.bundle.js, requires-body=true, binary-body-mode=true, tag=默认开启
+
+#!自行启用
+#!屏蔽首页右上活动@ddgksf2013
+http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, timeout=60, tag=默认开启bilibili
+#!哔哩哔哩7.65.0版本以下-1080P高码率+4K画质[番剧和影视除外]@ddgksf2013
+http-response ^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, timeout=60, tag=默认开启bilibili
+
+#!自行启用
+#!📺 BiliBili: 👘 Modified @MartinsKing
+#!使用大会员皮肤
+http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBili.Modified.response.js, requires-body=true, tag=#默认关闭
+http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/(account\/(myinfo|mine)|space) script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBili.Modified.response.js, requires-body=true, tag=#默认关闭
+http-response ^https:\/\/api\.bilibili\.com\/x\/vip\/(web\/vip_center\/combine|price\/panel\/lexi|top_panel_info) script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBili.Modified.response.js, requires-body=true, tag=#默认关闭
+#!伪装大会员，点亮大会员标志，不能使用大会员功能（紫薇）
+http-request ^https?:\/\/ap(i|p)\.bilibili\.com\/bilibili(.*)\/(View|Play(URL|View|Conf|erOnline)|MainList|ViewProgress)$ script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/BiliBili/biliCrack.js, tag=#默认关闭
+
+#!B站每日任务签到
+cron "{{{签到cron设置}}}" script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, timeout=15, tag=#默认关闭
+http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=#默认关闭
+http-request ^https?:\/\/m\.bilibili\.com/$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=#默认关闭
+
+[MITM]
+hostname = manga.bilibili.com, live.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, www.bilibili.com, app.bilibili.com, app.biliapi.net, api.bilibili.com, api.biliapi.net, grpc.biliapi.net, m.bilibili.com, i?.hdslb.com
