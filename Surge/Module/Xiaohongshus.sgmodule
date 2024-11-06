@@ -50,5 +50,9 @@ body_rewrite_18 = type=http-response, pattern=^https:\/\/edith\.xiaohongshu\.com
 # 移除图片和实况照片水印
 移除图片和实况照片水印 = type=http-response, pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/note\/(?:imagefeed|live_photo\/save), script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Xiaohongshu.js, requires-body=true
 
+# 移除视频水印
+移除视频水印 = type=http-response, pattern=^https:\/\/(?:edith|rec|www)\.xiaohongshu\.com\/api\/sns\/(?:v4\/note\/videofeed|v10\/note\/video\/save), script-path=https://kelee.one/Resource/Script/RedPaper/RedPaper_remove_ads.js, requires-body=true
+
+
 [MITM]
 hostname = %APPEND% edith.xiaohongshu.com, www.xiaohongshu.com
