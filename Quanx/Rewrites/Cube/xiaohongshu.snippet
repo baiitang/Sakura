@@ -1,0 +1,21 @@
+# ======= 小红书 ======= #
+# 2023-03-30 10:35
+
+# 惊喜弹窗
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/surprisebox\/(get_style\?|open\?|submit_action$) url reject-dict
+^https:\/\/www\.xiaohongshu\.com\/api\/marketing\/box\/trigger\? url reject-dict
+
+# 搜索页
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/search\/hot_list\?? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/xiaohongshu.js
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v4\/search\/(hint|trending)\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/xiaohongshu.js
+
+# 开屏广告
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/system_service\/config\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/xiaohongshu.js
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/system_service\/splash_config$ url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/xiaohongshu.js
+
+# 信息流
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v6\/homefeed\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/xiaohongshu.js
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v[23]\/note\/(video)?feed\? url response-body "disable_watermark":false, response-body "disable_watermark":true,
+^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/ads\/resource\? url reject-dict
+
+hostname = edith.xiaohongshu.com, www.xiaohongshu.com

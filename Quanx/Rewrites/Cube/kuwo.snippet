@@ -1,0 +1,14 @@
+# ======= 酷我音乐 ====== #
+# 2023-02-27 19:30
+
+# 广告
+^http:\/\/audiobookpay\.kuwo\.cn\/a\.p\?op=get_advertright_endtime url reject-dict
+^http:\/\/(mgxhtj|nmobi|searchrecterm)\.kuwo\.cn\/(mgxh|mobi|recterm)\.s url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/kuwo.js
+
+# 会员
+^http:\/\/audiobookpay\.kuwo\.cn\/a\.p url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/kuwo.js
+^http:\/\/musicpay\.kuwo\.cn\/music\.pay url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/kuwo.js
+^http:\/\/vip1\.kuwo\.cn\/vip\/(enc\/user\/vip\?op=ui|v2\/theme\?op=gd) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/kuwo.js
+^https:\/\/vip1\.kuwo\.cn\/vip\/v2\/user\/vip url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/kuwo.js
+
+hostname = *.kuwo.cn

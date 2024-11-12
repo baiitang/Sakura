@@ -1,0 +1,8 @@
+# ======= IT之家 ======= #
+# 2023-02-15 19:50
+
+^https:\/\/api\.ithome\.com\/json\/(listpage\/news|newslist\/news|slide\/index) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/ithome.js
+^https:\/\/m\.ithome\.com\/api\/news\/newslistpageget url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/ithome.js
+^https:\/\/napi\.ithome\.com\/api\/(news\/index|topmenu\/getfeeds) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/ithome.js
+
+hostname = api.ithome.com, m.ithome.com, napi.ithome.com
