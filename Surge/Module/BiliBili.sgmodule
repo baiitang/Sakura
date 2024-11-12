@@ -1,7 +1,7 @@
 #!name=哔哩哔哩净化@整点薯条
 #!desc=BiliBili去广告，需要搭配boxjs使用
 #!openUrl=http://boxjs.com/#/app/BiliBili.ADBlock
-#!source=https://raw.githubusercontent.com/BiliUniverse/ADBlock/main/modules/BiliBili.ADBlock.sgmodule
+#!source=https://github.com/BiliUniverse/ADBlock/releases/latest/download/BiliBili.ADBlock.sgmodule
 #!arguments=启用广告屏蔽:默认开启, 启用首页设置:默认开启, 启用屏蔽活动:默认开启, 启用画质解锁:默认开启, 启用皮肤切换:#默认关闭, 启用会员伪装:#默认关闭, B站每日任务签到:#默认关闭, B站Cookie(APP):#默认关闭, B站Cookie(网页):#默认关闭, 签到Cron设置:10 9 * *
 #!arguments-desc=活动是指右上角消息旁边的活动图标\n画质解锁仅限于粉色哔哩哔哩7.65.0以下版本\nB站每日签到任务默认关闭，请自行输入“任意文字”启用
 
@@ -54,19 +54,6 @@
 {{{启用广告屏蔽}}} = type=http-response, pattern=^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/channel\/region\/list\?, script-path=https://github.com/BiliUniverse/Enhanced/releases/download/v0.5.3/response.bundle.js, requires-body=true, engine=jsc
 
 #!📺 BiliBili: 🛡️ ADBlock
-#!{{{启用首页设置}}} = type=http-request, pattern=^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/feed\/index\?, script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.8/response.bundle.js, engine=webview
-#!{{{启用首页设置}}} = type=http-response, pattern=^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/(splash\/(brand\/list|event\/list2|list|show)|feed\/index(\/story)?|search\/square), script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.8/response.bundle.js, requires-body=1, engine=webview
-#!{{{启用首页设置}}} = type=http-response, pattern=^https?:\/\/api\.bilibili\.com\/x\/web-interface\/wbi\/index\/top\/feed\/rcmd\?, script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.8/response.bundle.js, requires-body=1, engine=webview
-#!{{{启用首页设置}}} = type=http-response, pattern=^https?:\/\/api\.bili(bili\.com|api\.net)\/pgc\/page\/(bangumi|cinema\/tab\?), script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.8/response.bundle.js, requires-body=1, engine=webview
-#!{{{启用首页设置}}} = type=http-response, pattern=^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom, script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.8/response.bundle.js, requires-body=1, engine=webview
-#!{{{启用首页设置}}} = type=http-response, pattern=^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.(view|viewunite)\.v1\.View\/(View|TFInfo)$, script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.8/response.bundle.js, requires-body=1, binary-body-mode=1, engine=webview
-#!{{{启用首页设置}}} = type=http-response, pattern=^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.dynamic\.v2\.Dynamic\/Dyn(All|Video)$, script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.8/response.bundle.js, requires-body=1, binary-body-mode=1, engine=webview
-#!{{{启用首页设置}}} = type=http-response, pattern=^https?:\/\/(grpc|app)\.bili(bili\.com|api\.net)\/bilibili\.app\.playurl\.v1\.PlayURL\/PlayView$, script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.8/response.bundle.js, requires-body=1, binary-body-mode=1, engine=webview
-#!{{{启用首页设置}}} = type=http-response, pattern=^https?:\/\/(grpc|app)\.bili(bili\.com|api\.net)\/bilibili\.polymer\.app\.search\.v1\.Search\/SearchAll$, script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.8/response.bundle.js, requires-body=1, binary-body-mode=1, engine=webview
-#!{{{启用首页设置}}} = type=http-response, pattern=^https:\/\/(grpc|app)\.bili(bili\.com|api\.net)\/bilibili\.community\.service\.dm\.v1\.DM\/(DmView|DmSegMobile), script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.8/response.bundle.js, requires-body=1, binary-body-mode=1, engine=webview
-#!{{{启用首页设置}}} = type=http-response, pattern=^https:\/\/(grpc|app)\.bili(bili\.com|api\.net)\/bilibili\.app\.interface\.v1\.Teenagers\/ModeStatus, script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.8/response.bundle.js, requires-body=1, binary-body-mode=1, engine=webview
-#!{{{启用首页设置}}} = type=http-response, pattern=^https:\/\/(grpc|app)\.bili(bili\.com|api\.net)\/bilibili\.main\.community\.reply\.v1\.Reply\/MainList, script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.8/response.bundle.js, requires-body=1, binary-body-mode=1, engine=webview
-
 {{{启用首页设置}}} = type=http-request, pattern=^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/feed\/index\?, engine=webview, script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.8/request.bundle.js
 {{{启用首页设置}}} = type=http-response, pattern=^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/(splash\/(brand\/list|event\/list2|list|show)|feed\/index(\/story)?|search\/square), requires-body=1, engine=webview, script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.8/response.bundle.js
 {{{启用首页设置}}} = type=http-response, pattern=^https?:\/\/api\.bilibili\.com\/x\/web-interface\/wbi\/index\/top\/feed\/rcmd\?, requires-body=1, engine=webview, script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.8/response.bundle.js
