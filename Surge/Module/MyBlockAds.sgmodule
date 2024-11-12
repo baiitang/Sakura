@@ -156,7 +156,7 @@ myBlockAds = type=http-response, pattern=^https:\/\/guide-acs\.m\.taobao\.com\/g
 
 myBlockAds = type=http-response, pattern=^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.json, script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/MyBlockAds.js, requires-body=true, max-size=-1, timeout=60
 
-baiduCloud = type=http-response, pattern=^https:\/\/pan\.baidu\.com\/api\/getsyscfg\?, script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/BaiduCloud.js, requires-body=true, max-size=-1, timeout=60
+baiduCloud = type=http-response, pattern=^https:\/\/pan\.baidu\.com\/api\/getsyscfg\?, script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Baidu/BaiduCloud.js, requires-body=true, max-size=-1, timeout=60
 
 baiduCloud = type=http-response, pattern=^https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user, script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Baidu/BaiduCloud.js, requires-body=true, max-size=-1, timeout=60
 
