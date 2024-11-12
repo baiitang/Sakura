@@ -1,0 +1,282 @@
+# https://github.com/limbopro/Adblock4limbo/blob/main/Adblock4limbo.list
+# 2023-02-18
+
+# https://javmost.xyz/
+;HOST, delivery-node-aziz.voe-network.net, REJECT
+;HOST, inspiringaccurate.com, REJECT
+;HOST, track.aso1.net, REJECT
+HOST-SUFFIX, v3.fstats.xyz, REJECT
+HOST-SUFFIX, wpadmngr.com, REJECT
+HOST-SUFFIX, histats.com, REJECT
+HOST-SUFFIX, son-in-lawmorbid.com, REJECT
+HOST-SUFFIX, mc.yandex.ru, REJECT
+HOST-SUFFIX, amung.us, REJECT
+HOST-SUFFIX, widgets.amung.us, REJECT
+HOST-SUFFIX, s10.histats.com, REJECT
+;HOST-SUFFIX, js.wpadmngr.com, REJECT
+;HOST-SUFFIX, suzihaza.com, REJECT
+HOST-SUFFIX, eyebrowscrambledlater.com, REJECT
+HOST-SUFFIX, a.realsrv.com, REJECT
+HOST-SUFFIX, media.aso1.net, REJECT
+HOST-SUFFIX, js.wpshsdk.com, REJECT
+HOST-SUFFIX, js.wpushsdk.com, REJECT
+HOST-SUFFIX, 9e77b6e6e2.2e3f31faae.com, REJECT
+HOST-SUFFIX, playersb.com, REJECT
+;HOST-SUFFIX, dood.la, REJECT
+
+# https://www.tvc.cc/
+HOST-SUFFIX, 42yenxh.cn, REJECT
+HOST-SUFFIX, dwyhup.cn, REJECT
+HOST-SUFFIX, netdjs.net, REJECT
+HOST-SUFFIX, pc.stgowan.com, REJECT
+
+# https://avple.tv/
+HOST-SUFFIX, tapioni.com, REJECT
+;HOST-SUFFIX, 107iwh.cn:4032, REJECT
+;HOST-SUFFIX, qinhemuye.com:443, REJECT
+HOST-SUFFIX, 107iwh.cn, REJECT
+HOST-SUFFIX, hbhuatie.com, REJECT
+HOST-SUFFIX, qinzhihao.com, REJECT
+HOST-SUFFIX, nby360.com, REJECT
+HOST-SUFFIX, tfosrv.com, REJECT
+HOST-SUFFIX, trafforsrv.com, REJECT
+HOST-SUFFIX, trafficforce.com, REJECT
+HOST-SUFFIX, s.csyfe.com, REJECT
+
+# https://www.tvn.cc/ 韩剧TV
+HOST-SUFFIX, qw2v.changshuohr.net, REJECT
+HOST-SUFFIX, wss.haoyundmn.com, REJECT
+
+# missav.com
+HOST-SUFFIX, creative.live.missav.com, REJECT
+HOST-SUFFIX, cashewsforlife208.com, REJECT
+HOST-SUFFIX, ingest.sentry, REJECT
+HOST-SUFFIX, phloxsub73ulata.com, REJECT
+HOST-SUFFIX, xxxjmp.com, REJECT
+HOST-SUFFIX, pitrespite.com, REJECT
+HOST-SUFFIX, alexametrics.com, REJECT
+HOST-SUFFIX, designslicensedeep.com, REJECT
+HOST-SUFFIX, a.bestcontentfood.top, REJECT
+HOST-SUFFIX, tsyndicate.com, REJECT
+HOST-SUFFIX, cashewsforlife208.com, REJECT
+HOST-SUFFIX, e67repidwnfu7gcha.com, REJECT
+HOST-SUFFIX, mc7clurd09pla4nrtat7ion.com, REJECT
+HOST-SUFFIX, e67repidwnfu7gcha.com, REJECT
+HOST-SUFFIX, wuzbhjpvsf.com, REJECT
+HOST-SUFFIX, a.realsrv.com, REJECT
+
+# Jable.tv av吃到饱
+HOST-SUFFIX, a.shukriya90.com, REJECT
+HOST-SUFFIX, a.shukriya90.com, REJECT
+HOST-SUFFIX, creative.xlviirdr.com, REJECT
+HOST-SUFFIX, realsrv.com, REJECT
+HOST-SUFFIX, asewlfjqwlflkew.com, REJECT
+HOST-SUFFIX, uus52.com, REJECT
+HOST-SUFFIX, uus58.com, REJECT
+HOST-SUFFIX, ddmax20.xyz, REJECT
+HOST-SUFFIX, ads.exosrv.com, REJECT
+HOST-KEYWORD, exosrv, REJECT
+HOST-KEYWORD, asewlfjqwlflkew, REJECT
+HOST-SUFFIX, tyrantdb.com, REJECT
+HOST-SUFFIX, adserve.work, REJECT
+
+# nfmovies.com 奈菲影视
+HOST-KEYWORD, brushshopy, REJECT
+HOST-KEYWORD, onenews, REJECT
+HOST-SUFFIX, s96.cnzz.com, REJECT
+;HOST-SUFFIX, yabo729.com, REJECT
+
+# m.pianku.me/ 手机片库网
+;HOST-SUFFIX, xn--xhq9mt12cf5v.xn--io0a7i:4443, REJECT
+;HOST-KEYWORD, xn--2qux23c9ziyrq, REJECT
+HOST-SUFFIX, xn--3bs795g.zone, REJECT
+HOST-SUFFIX, xn--2qux23c9ziyrq.plus, REJECT
+HOST-SUFFIX, xn--2qux23c9ziyrq.club, REJECT
+HOST-SUFFIX, xn--xhq9mt12cf5v.xn--io0a7i, REJECT
+HOST-SUFFIX, ddmax20.xyz, REJECT
+;HOST-SUFFIX, www.avple.video, REJECT
+HOST-SUFFIX, xn--3bs795g.link, REJECT
+HOST-SUFFIX, show.suning.beer, REJECT
+HOST-SUFFIX, www.govshenzhen.cn, REJECT
+HOST-SUFFIX, mm9842.com, REJECT
+HOST-KEYWORD, e2wysbacctt1, REJECT
+;HOST-SUFFIX, streamtape.com, REJECT
+
+# netflav.com Netflav
+HOST-SUFFIX, maphuahin.com, REJECT
+HOST-SUFFIX, ggsfq.com, REJECT
+HOST-SUFFIX, ad.pornimg.xyz, REJECT
+HOST-SUFFIX, yandex.ru, REJECT
+HOST-SUFFIX, awaitcola.com, REJECT
+;HOST-SUFFIX, jsdelivr.net, REJECT
+HOST-SUFFIX, wine-api.net, REJECT
+;HOST-KEYWORD, wixsite.com, REJECT
+HOST-SUFFIX, exosrv.com, REJECT
+HOST-SUFFIX, juicyads.com, REJECT
+;HOST-SUFFIX, wixstatic.com, REJECT
+HOST-SUFFIX, thumb.fvs.io, REJECT
+HOST-SUFFIX, itnuzleafan.com, REJECT
+HOST-SUFFIX, oawhaursaith.com, REJECT
+HOST-SUFFIX, unreshiramor.com, REJECT
+HOST-SUFFIX, regulationprivilegescan.top, REJECT
+HOST-SUFFIX, in-page-push.com, REJECT
+HOST-SUFFIX, farmcrapsubsist.com, REJECT
+
+# avgle.me
+HOST-SUFFIX, jads.co, REJECT
+HOST-SUFFIX, adxadserv.com, REJECT
+HOST-SUFFIX, moatads.com, REJECT
+HOST-SUFFIX, juicyads.in, REJECT
+HOST-SUFFIX, dtscout.com, REJECT
+
+# dilili.tv
+HOST-SUFFIX, 51.la, REJECT
+HOST-SUFFIX, 51daeka.com, REJECT
+
+# porn
+HOST-SUFFIX, trafficjunky.com, REJECT
+
+# ja.nyahentai.com
+HOST-SUFFIX, adserver.juicyads.com, REJECT
+HOST-SUFFIX, poweredby.jads.co, REJECT
+HOST-SUFFIX, jads.co, REJECT
+
+# www.cocomanhua.com
+HOST-SUFFIX, exdynsrv.com, REJECT
+;HOST-SUFFIX, cloudfront.net, REJECT
+HOST-SUFFIX, d227cncaprzd7y.cloudfront.net, REJECT
+HOST-SUFFIX, d10lumateci472.cloudfront.net, REJECT
+
+# www.mfkhm.com
+HOST-SUFFIX, new.xiongzhangad.com, REJECT
+
+# m.yhdm.io
+HOST-SUFFIX, dvzk66.cn, REJECT
+HOST-SUFFIX, pu0glv.cn, REJECT
+
+# hmtv.me
+HOST-SUFFIX, sentry.io, REJECT
+
+# www.porntrex.com/
+;HOST-SUFFIX, ads.bullionyield.com, REJECT
+
+# https://www.zhenbuka.com/
+HOST-KEYWORD, dlads, REJECT
+HOST, dagonghuzhu.com, REJECT
+;HOST-SUFFIX, byteimg.com, REJECT
+HOST-KEYWORD, xxshuyuan, REJECT
+HOST-KEYWORD, haowanyou, REJECT
+HOST-KEYWORD, dat8, REJECT
+HOST-KEYWORD, 112wan, REJECT
+HOST-KEYWORD, dfkj8, REJECT
+HOST-KEYWORD, mifengv, REJECT
+HOST-KEYWORD, lieyou, REJECT
+HOST-KEYWORD, 789htbet, REJECT
+HOST-KEYWORD, mdapp09, REJECT
+HOST-KEYWORD, juruigj, REJECT
+;HOST-KEYWORD, mmiyue, REJECT
+
+# pornhub.com
+HOST-SUFFIX, etahub.com, REJECT
+HOST-SUFFIX, evtubescms.phncdn.com, REJECT
+
+# www.hptoon.com
+HOST-SUFFIX, 22c.in, REJECT
+HOST-SUFFIX, imgxxx.shunxincar.cn, REJECT
+;HOST-SUFFIX, cc58.oss-cn-beijing.aliyuncs.com, REJECT
+;HOST-SUFFIX, oss-accelerate.aliyuncs.com, REJECT
+HOST-SUFFIX, kk.braincf.com, REJECT
+HOST-SUFFIX, run.haireig.com, REJECT
+HOST-SUFFIX, d.zxptw.cn, REJECT
+HOST-SUFFIX, new.xiongzhangad.com, REJECT
+HOST-SUFFIX, js.users.51.la, REJECT
+HOST-SUFFIX, maxwellsery.com, REJECT
+HOST-SUFFIX, annabelleabe.com, REJECT
+
+# https://91mjw.com/
+HOST-SUFFIX, jidukeji.com, REJECT
+HOST-SUFFIX, atmib.com, REJECT
+HOST-SUFFIX, bjzysd.net, REJECT
+HOST-SUFFIX, iycwl.com, REJECT
+HOST-SUFFIX, haoyundm.com, REJECT
+HOST-SUFFIX, qqq123987.site, REJECT
+HOST-SUFFIX, qweewq2021.online, REJECT
+HOST-SUFFIX, qqq123987.site, REJECT
+HOST-SUFFIX, jianxinshanghai.com, REJECT
+HOST-SUFFIX, js.51toubu.com, REJECT
+HOST-SUFFIX, img.hylmxing.com, REJECT
+HOST-SUFFIX, 777.000123456789.space, REJECT
+HOST-SUFFIX, bhichong.com, REJECT
+HOST-SUFFIX, tskdfjksldk.sdhsgcj.com, REJECT
+HOST-SUFFIX, haoyuntj.com, REJECT
+
+# https://m.biquge.com.cn/
+HOST-SUFFIX, bizhixiang.cn, REJECT
+HOST-SUFFIX, jspassport.ssl.qhimg.com, REJECT
+
+# https://gimy.tv/ 剧迷tv
+HOST-SUFFIX, ads.superad.cc, REJECT
+
+# https://javfan.one/ JAVFAN
+HOST-SUFFIX, isboost.co.jp, REJECT
+HOST-SUFFIX, boost-next.co.jp, REJECT
+HOST-SUFFIX, ad-nex.com, REJECT
+HOST-SUFFIX, aaacompany.net, REJECT
+HOST-SUFFIX, d24ak3f2b.top, REJECT
+HOST-SUFFIX, blastcahs.com, REJECT
+
+# javtsunami.com
+HOST-SUFFIX, alexametrics.com, REJECT
+
+# https://hpjav.tv/ JAVFAN #NSFW
+HOST-SUFFIX, wpncdn.com, REJECT
+HOST-SUFFIX, exosrv.com, REJECT
+HOST-SUFFIX, jads.co, REJECT
+HOST-KEYWORD, toateeli, REJECT
+HOST-KEYWORD, greenplasticdua, REJECT
+HOST-KEYWORD, bongacash, REJECT
+HOST-KEYWORD, bngpt, REJECT
+HOST-KEYWORD, stunninglover, REJECT
+HOST-KEYWORD, jads, REJECT
+HOST-KEYWORD, trwl1, REJECT
+;HOST-KEYWORD, vidoza, REJECT
+HOST-KEYWORD, o333o, REJECT
+HOST-SUFFIX, ad.pornimg.xyz, REJECT
+
+# https://javgg.net/
+HOST-SUFFIX, x2sfa.javgg.eu, REJECT
+HOST-SUFFIX, xd3r.javgg.eu, REJECT
+HOST-SUFFIX, p242.plainwrk.name, REJECT
+
+# https://www5.javmost.com/
+HOST-KEYWORD, histats, REJECT
+HOST-KEYWORD, dtscout, REJECT
+HOST-KEYWORD, adform, REJECT
+HOST-KEYWORD, mathtag, REJECT
+HOST-KEYWORD, pagespeed-mod, REJECT
+HOST-KEYWORD, in-page-push, REJECT
+
+# disqus
+HOST-SUFFIX, referrer.disqus.com, REJECT
+HOST-SUFFIX, links.services.disqus.com, REJECT
+HOST-SUFFIX, disqusads.com, REJECT
+HOST, glitter.services.disqus.com, REJECT
+HOST, juggler.services.disqus.com, REJECT
+HOST, tempest.services.disqus.com, REJECT
+HOST, mc.viglink.com, REJECT
+HOST, qa.viglink.com, REJECT
+HOST, ns4.viglink.com, REJECT
+HOST, ns2.viglink.com, REJECT
+HOST, ns3.viglink.com, REJECT
+HOST, apicdn.viglink.com, REJECT
+HOST-SUFFIX, cdn.viglink.com, REJECT
+
+# www.tz659.com
+HOST, nggfe.fdgem.com, REJECT
+HOST, rthmnj.xyz, REJECT
+HOST-SUFFIX,  jknmthwd.xyz, REJECT
+HOST, koprtgh.omhoa.com, REJECT
+HOST, hbftgh.ibjkqnhjwd.xyz, REJECT
+HOST, kmopoer.jkbuymjhp.xyz, REJECT
+HOST, kmef.ikjwmfeds.xyz, REJECT
+HOST, hnrtg.iujkegbpo.xyz, REJECT
