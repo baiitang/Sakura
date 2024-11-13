@@ -177,7 +177,7 @@ jingdong = type=http-response, pattern=^https:\/\/api\.m\.jd\.com\/client\.actio
 replaceBody = type=http-response, pattern=^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/replace-body.js, requires-body=true, max-size=-1, timeout=30, argument=jdLiteAdvertisingVO-%3Erucu6
 
 # 酷安 //api.coolapk.com
-coolapk = type=http-response, pattern=^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)\?, script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Coolapk.js, requires-body=true, max-size=-1, timeout=60
+#coolapk = type=http-response, pattern=^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)\?, script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Coolapk.js, requires-body=true, max-size=-1, timeout=60
 
 coolapk = type=http-response, pattern=^https:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8|init), script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Coolapk.js, requires-body=true, max-size=-1, timeout=60
 
