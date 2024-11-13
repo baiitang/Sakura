@@ -33,7 +33,6 @@ ne_mybarad = type=http-response,pattern=^https?:\/\/(ipv4|interface\d?)\.music\.
 # 显示未关注你
 ne_foll = type=http-response,pattern=^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/user\/follow\/users\/mixed\/get,requires-body=1,max-size=0,timeout=20,binary-body-mode=1,script-path=https://raw.githubusercontent.com/Keywos/rule/main/script/wy/js/wyres.js
 
-
 [URL Rewrite]
 ^https?:\/\/httpdns.n\.netease\.com - reject
 ^https?:\/\/httpdns\.music\.163\.com - reject
@@ -45,7 +44,7 @@ DOMAIN,iadmatapk.nosdn.127.net,REJECT-NO-DROP
 DOMAIN,httpdns.n.netease.com,REJECT-NO-DROP
 
 [Header Rewrite]
-http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/e?api\/(?:batch|v\d\/resource\/comment\/floor\/get|homepage\/block\/page|link\/page\/rcmd\/resource\/show|user\/follow\/users\/mixed\/get) header-del x-aeapi
+http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/e?api\/(?:batch|v\d\/resource\/comment\/floor\/get|homepage\/block\/page|link\/page\/rcmd\/(block\/resource\/multi\/refresh|resource\/show)|user\/follow\/users\/mixed\/get|link\/home\/framework\/tab) header-del x-aeapi
 
 [Map Local]
 ^https?:\/\/(ipv4|interface\d?)\.music\.163.com\/e?api\/ad data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/eapiad.json"
