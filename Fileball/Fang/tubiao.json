@@ -1,6 +1,6 @@
 {
-"name":"Fileball Icon", 
-"description":"图标按照服名或群名命名，按照A-Z排列，方便查找。Fileball可以在图标搜索框搜索图标名。", 
+"name":"Fileball@baitang", 
+"description":"在原作者Softlyx的基础上新增，图标按照服名或群名命名，按照A-Z排列，方便查找。Fileball可以在图标搜索框搜索图标名。", 
 "icons":
     [
 	{"name":"Emby", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/FANG/Emby.png"},
@@ -38,6 +38,9 @@
 	{"name":"BuGeiKan1", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/FANG/BuGeiKan1.png"},
 	{"name":"BuGeiTing", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/FANG/BuGeiTing.png"},
 	{"name":"Byg", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/FANG/Byg.png"},
+
+	{"name":"BTYIN", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Fang/icon/BTYIN.png"},
+	{"name":"BTYIN1", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Fang/icon/BTYIN1.png"},
         
 	{"name":"Captain-z", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/FANG/Captain-z.png"},
 	{"name":"Captain-z1", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/FANG/Captain-z1.png"},
