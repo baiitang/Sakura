@@ -1,6 +1,10 @@
+[![Banner1](Notion/Eva/Sakuras.jpg)](https://t.me/Siakiura)
+
 # Sakuraの夢番地
 
 ------
+> [!TIP]
+> 你可以转载到自己仓库，但请不要直接Fork此仓库。
 
 > [!CAUTION]
 > 禁止在中华人民共和国境内平台公开传播本仓库内的任何内容或以此牟利！
