@@ -1,8 +1,9 @@
 #!name = 让我喵喵
 #!desc = 原名哎呀漫鸭，解锁会员权益，去开屏广告 通用广告。
+#!source= https://raw.githubusercontent.com/Yu9191/Rewrite/main/rwmm.js
 #!openUrl = https://apps.apple.com/app/id6680187161
-#!author = Yu9191
-#!tag = 共享会员
+#!author = Yu9191[https://github.com/Yu9191]
+#!tag = 解锁会员
 #!system = 
 #!system_version = 
 #!loon_version = 3.2.1(749)
