@@ -42,7 +42,7 @@
 	{"name":"BuGeiTing", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/BuGeiTing.png"},
 	{"name":"Byg", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Byg.png"},
 
-        {"name":"Black", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Black.png"},
+ {"name":"Black", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Black.png"},
 	{"name":"BTYIN", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/BTYIN.png"},
 	{"name":"BTYIN1", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/BTYIN1.png"},
 
@@ -64,6 +64,8 @@
 	{"name":"Csn2", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Csn2.png"},
 	{"name":"CurlyMouse", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/CurlyMouse.png"},
 	{"name":"CurlyMouse1", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/CurlyMouse1.png"},
+
+	{"name":"CineTrail", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/CineTrail.png"},
 
 	{"name":"Dafashijian", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Dafashijian.png"},
 	{"name":"DaHangHai", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/DaHangHai.png"},
