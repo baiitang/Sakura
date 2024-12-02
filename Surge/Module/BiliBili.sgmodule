@@ -25,7 +25,8 @@
 # 去除搜索中的默认关键词
 ^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.interface\.v1\.Search\/DefaultWords$ - reject
 #!移除观影页广告（含左上角云视听小电视）
-^https:\/\/i\d\.hdslb\.com\/bfs\/activity-plat\/static\/\w+ - reject
+#!^https:\/\/i\d\.hdslb\.com\/bfs\/activity-plat\/static\/\w+ - reject
+^https:\/\/i\d\.hdslb\.com\/bfs\/activity-plat\/static\/.*660w_160h.*\.png$ - reject
 
 [Map Local]
 #!📺 BiliBili: 🛡️ ADBlock
