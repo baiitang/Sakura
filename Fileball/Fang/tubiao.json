@@ -293,8 +293,6 @@
 	{"name":"23Studio", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/FANG/23Studio.png"},
 	{"name":"2020", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/FANG/2020.png"},
 	{"name":"404", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/FANG/404.png"},
-	
-	{"name":"Shwl", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Fang/icon/Shwl.png"},
 
 	{"name":"Alist", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/FANG/Alist.png"},
 	{"name":"Webdav", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/FANG/Webdav.png"},
@@ -313,6 +311,15 @@
 
 	{"name":"Nplayer", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/FANG/Nplayer.png"},
 	{"name":"Infuse", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/FANG/Infuse.png"},
-	{"name":"Music", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/FANG/Music.png"}
+	{"name":"Music", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/FANG/Music.png"},
+	
+	{"name":"Ash", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Ash.png"},
+	{"name":"NiceDuck", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/NiceDuck.png"},
+	{"name":"NiceDuck1", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/NiceDuck1.png"},
+	{"name":"NiceDuckJMS", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/NiceDuckJMS1.png"},
+	{"name":"NiceDuckDPX", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/NiceDuckDPX.png"},
+	{"name":"NiceDuck1111", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/NiceDuck1111.png"},
+	{"name":"Shwl", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Fang/icon/Shwl.png"},
+	
     ]
 }
