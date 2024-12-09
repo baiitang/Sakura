@@ -2,8 +2,8 @@
 #!desc= telegram外链直接跳转三方客户端swiftgram
 #!openurlUrl=
 #!author= 秦城二院彭医生[https://github.com/dcpengx/Loon/]
-#!homepage= https://github.com/dcpengx/Loon/tree/main/plugin/TG_url_to_SG
-#!icon= https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
+#!homepage= https://github.com/dcpengx/Loon/tree/main/plugin
+#!icon= https://raw.githubusercontent.com/baiitang/Sakura/main/Loon/Icons/App/Telegram.png
 #!system = iOS,iPadOS
 #!system_version = 
 #!loon_version =
