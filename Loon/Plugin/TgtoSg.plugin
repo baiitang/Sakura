@@ -1,13 +1,14 @@
-#!name= tg外链直跳sg
-#!desc= telegram外链直接跳转三方客户端swiftgram
-#!openurlUrl=
-#!author= 秦城二院彭医生[https://github.com/dcpengx/Loon/]
-#!homepage= https://github.com/dcpengx/Loon/tree/main/plugin
-#!icon= https://raw.githubusercontent.com/baiitang/Sakura/main/Loon/Icons/App/Telegram.png
+#!name = Tg外链直跳sg
+#!desc = telegram外链直接跳转三方客户端swiftgram
+#!author = 秦城二院彭医生[https://github.com/dcpengx/Loon]
+#!openUrl = https://apps.apple.com/app/id6471879502
+#!icon = https://raw.githubusercontent.com/baiitang/Sakura/main/Loon/Icons/App/Telegram.png
+#!tag = 功能增强
 #!system = iOS,iPadOS
-#!system_version = 
-#!loon_version =
-#!tag = 功能增强,telegram
+#!system_version = 15
+#!loon_version = 3.2.1(749)
+#!homepage = https://github.com/dcpengx/Loon/tree/main/plugin
+#!date = 2024-09-28 10:30
 
 [rewrite]
 (https:\/\/)?t\.me\/(.+) 302 sg://resolve?domain=$2
