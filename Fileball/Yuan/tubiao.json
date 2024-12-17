@@ -5,9 +5,7 @@
     [
 	{"name":"Emby", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Emby.png"},
 	{"name":"Emby1", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Emby1.png"},
-	{"name":"Emby2", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Emby2.png"},
-	{"name":"Emby3", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Emby3.png"},
-	{"name":"Emby4", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Emby4.png"},
+	
 	{"name":"Jellyfin", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Jellyfin.png"},
 	{"name":"Plex", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Plex.png"},
 	{"name":"Plex1", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Plex1.png"},
