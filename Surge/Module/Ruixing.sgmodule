@@ -1,0 +1,31 @@
+#!name=瑞幸咖啡去广告@Sliverkiss
+#!desc=瑞幸咖啡app去广告，可编辑参数自定义
+#!category=
+#!source=https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/瑞幸咖啡去广告.sgmodule
+
+[URL Rewrite]
+# 日历
+^https:\/\/capi\.lkcoffee\.com\/resource\/m\/growUp\/calendarList - reject
+
+# 礼品卡
+^https:\/\/capi\.lkcoffee\.com\/resource\/m\/promotion\/giftCard\/topPage - reject
+
+# 幸运集杯横幅
+^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/base\/myLittleLuck - reject
+
+# 新人推荐
+^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v2\/menu\/ordinaryUserLayeredArea - reject
+
+# 轮播图
+^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/common\/modules - reject
+
+# 首页商品列表
+^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v2\/homepage\/homePageCoffeeList - reject
+^https:\/\/capi\.lkcoffee\.com\/resource\/m\/eorder\/product\/popAppTagProductList - reject
+
+# 开屏广告
+^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/app\/adposNew - reject
+# ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/home\/ordertips - reject
+
+[MITM]
+hostname = %APPEND% capi.lkcoffee.com
