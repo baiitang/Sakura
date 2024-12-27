@@ -1,0 +1,12 @@
+#!name=京东比价@Mw418
+#!desc=通知版：点击商品页面详情 看弹窗通知 
+
+#!适用于京东App版本V13.8.2
+#!脚本修改来源 https://raw.githubusercontent.com/githubdulong/Script/master/jd_price2.sgmodule
+#!脚本修改来源 https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
+
+[Script]
+京东比价 = type=http-request, pattern=^https:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html, script-path=https://raw.githubusercontent.com/mw418/Loon/main/script/jd_price.js, timeout=60
+
+[MITM]
+hostname = %APPEND% in.m.jd.com
