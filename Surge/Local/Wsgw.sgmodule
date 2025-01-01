@@ -1,0 +1,10 @@
+#!name=网上国网
+#!desc=展示使用电量、费用，需要搭配Scriptable
+#!source=https://raw.githubusercontent.com/dompling/Script/master/wsgw/index.js
+#!category=面板模块
+
+[Script]
+接口重写 = type=http-request, pattern=^https?:\/\/api\.wsgw-rewrite\.com\/electricity\/bill\/all, script-path=https://raw.githubusercontent.com/dompling/Script/master/wsgw/index.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% api.wsgw-rewrite.com
