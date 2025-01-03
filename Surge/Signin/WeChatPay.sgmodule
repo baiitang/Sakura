@@ -1,0 +1,17 @@
+#!name=微信支付签到@FoKit
+#!desc=微信支付有优惠小程序Cookie获取并自动领取金币
+#!category=签到模块
+#!arguments=微信支付签到:默认启用,签到Cookie获取:默认启用,签到Cron设置:30 9 * * *,MITM:hostname
+#!arguments-desc=Cookie和MITM默认启用，输入#即可关闭\n成功获取Cookie后，请关闭获取Cookie脚本，防止产生不必要的mitm
+
+#!活动规则：每周累计使用微信支付 10 次可领取 15 金币。
+#!BoxJs 订阅：https://raw.githubusercontent.com/FoKit/Scripts/main/boxjs/fokit.boxjs.json
+
+
+[Script]
+{{{微信支付签到}}} = type=cron,cronexp={{{签到cron设置}}},timeout=60,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js,script-update-interval=0
+
+{{{签到Cookie获取}}} = type=http-response,pattern=https:\/\/payapp\.weixin\.qq\.com\/(coupon-center-user\/home\/login|coupon-center-award\/award\/detail),requires-body=1,max-size=0,binary-body-mode=0,timeout=30,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js,script-update-interval=0
+
+[MITM]
+{{{MITM}}} = payapp.weixin.qq.com
