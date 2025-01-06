@@ -1,0 +1,10 @@
+#!name=淘宝比价@yichahucha
+#!desc=通知版：点击商品页面详情 看弹窗通知 
+#!arguments=淘宝比价1 Lite(通知版):默认开启,淘宝比价2 Lite(通知版):默认开启
+
+[Script]
+{{{淘宝比价1 Lite(通知版)}}} = type=http-request, pattern=^http://.+/amdc/mobileDispatch, script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price_lite.js, requires-body=true
+{{{淘宝比价2 Lite(通知版)}}} = type=http-response, pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail, script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price_lite.js, requires-body=true
+
+[MITM]
+hostname = %APPEND% trade-acs.m.taobao.com
