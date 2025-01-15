@@ -1,0 +1,10 @@
+#!name=维克音乐@Baby
+#!desc=解锁会员权益，一次性解锁
+#!来源于baby，请自用，不要借此脚本进行牟利
+#!source=https://raw.githubusercontent.com/Yu9191/Rewrite/main/itunes/wkmusic.js
+
+[Script]
+wkmusic = type=http-response, pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/itunes/wkmusic.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
