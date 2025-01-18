@@ -1,0 +1,10 @@
+#!name=AcgPlayer@Baby
+#!desc=解锁会员 非一次性解锁
+#!来源于baby，请自用，不要借此脚本进行牟利
+#!source=https://raw.githubusercontent.com/Yu9191/Rewrite/main/AGC.js
+
+[Script]
+AGC = type=http-response, pattern=https://api.agcplayer.com/, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/AGC.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% api.agcplayer.com
