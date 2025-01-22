@@ -1,0 +1,18 @@
+#!name=TestFlight账户管理
+#!desc=自动存储/合并多个TestFlight账户列表, 并可导出/分享TestFlight APP.
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1025.png
+#!keyword=🐻 NobyDa
+#!source=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Module/TestFlightAccount.sgmodule
+#!arguments=TestFlight账户管理:默认启用,请求超时:30,启用缓存:1,使用iOS列表:0,脚本引擎:jsc,调试模式:0,TestFlight区域限制:#默认关闭
+#!arguments-desc=TestFlight账户管理：# 关闭。\n\n请求超时：单位：秒。默认30秒。\n\n启用缓存：1/0，开启/关闭，默认开启。用于缓存APP列表，改善列表页面加载过慢。一般与"请求超时"配合使用，开启缓存并刷新列表后，可适当调小超时。\n\n使用iOS列表：1/0，开启/关闭。强制使用iOS应用列表，用于改善 macOS TestFlight 加载过慢。iOS用户无需开启。\n\n脚本引擎：jsc/webview/auto，默认为jsc，如遇内存超限问题可调整为 auto 或 webview\n\n调试模式：1/0，开启/关闭。用于调试脚本。\n\nTestFlight账户管理包含区域限制解除，默认关闭第二个区域限制解除脚本。
+
+[General]
+skip-proxy = iosapps.itunes.apple.com
+
+[Script]
+http-request ^https:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/ script-path=https://raw.githubusercontent.com/NobyDa/Script/master/TestFlight/TestFlightAccount.js, requires-body=true, timeout=180, tag=默认启用, argument="timeout=30&enableCache=1&forceIOSlist=0&debug=0"
+
+http-request ^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$ script-path=https://gist.githubusercontent.com/NobyDa/9be418b93afc5e9c8a8f4d28ae403cf2/raw/TF_Download.js, requires-body=true, tag=#默认关闭
+
+[MITM]
+hostname = testflight.apple.com
