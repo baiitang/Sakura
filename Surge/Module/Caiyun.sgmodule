@@ -1,14 +1,72 @@
 #!name=彩云天气@chxm1023
 #!desc=净化界面 解锁SVIP
 #!source=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js
+#!source2=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js
 #!source-hub=http://script.hub/file/_start_/https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js/_end_/caiyun.sgmodule?n=%E2%9C%A8%E5%BD%A9%E4%BA%91%E5%A4%A9%E6%B0%94%40chxm1023%2B%E5%87%80%E5%8C%96%E7%95%8C%E9%9D%A2%20%E8%A7%A3%E9%94%81SVIP&type=qx-rewrite&target=surge-module&del=true
 
-[Script]
-# VIP信息
-caiyun = type=http-response, pattern=^https?:\/\/(biz|wrapper|starplucker)\.(cyapi|caiyunapp)\.(cn|com)\/(.+\/(user\?app_name|activity\?app_name|visitors|operation\/banners|ai\/weather|operation\/homefeatures)|p\/v\d\/(vip_info|user_info|entries|privileges)), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js, requires-body=true, max-size=-1, timeout=60
 
-# SVIP地图-48小时预报(方法来源:苍井灰灰)
-caiyun = type=http-request, pattern=^https?:\/\/(api|wrapper)\.(cyapi|caiyunapp)\.(cn|com)\/v\d\/(satellite|nafp\/origin_images), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js, timeout=60
+[Rule]
+# 上传信息
+DOMAIN,gather.colorfulclouds.net,REJECT
+
+[Map Local]
+# 普通版开屏广告(此广告不定时出现)
+^https:\/\/ad\.cyapi\.cn\/v2\/req\?app_name=weather data-type=text data="{}" status-code=200
+
+# 7.1.9 限时福利Svip
+^https:\/\/biz\.cyapi\.cn\/p\/v1\/trial_card\/info data-type=text data="{}" status-code=200
+
+# 7.2.0普通版修改VIP后提示账号迁移
+^https:\/\/biz\.cyapi\.cn\/api\/v1\/token\/device$ data-type=text data="{}" status-code=200
+
+# 亲友卡
+^https:\/\/biz\.cyapi\.cn\/p\/v1\/entries data-type=text data="{}" status-code=200
+
+# 左上角+进去推荐
+^https:\/\/starplucker\.cyapi\.cn\/v3\/config$ data-type=text data="{}" status-code=200
+
+# 通知
+^https:\/\/starplucker\.cyapi\.cn\/v3\/notification\/message_center data-type=text data="{}" status-code=200
+
+# 会员限时弹窗
+^https:\/\/starplucker\.cyapi\.cn\/v3\/config\/cypage\/home\/conditions\/local$ data-type=text data="{}" status-code=200
+^https:\/\/starplucker\.cyapi\.cn\/v3\/config\/cypage\/home_activity\/conditions$ data-type=text data="{}" status-code=200
+^https:\/\/starplucker\.cyapi\.cn\/v3\/config\/cypage\/40day\/conditions\/local$ data-type=text data="{}" status-code=200
+
+[Script]
+# 赏叶赏花模块
+caiyun = type=http-response, pattern=^https:\/\/wrapper\.cyapi\.cn\/v1\/activity\?app_name=weather, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js, requires-body=true, max-size=-1, timeout=60
+
+# 解锁旧版vip(7.20.0之前)
+caiyun = type=http-response, pattern=^https:\/\/biz\.cyapi\.cn\/v2\/user, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js, requires-body=true, max-size=-1, timeout=60
+
+# 卫星云图 48小时预报
+caiyun = type=http-request, pattern=^https:\/\/wrapper\.cyapi\.cn\/v1\/(satellite|nafp\/origin_images), script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js, timeout=60
+
+# 7.20.0版本显示VIP
+caiyun = type=http-response, pattern=^https?:\/\/biz\.cyapi\.cn\/api\/v1\/user_detail$, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js, requires-body=true, max-size=-1, timeout=60
+
+# 7.22.0版本 40天趋势/60天潮汐/风 等等有时候无法加载
+caiyun = type=http-request, pattern=^https:\/\/starplucker\.cyapi\.cn\/v3\/, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js, timeout=60
+
+# 发现-轮播
+caiyun = type=http-response, pattern=^https:\/\/starplucker\.cyapi\.cn\/v3\/operation\/banners\?user_type=paid$, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js, requires-body=true, max-size=-1, timeout=60
+
+# 发现-宫格
+caiyun = type=http-response, pattern=^https:\/\/starplucker\.cyapi\.cn\/v3\/operation\/features\?user_type=paid$, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js, requires-body=true, max-size=-1, timeout=60
+
+# 发现-官方活动
+caiyun = type=http-response, pattern=^https:\/\/starplucker\.cyapi\.cn\/v3\/campaigns$, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js, requires-body=true, max-size=-1, timeout=60
+
+# 发现-瀑布流
+caiyun = type=http-response, pattern=^https:\/\/starplucker\.cyapi\.cn\/v3\/operation\/feeds, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js, requires-body=true, max-size=-1, timeout=60
+
+#!来源于chxm1023
+#!VIP信息
+#!caiyun = type=http-response, pattern=^https?:\/\/(biz|wrapper|starplucker)\.(cyapi|caiyunapp)\.(cn|com)\/(.+\/(user\?app_name|activity\?app_name|visitors|operation\/banners|ai\/weather|operation\/homefeatures)|p\/v\d\/(vip_info|user_info|entries|privileges)), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js, requires-body=true, max-size=-1, timeout=60
+
+#!SVIP地图-48小时预报(方法来源:苍井灰灰)
+#!caiyun = type=http-request, pattern=^https?:\/\/(api|wrapper)\.(cyapi|caiyunapp)\.(cn|com)\/v\d\/(satellite|nafp\/origin_images), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js, timeout=60
 
 [MITM]
 hostname = %APPEND% *.cyapi.cn, *.caiyunapp.com
