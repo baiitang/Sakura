@@ -1,6 +1,6 @@
 {
-"name":"Fileball@baitang", 
-"description":"在原作者Softlyx的基础上新增，图标按照服名或群名命名，按照A-Z排列，方便查找。Fileball可以在图标搜索框搜索图标名。", 
+"name":"Emby图标库(圆)@baiitang", 
+"description":"在原作者Softlyx的基础上新增，图标按照服名或群名命名，按照A-Z排列，方便查找。可以在图标搜索框搜索图标名，缺少的图标可投稿。", 
 "icons":
     [
 	{"name":"Emby", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Emby.png"},
@@ -140,6 +140,8 @@
 
 	{"name":"Infinity", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Infinity.png"},
 	{"name":"Ikoumi", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Ikoumi.png"},
+
+	{"name":"libhsulife", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/libhsulife.png"},
 
 	{"name":"Jhemby", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Jhemby.png"},
 	{"name":"Jianshouqing", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Jianshouqing.png"},
