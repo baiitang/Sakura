@@ -7,7 +7,7 @@
 #!system_version = 
 #!loon_version = 3.2.1(749)
 #!homepage = https://gitlab.com/isous/loonresource/-/blob/main/README.md
-#!icon = 
+#!icon = https://raw.githubusercontent.com/baiitang/Sakura/main/Loon/Icons/Plugin/Reflix.png
 #!date = 2025-02-21 12:16:37
 
 [Rewrite]
