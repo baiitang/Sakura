@@ -1,0 +1,17 @@
+#!name = Reflix
+#!desc = 一次性破解，恢复内购即可
+#!openUrl = https://apps.apple.com/app/id6621243955
+#!author = @langkhach270389 @fly
+#!tag = 共享会员
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.1(749)
+#!homepage = https://gitlab.com/isous/loonresource/-/blob/main/README.md
+#!icon = 
+#!date = 2025-02-21 12:16:37
+
+[Rewrite]
+^https:\/\/(api\.revenuecat\.com|api\.rc-backup\.com)\/.+\/(receipts$|subscribers\/[^/]+$) https://rc-backup.lovebabyforever.workers.dev header
+
+[MITM]
+hostname = api.revenuecat.com, api.rc-backup.com
