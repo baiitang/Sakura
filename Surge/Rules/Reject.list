@@ -1,5 +1,10 @@
 #!白糖自定义去广告分流规则
 
+#!微信禁止热更新
+DOMAIN,dl.wechat.com,REJECT
+DOMAIN,dldir1.qq.com,REJECT
+DOMAIN,dldir1v6.qq.com,REJECT
+
 #!滴滴出行，配合@怎么肥事的模块
 DOMAIN-SUFFIX,gwp.xiaojukeji.com
 IP-CIDR,123.207.209.39/32
