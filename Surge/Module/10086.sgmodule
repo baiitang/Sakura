@@ -1,5 +1,6 @@
 #!name=中国移动净化@onz3v
 #!desc=去除肉眼可见的广告，App内大部分活动不对其去除
+#!category=白糖自用
 #!source=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/ChinaMobile/NoAds.js
 
 [Map Local]
