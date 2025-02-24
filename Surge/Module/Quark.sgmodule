@@ -1,6 +1,6 @@
 #!name=夸克@kelee
 #!desc=移除阅读广告，精简我的页面
-#!desc=白糖自用
+#!category=白糖自用
 #!source=https://kelee.one/Tool/Loon/Plugin/QuarkBrowser_remove_ads.plugin
 
 [URL Rewrite]
