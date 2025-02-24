@@ -1,0 +1,16 @@
+#!name=夸克@kelee
+#!desc=移除阅读广告，精简我的页面
+#!desc=白糖自用
+#!source=https://kelee.one/Tool/Loon/Plugin/QuarkBrowser_remove_ads.plugin
+
+[URL Rewrite]
+^https:\/\/huichuan\.sm\.cn\/nativead$ - reject
+
+[Map Local]
+^https:\/\/stars\.shuqireader\.com\/kkios\/render\/load\/resource\/appConfig$ data-type=text data="{}" status-code=200
+
+[Script]
+精简我的页面 = type=http-response, pattern=^https:\/\/open-cms-api\.quark\.cn\/open-cms, script-path=https://kelee.one/Resource/Script/QuarkBrowser/QuarkBrowser_remove_ads.js, requires-body=true
+
+[MITM]
+hostname = %APPEND% huichuan.sm.cn, stars.shuqireader.com, open-cms-api.quark.cn
