@@ -1,0 +1,12 @@
+#!name=实时油价@keywos
+#!desc=显示当地的油价，可编辑参数自定义地区
+#!原作者 @RS0485 Surge兼容 @keywos
+#!category=面板模块
+#!arguments=省份地址:hubei/wuhan
+#!arguments-desc=使用方法：编辑模块参数，填写自己省份的拼音 例如guangdong，hubei/wuhan
+
+
+[Panel]
+实时油价 = script-name=实时油价,update-interval=43200
+[Script]
+实时油价 = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/yj.js, argument={{{省份地址}}}
