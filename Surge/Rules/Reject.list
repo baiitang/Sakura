@@ -1,5 +1,8 @@
 #!白糖自定义去广告分流规则
 
+#!轻松签免责弹窗屏蔽
+DOMAIN,esign.yyyue.xyz
+
 #!微信禁止热更新
 DOMAIN,dl.wechat.com,REJECT
 DOMAIN,dldir1.qq.com,REJECT
