@@ -1,0 +1,9 @@
+#!name=京东比价@小白脸
+#!desc=卡片版：拥有更直观的UI风格，支持“明亮”与“暗黑”卡片模式展现。
+#!已知问题：卡片“明亮”与“暗黑”模式只能根据系统时间切换，无法根据自定义或主题模式切换（即：早 7 点、晚 7 点自动切换） 
+
+[Script]
+京东比价 = type=http-response,pattern=^https:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html,requires-body=1,max-size=0,binary-body-mode=0,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js,timeout=30
+
+[MITM]
+hostname = %APPEND% in.m.jd.com
