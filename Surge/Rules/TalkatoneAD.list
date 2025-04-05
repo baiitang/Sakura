@@ -2,6 +2,7 @@
 # 规则来源于
 # https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
 # https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+# https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/Talkatone.sgmodule
 # Talkatone如果发现有剩余的广告，可以引用上面两个分流，自行排查（可以反馈给我，谢谢）
 
 DOMAIN-SUFFIX,gum.criteo.com
