@@ -23,13 +23,6 @@ https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/release/surg
 # 8.24  10.30  11.3
 # 5.2
 
-[Rule]
-#!Bilibili增强
-DOMAIN,api.biliapi.com,REJECT,pre-matching
-DOMAIN,app.biliapi.com,REJECT,pre-matching
-DOMAIN,api.biliapi.net,REJECT,pre-matching
-DOMAIN,app.biliapi.net,REJECT,pre-matching
-
 [URL Rewrite]
 #!📺 BiliBili: 🛡️ ADBlock
 # 去除搜索中的默认关键词
