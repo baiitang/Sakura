@@ -1,0 +1,13 @@
+{
+    "name":"洛克王国", 
+    "description":"", 
+    "icons":
+            [
+	{"name":"LKWG_1", "url":""},
+	{"name":"LKWG_2", "url":""},
+	{"name":"LKWG_3", "url":""},
+	{"name":"LKWG_4", "url":""},
+	{"name":"LKWG_5", "url":""},
+	{"name":"LKWG_6", "url":""}
+            ]
+    }
