@@ -1,0 +1,32 @@
+{
+    "name":"洛克王国", 
+    "description":"", 
+    "icons":
+            [
+	{"name":"LKWG_1", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKWG_1.png"},
+	{"name":"LKWG_2", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKWG_2.png"},
+	{"name":"LKWG_3", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKWG_3.png"},
+	{"name":"LKWG_4", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKWG_4.png"},
+	{"name":"LKWG_5", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKWG_5.png"},
+	{"name":"LKWG_6", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKWG_6.png"},
+	{"name":"LKWG_7", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKWG_7.png"},
+	{"name":"LKWG_8", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKWG_8.png"},
+	{"name":"LKWG_9", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKWG_9.png"},
+	{"name":"LKWG_10", "url":"hhttps://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKWG_10.png"},
+	{"name":"LKWG_11", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKWG_11.png"},
+	{"name":"LKWG_12", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKWG_12.png"},
+	{"name":"LKWG_13", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKWG_13.png"},
+	{"name":"LKWG_14", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKWG_14.png"},
+	{"name":"LKWG_15", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKWG_15.png"},
+	{"name":"LKWG_16", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKWG_16.png"},
+	{"name":"LKWG_17", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKWG_17.png"},
+	{"name":"LKWG_18", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKWG_18.png"},
+	
+	{"name":"LKJL_1", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKJL_1.png"},
+	{"name":"LKJL_2", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKJL_2.png"},
+	{"name":"LKJL_3", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKJL_3.png"},
+	{"name":"LKJL_4", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKJL_4.png"},
+	{"name":"LKJL_5", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Portrait/Rocokingdom/icon/LKJL_5.png"}
+	
+            ]
+    }
