@@ -3,11 +3,11 @@
     "description":"", 
     "icons":
             [
-	{"name":"LKWG_1", "url":""},
-	{"name":"LKWG_2", "url":""},
-	{"name":"LKWG_3", "url":""},
-	{"name":"LKWG_4", "url":""},
-	{"name":"LKWG_5", "url":""},
-	{"name":"LKWG_6", "url":""}
+	{"name":"LKWG_1", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Contact/icon/LKWG_1.png"},
+	{"name":"LKWG_2", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Contact/icon/LKWG_2.png"},
+	{"name":"LKWG_3", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Contact/icon/LKWG_3.png"},
+	{"name":"LKWG_4", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Contact/icon/LKWG_4.png"},
+	{"name":"LKWG_5", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Contact/icon/LKWG_5.png"},
+	{"name":"LKWG_6", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Contact/icon/LKWG_6.png"}
             ]
     }
