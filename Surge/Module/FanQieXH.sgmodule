@@ -1,7 +1,6 @@
 #!name=番茄小说净化@ALLG999
-#!desc=解锁会员 非一次性解锁
+#!desc=解锁会员，净化页面，限6.5.9以下版本
 #!category=白糖自用
-#!来源于baby，请自用，不要借此脚本进行牟利
 #!source=https://raw.githubusercontent.com/ALLG999/newcloud/refs/heads/master/FQXS.js
 #!更新时间：2025-05-16
 #!测试版本：5.6.5/6.2.1，降级id：854680019/865224914
@@ -28,8 +27,8 @@
 #!         我的✅ 领取我的今日专属福利❌ 
 
 #!配合以下分流食用更香哦！（勾选策略偏好--REJECT）
-https://raw.githubusercontent.com/baiitang/Sakura/main/Surge/Rules/Fqxs/FQNovelAdvertising.list
-https://raw.githubusercontent.com/baiitang/Sakura/main/Surge/Rules/Fqxs/FQFL.list
+#!https://raw.githubusercontent.com/baiitang/Sakura/main/Surge/Rules/Fqxs/FQNovelAdvertising.list
+#!https://raw.githubusercontent.com/baiitang/Sakura/main/Surge/Rules/Fqxs/FQFL.list
 
 
 
