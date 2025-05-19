@@ -1,5 +1,4 @@
 #!name=番茄小说分流
 #!source=https://raw.githubusercontent.com/ALLG999/newcloud/refs/heads/master/FQFL.list
 
-DOMAIN-KEYWORD,ad,REJECT
-DOMAIN-KEYWORD,ad,REJECT,PROXY-NAME=com.dragon.read
+DOMAIN-KEYWORD,ad
