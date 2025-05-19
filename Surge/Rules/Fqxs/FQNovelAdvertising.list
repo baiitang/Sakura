@@ -1,0 +1,7 @@
+#!name=番茄去广告
+#!source=https://raw.githubusercontent.com/EAlyce/conf/main/Rule/FQNovelAdvertising.list
+
+DOMAIN-KEYWORD,dig.zjurl.cn
+DOMAIN-KEYWORD,dig.bdurl.net
+AND,((DOMAIN-KEYWORD,zijieapi),(DOMAIN-KEYWORD,ad))
+DOMAIN-KEYWORD,is.snssdk.com
