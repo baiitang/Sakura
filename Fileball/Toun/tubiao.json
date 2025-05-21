@@ -1,0 +1,13 @@
+{
+"name":"Emby透明图标@baiitang", 
+"description":"图标按照服名或群名命名，按照A-Z排列，方便查找。可以在图标搜索框搜索图标名（抠图有难度不一定全都有）。", 
+"icons":
+    [
+  {"name":"Bingzhenxigua", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Bingzhenxigua.png"},
+  
+  {"name":"Omega", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Omega.png"},
+	
+  {"name":"Terminus", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Terminus.png"}
+      	
+    ]
+}
