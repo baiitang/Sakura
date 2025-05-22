@@ -7,13 +7,17 @@
 
 	{"name":"Iris", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Iris.png"},
 	
+    {"name":"Micu", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Micu.png"}
+    
     {"name":"Omega", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Omega.png"},
 	
 	{"name":"Terminus", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Terminus.png"},
     
     {"name":"Yezi", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Yezi.png"},
     
-    {"name":"Yezi1", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Yezi1.png"}
+    {"name":"Yezi1", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Yezi1.png"},
+    
+    {"name":"1111", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/1111.png"}
 	
     ]
 }
