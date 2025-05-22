@@ -4,8 +4,10 @@
 "icons":
     [
 	{"name":"Bingzhenxigua", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Bingzhenxigua.png"},
+
+	{"name":"Iris", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Iris.png"},
 	
-    {"name":"Omega", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Omega.png"},
+        {"name":"Omega", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Omega.png"},
 	
 	{"name":"Terminus", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Terminus.png"}
 	
