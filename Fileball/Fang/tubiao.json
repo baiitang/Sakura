@@ -360,7 +360,7 @@
 	{"name":"SaturDayPro", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Fang/icon/SaturDayPro.png"},
 	{"name":"SaturDayPremium", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Fang/icon/SaturDayPremium.png"},
 	{"name":"SaturDayXperience", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Fang/icon/SaturDayXperience.png"},
- {"name":"Starharn", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Fang/icon/Starharn.png"},
+	{"name":"Starharn", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Fang/icon/Starharn.png"},
 	{"name":"Starharn1", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Fang/icon/Starharn1.png"},
 	{"name":"Starsho", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Fang/icon/Starsho.png"},
 	{"name":"Starsho1", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Fang/icon/Starsho1.png"},
@@ -394,6 +394,8 @@
 	{"name":"V61", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/FANG/V61.png"},
 
 	{"name":"Violet", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Fang/icon/Violet.png"},
+	{"name":"Violet1", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Fang/icon/Violet1.png"},
+	{"name":"Violet2", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Fang/icon/Violet2.png"},
 
 	{"name":"Wagon", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/FANG/Wagon.png"},
 	{"name":"WangZhe", "url":"https://raw.githubusercontent.com/Softlyx/Fileball/main/FANG/WangZhe.png"},
