@@ -1,5 +1,7 @@
 # 白糖自用Emby（透明）图标集
 
+两种格式会同步更新，请根据自己的喜好选择
+
 108x108格式：https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/tubiao.json
 
 180x180格式：https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/Fwicon/tubiao.json
