@@ -1,6 +1,6 @@
 {
 "name":"Emby透明图标@baiitang", 
-"description":"此图标格式108x108,图标按照服名或群名命名，按照A-Z排列，方便查找。可以在图标搜索框搜索图标名（抠图有难度不一定全都有）。", 
+"description":"此图标格式108x108，图标按照服名或群名命名，按照A-Z排列，方便查找。可以在图标搜索框搜索图标名（抠图有难度不一定全都有）。", 
 "icons":
     [
         {"name":"Alphatv", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Alphatv.png"},
