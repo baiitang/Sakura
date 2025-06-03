@@ -8,6 +8,14 @@
 
 注意：使用本图标集前请您仔细阅读以下条款，使用本图标集则表明您已明知并接受这些条款。
 
+这里推荐一下其他大佬的透明图标集
+
+Gini透明图标库：https://raw.githubusercontent.com/ginibond/ginibond/main/Icons/Forward/tubiao.json
+
+Tfel透明图标库：https://raw.githubusercontent.com/TFEL00/Emby/main/TFEL-emby-icons.json
+
+Gdnonono透明图标库：https://raw.githubusercontent.com/Grindoo/icon/refs/heads/main/icon.json
+
 版权声明
 
 一、本图标集内含的图片作品，其版权属于原作者所有。其他媒体、网站或个人转载使用时不得进行商业性的原版原式的转载。
