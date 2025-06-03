@@ -1,7 +1,7 @@
 {
   "title": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂 ‘𝓼 𝓦𝓲𝓭𝓰𝓮𝓽𝓼",
   "description": "汇集豆瓣、TMDB、IMDB、猫眼和Bangumi的各类榜单，根据自身的需求所改写",
-  "icon": "https://raw.githubusercontent.com/quantumultxx/FW-Widgets/refs/heads/main/icon/icon2.PNG",
+  "icon": "https://raw.githubusercontent.com/baiitang/Sakura/main/Notion/Eva/Yuanshen.png",
   "widgets": [
     {
       "id": "douban",
