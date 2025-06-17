@@ -1,5 +1,6 @@
 #!name=微信读书@Sliverkiss
 #!desc=点击订阅人数, 解锁下架书籍
+#!category=白糖自用
 #!source=https://gist.githubusercontent.com/Sliverkiss/027bdc166e2e96d66c9f1a48e30db25a/raw/wxread.js
 #!微信读书app 点击订阅人数, 解锁下架书籍
 
