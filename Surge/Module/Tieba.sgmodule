@@ -1,5 +1,6 @@
 #!name=贴吧去广告@app2smile
 #!desc=开屏广告;推荐和吧内帖子列表的直播及广告
+#!category=白糖自用
 #!arguments=per_filter_video:0
 #!arguments-desc=per_filter_video:设置为1则推荐页不展示视频贴
 #!source=https://raw.githubusercontent.com/app2smile/rules/master/module/tieba.sgmodule
