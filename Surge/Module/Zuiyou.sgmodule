@@ -1,5 +1,6 @@
 #!name=最右去广告@可莉
 #!desc=移除开屏广告、信息流广告和广告轮播图。
+#!category=白糖自用
 #!source=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/ZuiYou_remove_ads.plugin
 #!source-hub=http://script.hub/file/_start_/https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/ZuiYou_remove_ads.plugin/_end_/ZuiYou_remove_ads.sgmodule?type=loon-plugin&target=surge-module&del=true
 #!date=2024-07-13 02:37:32
