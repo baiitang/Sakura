@@ -1,5 +1,6 @@
 #!name=云闪付净化@RuCu6
 #!desc=去除广告，净化相关页面，注:需解除软件MITM限制
+#!category=白糖自用
 #!descs=适合解除SSL证书锁定的app。不会注入不建议启用此重写。第三方库仓库: https://github.com/NyaMisty/ssl-kill-switch3
 #!author=https://t.me/Aa28413761/1227
 #!update=2023-12-07 17:55
