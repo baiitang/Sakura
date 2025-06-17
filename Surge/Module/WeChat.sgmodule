@@ -1,5 +1,6 @@
 #!name=解除微信链接限制@zZPiglet
 #!desc=跳过中间界面，支付宝链接、被封禁链接进行通知弹窗跳转
+#!category=白糖自用
 #!source=https://raw.githubusercontent.com/zZPiglet/Task/master/UnblockURLinWeChat.sgmodule
 
 [MITM]
