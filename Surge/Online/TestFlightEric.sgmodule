@@ -1,6 +1,6 @@
 #!name=TestFlight自动加入
 #!desc=TF测试未满员时，可自动获取测试资格，打开测试链接自动跳转到TF即可
-#!category=TestFlight
+#!category=远程模块
 #!arguments=TestFlight_auto:默认开启,TestFlight_cron:默认开启,CRONEXP:*/10 * * * *,MITM:hostname
 #!arguments-desc=TestFlight_auto TF链接参数获取\nTestFlight_cron TF自动加入脚本\nCRONEXP TF自动加入时间\n可搭配boxjs使用，boxjs链接请看注释,相关脚本可加“#”关闭
 
