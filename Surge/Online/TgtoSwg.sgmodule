@@ -1,5 +1,6 @@
 #!name=Tg外链直跳Swg
 #!desc=telegram外链直接跳转三方客户端swiftgram
+#!category=远程模块
 #!author=秦城二院彭医生[https://github.com/dcpengx]
 
 [URL Rewrite]
