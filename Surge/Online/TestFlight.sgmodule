@@ -1,5 +1,6 @@
 #!name=TestFlight自动加入
 #!author=@mcdasheng
+#!category=远程模块
 #!source=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/TestFlight.js
 #!desc=获取自动加入 TestFlight任务所需各项参数的重写文件
 
