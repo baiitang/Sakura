@@ -1,11 +1,11 @@
 #!name=Fimo-复古胶片相机@chxm1023
-#!desc=解锁Vip 恢复胶卷
+#!desc=解锁Vip 恢复胶卷，非一次性解锁
 #!category=白糖自用
 #!source=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js
 #!source-hub=http://script.hub/file/_start_/https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js/_end_/fimo.sgmodule?n=%E2%9C%A8Fimo-%E5%A4%8D%E5%8F%A4%E8%83%B6%E7%89%87%E7%9B%B8%E6%9C%BA%40chxm1023%2B%E8%A7%A3%E9%94%81Vip%20%E6%81%A2%E5%A4%8D%E8%83%B6%E5%8D%B7&type=qx-rewrite&target=surge-module&del=true
 
 [Script]
-fimo = type=http-response, pattern=^https:\/\/server\.(yoyiapp|zbisq)\.com, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js, requires-body=true, max-size=-1, timeout=60
+fimo = type=http-response, pattern=^https?:\/\/fimo\.appfimo\.com\/fimo-.*\/(user|apple\/certificate|config|startPopConfig|filmAll), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
-hostname = %APPEND% server.*.com
+hostname = %APPEND% fimo.appfimo.com
