@@ -1,6 +1,6 @@
 #!name= Google搜索重定向
 #!desc= 将Google搜索重定向至.com域名
-
+#!category=远程模块
 
 [URL Rewrite]
 ^https?://(www.)?g.cn https://www.google.com 302
