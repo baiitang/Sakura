@@ -1,5 +1,6 @@
 #!name=联通余量(v4)
 #!desc=定时查询 与 Panel 面板
+#!category=面板模块
 #!source=https://github.com/ChinaTelecomOperators/ChinaUnicom/releases/download/Prerelease-Alpha/10010.sgmodule
 #!arguments-desc=cronexp\n\n定时任务\n默认为每 5 分钟\n\ncron\n\n自定义定时任务名\n若设为 # 可取消定时任务\n\npanel\n\n自定义面板名\n若设为 # 可取消面板\n\ncapture\n\n自定义抓包脚本名\n若设为 # 可取消抓包
 #!arguments=cronexp:*/5 * * * *,cron:10010v4-cron,capture:10010v4-capture,panel:10010v4-panel
