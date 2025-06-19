@@ -1,7 +1,7 @@
 #!name= Troubleshoot
 #!desc= 故障排除 访问 http://trouble.shoot 查看
 #!author= @xream @key
-#!category= Key
+#!category=面板模块
 #!source=https://raw.githubusercontent.com/Keywos/rule/main/script/st/surgetool.sgmodule
 #!arguments= script-update:-1, update-interval:-1, Type:1, Log:0, List:1, Push:1,title:规则详情 | , color:#6699FF, icon:heart.text.square, ST Panel:ST Panel
 #!arguments-desc= 规则集数量统计支持远程分流规则/本地单条规则,不支持无法读取的本地规则集, ScriptHub 转换的规则有缓存会更快速地读取, ScriptHub转换过的规则会读取缓存数, 速度快\n\nST Panel 如果填写为 # 则关闭面板\n在通知显示规则类型数量: Type\n在通知显示各规则集数量: List\n开启通知: Push\n开启日志: Log\n\n开启为: 1\n关闭为: 0
