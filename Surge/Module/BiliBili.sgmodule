@@ -1,5 +1,6 @@
 #!name=哔哩哔哩净化@整点薯条
 #!desc=BiliBili去广告，需要搭配boxjs使用
+#!category=白糖自用
 #!openUrl=http://boxjs.com/#/app/BiliBili.ADBlock
 #!source=https://github.com/BiliUniverse/ADBlock/releases/latest/download/BiliBili.ADBlock.sgmodule，https://github.com/BiliUniverse/Enhaned/releases/latest/download/BiliBili.Enhaned.sgmodule
 #!arguments=启用广告屏蔽:默认开启, 启用首页设置:默认开启, 动态最常访问:auto, 过滤置顶评论广告:1, 空降助手:bilibili.airborne, 启用屏蔽活动:默认开启, 启用画质解锁:默认开启, 启用皮肤切换:#默认关闭, 启用会员伪装:#默认关闭, B站每日任务签到:#默认关闭, B站Cookie(APP):#默认关闭, B站Cookie(网页):#默认关闭, 签到Cron设置:10 9 * *
