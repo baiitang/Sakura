@@ -1,5 +1,6 @@
 #!name=电信余量(v4)
 #!desc=定时查询 与 Panel 面板
+#!category=面板模块
 #!source=https://github.com/ChinaTelecomOperators/ChinaTelecom
 #!arguments=CRON_EXP:#*/5 * * * *
 #!arguments-desc=CRON_EXP自定义触发时间
