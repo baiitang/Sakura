@@ -3,9 +3,9 @@
 "description":"此图标格式108x108，图标按照服名或群名命名，按照A-Z排列，方便查找。可以在图标搜索框搜索图标名（抠图有难度不一定全都有），如果你有好的作品，欢迎投稿。", 
 "icons":
     [
- {"name":"Alphatv", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Alphatv.png"},
-	{"name":"Alphatvx", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Alphatvx.png"},
-	{"name":"Aurora", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Aurora.png"},
+    {"name":"Alphatv", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Alphatv.png"},
+    {"name":"Alphatvx", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/
+    {"name":"Aurora", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Aurora.png"},
 	{"name":"Anisaga", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Anisaga.png"},
 	    
 	{"name":"Bingzhenxigua", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Bingzhenxigua.png"},
@@ -35,7 +35,7 @@
         
 	{"name":"Iris", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Iris.png"},
         
- {"name":"Jianshouqing", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Jianshouqing.png"},
+	{"name":"Jianshouqing", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Jianshouqing.png"},
 	{"name":"Jellyfish", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Jellyfish.png"},
 	{"name":"July", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/July.png"},
 	    
@@ -63,7 +63,7 @@
 	{"name":"Nebula", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Nebula.png"},
 	{"name":"Nanflix", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Nanflix.png"},
 	
- {"name":"Omega", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Omega.png"},
+	{"name":"Omega", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Omega.png"},
 	{"name":"Ouo", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Ouo.png"},
 	    
 	{"name":"Pilipili", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Pilipili.png"},
@@ -86,7 +86,7 @@
 	{"name":"Star1", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Star1.png"},
 	{"name":"Stark", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Stark.png"},
         
- {"name":"Terminus", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Terminus.png"},
+	{"name":"Terminus", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Terminus.png"},
 	{"name":"Temby", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Temby.png"},
 	{"name":"Tecar", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Tecar.png"},
 	{"name":"Tdckemby", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Tdckemby.png"},
@@ -98,13 +98,13 @@
 	{"name":"Violet2", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Violet2.png"},
 	{"name":"Violet3", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Violet3.png"},
 
- {"name":"Yezi", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Yezi.png"},
- {"name":"Yezi1", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Yezi1.png"},
+	{"name":"Yezi", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Yezi.png"},
+	{"name":"Yezi1", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Yezi1.png"},
 	{"name":"Yomo", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Yomo.png"},
- {"name":"Yunhai", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Yunhai.png"},
+	{"name":"Yunhai", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Yunhai.png"},
 	{"name":"Youno", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Youno.png"},
-        
- {"name":"1111", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/1111.png"}
+    
+	{"name":"1111", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/1111.png"}
 	
     ]
 }
