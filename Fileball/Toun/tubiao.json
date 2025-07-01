@@ -3,9 +3,9 @@
 "description":"此图标格式108x108，图标按照服名或群名命名，按照A-Z排列，方便查找。可以在图标搜索框搜索图标名（抠图有难度不一定全都有），如果你有好的作品，欢迎投稿。", 
 "icons":
     [
-    {"name":"Alphatv", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Alphatv.png"},
-    {"name":"Alphatvx", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Alphatvx.png"},
-    {"name":"Aurora", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Aurora.png"},
+	{"name":"Alphatv", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Alphatv.png"},
+	{"name":"Alphatvx", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Alphatvx.png"},
+	{"name":"Aurora", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Aurora.png"},
 	{"name":"Anisaga", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Anisaga.png"},
 	    
 	{"name":"Bingzhenxigua", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/icon/Bingzhenxigua.png"},
