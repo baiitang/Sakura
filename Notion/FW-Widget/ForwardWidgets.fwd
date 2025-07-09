@@ -89,9 +89,9 @@
       "title": "影视榜单",
       "description": "聚合豆瓣、TMDB、IMDB和Bangumi的电影、剧集、动画片单与榜单",
       "requiredVersion": "0.0.1",
-      "version": "1.2.6",
+      "version": "1.2.7",
       "author": "阿米诺斯",
-      "url": "https://raw.githubusercontent.com/quantumultxx/FW-Widgets/refs/heads/main/Widgets/ForwardWidgets.js"
+      "url": "https://raw.githubusercontent.com/pack1r/ForwardWidgets/refs/heads/main/widgets/combined.js"
     },
     {
       "id": "person.movie.tmdb",
