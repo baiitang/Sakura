@@ -28,7 +28,7 @@
       "requiredVersion": "0.0.1",
       "version": "1.0.3", 
       "author": "Autism",
-      "url": "https://raw.githubusercontent.com/opix-maker/Forward/refs/heads/main/js/Bangumi.js"
+      "url": "https://raw.githubusercontent.com/opix-maker/Forward/refs/heads/main/js/Bangumi_v2.0.0.js"
     },
     {
       "id": "hot_picks",
@@ -101,6 +101,24 @@
       "version": "1.0.4",
       "author": "Evan",
       "url": "https://github.com/EmrysChoo/ForwardWidgets/raw/refs/heads/main/Widgets/person_movie.js"
+    },
+    {
+      "id": "imdb_discovery_final_v2",
+      "title": "IMDb 分类资源 v2",
+      "description": "聚合 IMDb 热门影视资源",
+      "requiredVersion": "0.0.1",
+      "version": "2.0.0",
+      "author": "Autism",
+      "url": "https://raw.githubusercontent.com/opix-maker/Forward/refs/heads/main/js/IMDb.js"
+    },
+    {
+      "id": "movie_paradise",
+      "title": "在线影院",
+      "description": "获取在线电影、电视剧、动漫、综艺和短剧",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.0",
+      "author": "两块",
+      "url": "https://raw.githubusercontent.com/2kuai/ForwardWidgets/refs/heads/main/Widgets/MovieParadise.js"
     },
   ]
 }
