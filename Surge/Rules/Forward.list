@@ -1,12 +1,26 @@
 #!解决Forward封面加载失败的问题，请将此分流走代理
+#!source=https://raw.githubusercontent.com/xxxjacc/SurgeRules/main/ForwardWidgetFilter.list
+#!2025.07.09
 
-DOMAIN-SUFFIX,javday.app
+#Porn Streaming Modules
+DOMAIN-KEYWORD,javday
 DOMAIN-SUFFIX,pornhub.com
+DOMAIN-SUFFIX,phncdn.com
 DOMAIN-SUFFIX,xvideos.com
 DOMAIN-SUFFIX,xvideos-cdn.com
 DOMAIN-SUFFIX,91porn.com
+DOMAIN-KEYWORD,btc620
+DOMAIN-KEYWORD,killcovid2021
+DOMAIN-KEYWORD,cdn77
 DOMAIN-SUFFIX,jable.tv
+DOMAIN-SUFFIX,mushroomtrack.com
 DOMAIN-SUFFIX,javrate.com
+#Media Metadata Sources
 DOMAIN-SUFFIX,imdb.com
 DOMAIN-SUFFIX,media-imdb.com
 DOMAIN-SUFFIX,tmdb.org
+#VOD Modules
+DOMAIN-SUFFIX,heimuer.tv
+DOMAIN-SUFFIX,dytt8vip.com
+DOMAIN-SUFFIX,imgzy360.com
+DOMAIN-SUFFIX,iill.top
