@@ -2,6 +2,7 @@
 #!desc=净化拼多多界面 去除广告
 #!source=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Pinduoduo.snippet
 #!source-hub=http://script.hub/file/_start_/https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Pinduoduo.snippet/_end_/Pinduoduo.sgmodule?type=qx-rewrite&target=surge-module&del=true
+#!category=白糖自用
 #!update=2024-08-10 09:33
 
 #!需要搭配相关分流https://raw.githubusercontent.com/ZenmoFeiShi/rule/main/Pinduoduo.list
