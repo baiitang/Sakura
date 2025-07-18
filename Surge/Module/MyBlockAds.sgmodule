@@ -2,6 +2,7 @@
 #!desc=去广告合集，以下app请使用单独配置文件：高德地图,哔哩哔哩,网易云音乐,微博,YouTube,知乎
 #!author=RuCu6
 #!arguments=酷安首页大图:默认去除
+#!category=白糖自用
 #!update=2024-08-24 12:50
 
 #!该分流规则来自频道@广告必须死，频道链接https://t.me/GitCube
