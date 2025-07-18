@@ -1,6 +1,7 @@
 #!name=豆瓣去广告@可莉
 #!desc=移除开屏广告、各页面信息流广告、首页横幅、搜索填充词，需要签名IPA签名使用。
 #!source=https://kelee.one/Tool/Loon/Plugin/DouBan_remove_ads.plugin
+#!category=白糖自用
 #!date=2024-12-10 9:40:31
 
 [Rule]
