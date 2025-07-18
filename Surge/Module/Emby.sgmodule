@@ -1,5 +1,6 @@
 #!name=Emby内购解锁
 #!desc=解锁 Emby Premium权益，非一次性解锁。
+#!category=白糖自用
 
 [Script]
 # 播放解锁
