@@ -3,6 +3,7 @@
 #!author=怎么肥事
 #!source=https://raw.githubusercontent.com/baiitang/Sakura/main/QuanX/Didichuxing.js
 #!source-hub=http://script.hub/file/_start_/https://raw.githubusercontent.com/unusuad/Baitangbot/main/QuanX/Didichuxing.js/_end_/Didichuxing.sgmodule?n=%E2%9C%A8%E6%BB%B4%E6%BB%B4%E5%87%BA%E8%A1%8C%20%E5%87%80%E5%8C%96%5B%E5%8D%B8%E8%BD%BD%E9%87%8D%E8%A3%85%5D%40%E6%80%8E%E4%B9%88%E8%82%A5%E4%BA%8B%2B%E5%87%80%E5%8C%96%E7%95%8C%E9%9D%A2%20%E5%8E%BB%E9%99%A4%E5%B9%BF%E5%91%8A&type=qx-rewrite&target=surge-module&del=true
+#!category=白糖自用
 #!update=2024-08-2 00:01
 #!ps=需要分流禁用掉 
 #!ip-cidr, 123.207.209.39/32, reject
