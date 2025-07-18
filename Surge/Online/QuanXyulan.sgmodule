@@ -1,5 +1,6 @@
 #!name=预览qx一键导入资源
 #!desc=将qx的一键导入链接复制到Safari打开可以预览
+#!category=订阅管理
 
 [Script]
 
