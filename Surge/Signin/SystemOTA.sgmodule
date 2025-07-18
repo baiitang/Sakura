@@ -1,6 +1,6 @@
 #!name=系统更新屏蔽
 #!desc=屏蔽 iOS/iPadOS 系统更新
-#!system=ios
+#!system=订阅管理
 #!arguments=iOS:DOMAIN,iPadOS:hostname
 #!arguments-desc=可自定义参数：默认启用，输入#关闭系统更新屏蔽
 #!可单独关闭iOS／iPadOS系统屏蔽
