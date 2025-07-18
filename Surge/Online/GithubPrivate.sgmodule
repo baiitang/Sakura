@@ -1,7 +1,7 @@
 #!name=Github
 #!desc=允许引用Github私有仓库/Gist中的订阅分流,重写,脚本等配置文件
 #!source=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Surge/module/githubPrivate.sgmodule
-#!category=Third-party module
+#!category=订阅管理
 #!arguments=username:GITHUB_USERNAME,token:GITHUB_TOKEN
 #!arguments-desc=[参数设置]\nusername: 填入GitHub的用户名\ntoken: 填入GitHub生成的Token\n\n[Token获取方式]\n头像菜单 -> Settings -> Developer settings -> Personal access tokens -> Generate new token -> 在权限列表中找到并勾选 gist 然后提交生成
 
