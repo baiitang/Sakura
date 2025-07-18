@@ -2,6 +2,7 @@
 #!desc=B站去广告 解锁1080P高码率
 #!source=https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Bilibili.conf
 #!source-hub=http://script.hub/file/_start_/https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Bilibili.conf/_end_/Bilibili.sgmodule?n=%E2%9C%A8%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E5%87%80%E5%8C%96%40ddgksf2013%2BB%E7%AB%99%E5%8E%BB%E5%B9%BF%E5%91%8A%20%E8%A7%A3%E9%94%811080P%E9%AB%98%E7%A0%81%E7%8E%87&type=qx-rewrite&target=surge-module&del=true
+#!category=白糖自用
 
 [URL Rewrite]
 # ～ BiliBili_哔哩哔哩_屏蔽IP请求@ddgksf2013
