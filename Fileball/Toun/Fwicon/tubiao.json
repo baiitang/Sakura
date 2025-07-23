@@ -104,7 +104,10 @@
         {"name":"Yunhai", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/Fwicon/icon/Yunhai.png"},
 	{"name":"Youno", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/Fwicon/icon/Youno.png"},
         
-        {"name":"1111", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/Fwicon/icon/1111.png"}
+        {"name":"1111", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/Fwicon/icon/1111.png"},
+
+	{"name":"Comedy", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/Fwicon/icon/Comedy.png"},
+	{"name":"Comedy1", "url":"https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Toun/Fwicon/icon/Comedy1.png"},
 	
     ]
 }
