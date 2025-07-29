@@ -202,13 +202,6 @@ tiebaJson = type=http-response, pattern=^http:\/\/c\.tieba\.baidu\.com\/c\/s\/sy
 
 tiebaJson = type=http-response, pattern=^https:\/\/tiebac\.baidu\.com\/tiebaads\/commonbatch\?, script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Baidu/TiebaJson.js, requires-body=true, max-size=-1, timeout=60
 
-# 网易新闻 //gw.m.163.com, nex.163.com
-news163 = type=http-response, pattern=^https:\/\/gw\.m\.163\.com\/nc\/api\/v1\/feed\/dynamic\/headline-list\?, script-path=https://kelee.one/Resource/Script/NeteaseNews/NeteaseNews_remove_ads.js, requires-body=true, max-size=-1, timeout=60
-
-news163 = type=http-response, pattern=^https:\/\/nex\.163\.com\/q, script-path=https://kelee.one/Resource/Script/NeteaseNews/NeteaseNews_remove_ads.js, requires-body=true, max-size=-1, timeout=60
-
-news163 = type=http-response, pattern=^https:\/\/gw\.m\.163\.com\/nc\/api\/v1\/search\/hot-word, script-path=https://kelee.one/Resource/Script/NeteaseNews/NeteaseNews_remove_ads.js, requires-body=true, max-size=-1, timeout=60
-
 # 微信封禁页面 //weixin110.qq.com, security.wechat.com
 wechat110 = type=http-response, pattern=^https\:\/\/(weixin110\.qq|security\.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?, script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Quanx/Scripts/Wechat/Wechat110.js, requires-body=true, max-size=-1, timeout=60
 
