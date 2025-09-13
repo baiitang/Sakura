@@ -1,13 +1,18 @@
-#!name=Spotify音乐VIP@app2smile
-#!desc=部分解锁premium 音质不能设置为超高
-#!source=https://github.com/ddgksf2013/Rewrite/raw/master/UnlockVip/Spotify.conf
-#!source-hub=http://script.hub/file/_start_/https://github.com/ddgksf2013/Rewrite/raw/master/UnlockVip/Spotify.conf/_end_/Spotify.sgmodule?n=%E2%9C%A8Spotify%E9%9F%B3%E4%B9%90VIP%5B%E9%9F%B3%E8%B4%A8%E2%89%A4%E9%AB%98%5D%40app2smile%2B%E9%83%A8%E5%88%86%E8%A7%A3%E9%94%81premium%20%E9%9F%B3%E8%B4%A8%E4%B8%8D%E8%83%BD%E8%AE%BE%E7%BD%AE%E4%B8%BA%E8%B6%85%E9%AB%98&type=qx-rewrite&target=surge-module&del=true
-#!category=白糖自用
+#!name= Spotify音乐VIP@App2smile
+#!desc= 部分解锁premium 音质不能设置为超高
+#!category= 白糖自用
+#!source= https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id324684580
+#!date= 2025-09-13 18:00:00
 
 [Script]
-spotify-proto = type=http-response, pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js, requires-body=true, binary-body-mode=true, max-size=-1, timeout=60
+spotify-qx-header = type=http-request, pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/user-customization-service\/v1\/customize$, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-qx-header.js, timeout=60
 
-spotify-json = type=http-request, pattern=^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js, timeout=60
+spotify-proto = type=http-response, pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js, requires-body=true, binary-body-mode=true, max-size=-1, timeout=60
+
+spotify-json = type=http-request, pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js, timeout=60
 
 [MITM]
-hostname = %APPEND% spclient.wg.spotify.com
+hostname = %APPEND% spclient.wg.spotify.com, *spclient.spotify.com
