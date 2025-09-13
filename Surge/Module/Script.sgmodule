@@ -1,10 +1,14 @@
-#!name=脚本合集@Baitang
-#!desc=更新时间 2024-04-20 12:30\nSpotify VVebo WPS B站 小红书 彩云 贴吧 Fimo 阿里云盘 音流
+#!name= 脚本合集@Baiitang
+#!desc= Spotify、VVebo、WPS、B站、小红书、彩云、贴吧、Fimo、阿里云盘、音流合集
+#!category=
+#!source= 
+#!arguments=
+#!arguments-desc=
+#!openUrl= 
+#!date= 2024-04-20 12:30:00
+
 #!致谢 此模块的内容来着各位大佬的无偿分享，本人为了方便整理而引用，如果介意请联系我删除，谢谢
-
-#!使用声明：作者并未参与任何形式的金钱交易，仅限测试和学习，请勿转载与贩卖，下载使用后24小时请删除
-
-
+#!使用声明：仅限测试和学习，请勿转载与贩卖，下载使用后24小时请删除
 
 [URL Rewrite]
 # 贴吧去广告(>=iOS15)
