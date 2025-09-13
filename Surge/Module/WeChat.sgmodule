@@ -1,11 +1,14 @@
-#!name=解除微信链接限制@zZPiglet
-#!desc=跳过中间界面，支付宝链接、被封禁链接进行通知弹窗跳转
-#!category=白糖自用
-#!source=https://raw.githubusercontent.com/zZPiglet/Task/master/UnblockURLinWeChat.sgmodule
-
-[MITM]
-hostname = %APPEND% security.wechat.com, weixin110.qq.com
+#!name= 解除微信链接限制@zZPiglet
+#!desc= 跳过中间界面，支付宝链接、被封禁链接进行通知弹窗跳转
+#!category= 白糖自用
+#!source= https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Function/UnblockURLinWeChat.conf
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id414478124
+#!date= 2025-09-13 18:00:00
 
 [Script]
-解除微信链接限制 = type=http-response,pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js
-// 解除微信链接限制 = type=http-response,pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js,argument=useCache=true&forceRedirect=false
+weixin110 = type=http-response, pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weixin110.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% weixin110.qq.com, security.wechat.com
