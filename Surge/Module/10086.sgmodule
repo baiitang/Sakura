@@ -2,6 +2,8 @@
 #!desc=去除肉眼可见的广告，App内大部分活动不对其去除
 #!category=白糖自用
 #!source=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/ChinaMobile/NoAds.js
+#!arguments=
+#!arguments-desc=
 #!openUrl = https://apps.apple.com/app/id583700738
 #!date= 2024-09-13 18:00:00
 
