@@ -1,7 +1,12 @@
-#!name=番茄小说净化@ALLG999
-#!desc=解锁会员，净化页面，限6.5.9以下版本
-#!category=白糖自用
-#!source=https://raw.githubusercontent.com/ALLG999/newcloud/refs/heads/master/FQXS.js
+#!name= 番茄小说净化@ALLG999
+#!desc= 解锁会员，净化页面，限6.5.9以下版本
+#!category= 白糖自用
+#!source= https://raw.githubusercontent.com/ALLG999/newcloud/refs/heads/master/FQXS.js
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id1468454200
+#!date= 2025-09-13 18:00:00
+
 #!更新时间：2025-05-16
 #!测试版本：5.6.5/6.2.1，降级id：854680019/865224914
 #!最新版6.5.9测试有效（文中【看视频免30分钟广告】点击广告「网络异常，请稍候再试」）
