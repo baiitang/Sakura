@@ -1,6 +1,11 @@
-#!name=京东比价@Mw418
-#!desc=通知版：点击商品页面详情 看弹窗通知 
-#!category=白糖自用
+#!name= 京东比价@Mw418
+#!desc= 通知版：点击商品页面详情 看弹窗通知
+#!category= 白糖自用
+#!source= https://raw.githubusercontent.com/mw418/Loon/main/script/jd_price.js
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id414245413
+#!date= 2025-09-13 18:00:00
 
 #!适用于京东App版本V13.8.2
 #!脚本修改来源 https://raw.githubusercontent.com/githubdulong/Script/master/jd_price2.sgmodule
