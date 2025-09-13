@@ -1,7 +1,11 @@
-#!name=让我喵喵@Yu9191
-#!desc=原哎呀漫鸭，解锁会员权益，去开屏广告 通用广告
-#!source=https://raw.githubusercontent.com/Yu9191/Rewrite/main/rwmm.js
-#!category=白糖自用
+#!name= 让我喵喵@Baby
+#!desc= 原哎呀漫鸭，解锁会员权益，去开屏广告、通用广告
+#!category= 白糖自用
+#!source= https://raw.githubusercontent.com/Yu9191/Rewrite/main/rwmm.js
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id6680187161
+#!date= 2025-09-13 18:00:00
 
 [Script]
 rwmm = type=http-response, pattern=https://www.pdreamer.com/aymyProd/api/getUserInfo, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/rwmm.js, requires-body=true, max-size=-1, timeout=60
