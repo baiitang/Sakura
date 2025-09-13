@@ -1,8 +1,14 @@
-#!name=高德地图净化@ddgksf2013
-#!desc=使用前请卸载高德地图，挂载脚本然后打开使用
-#!category=白糖自用
-#!source=https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Amap.conf
-#!source-hub=http://script.hub/file/_start_/https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Amap.conf/_end_/Amap.sgmodule?n=%E2%9C%A8%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E5%87%80%E5%8C%96%5B%E5%8D%B8%E8%BD%BD%E9%87%8D%E8%A3%85%5D%40ddgksf2013%2B%E4%BD%BF%E7%94%A8%E5%89%8D%E8%AF%B7%E5%8D%B8%E8%BD%BD%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%EF%BC%8C%E6%8C%82%E8%BD%BD%E8%84%9A%E6%9C%AC%E7%84%B6%E5%90%8E%E4%BD%BF%E7%94%A8&type=qx-rewrite&target=surge-module&del=true
+#!name= 高德地图净化@ddgksf2013
+#!desc= 使用前请卸载高德地图，启用模块然后再打开App使用
+#!category= 白糖自用
+#!source= https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/AmapAds.conf
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/
+#!date= 2025-09-13 18:00:00
+
+[Rule]
+DOMAIN-SUFFIX,optimus-ads.amap.com,DIRECT
 
 [URL Rewrite]
 # > 高德地图_通用广告请求@ddgksf2013
@@ -25,7 +31,7 @@
 ^https?:\/\/.*\.amap\.com\/ws\/valueadded\/weather data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 [Script]
-# > 高德地图_amdc处理[Anti已将Amdc分流删除,故更换屏蔽策略]@ddgksf2013
+# > 高德地图_amdc处理@ddgksf2013
 amdc = type=http-response, pattern=^http:\/\/amdc\.m\.taobao\.com, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amdc.js, requires-body=true, max-size=-1, timeout=60
 
 # > 高德地图_底部tab栏角标@ddgksf2013
@@ -56,4 +62,4 @@ amap = type=http-response, pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/dsp\/p
 amap = type=http-response, pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/new_hotword, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amap.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
-hostname = %APPEND% *.amap.com
+hostname = %APPEND% m5.amap.com, m5-zb.amap.com, center.amap.com
