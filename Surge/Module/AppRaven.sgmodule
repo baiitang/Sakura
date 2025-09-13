@@ -1,10 +1,13 @@
-#!name=AppRaven
-#!author=解锁会员 非一次性解锁
-#!desc=David
+#!name= AppRaven@Baby
+#!desc= 解锁会员，非一次性解锁，需挂载模块使用
+#!category= 白糖自用
 #!source= https://raw.githubusercontent.com/Yu9191/Rewrite/main/AppRaven.js
-#!source-hub= https://script.hub/file/_start_/https://raw.githubusercontent.com/Yu9191/Rewrite/main/AppRaven.js/_end_/AppRaven.sgmodule.txt?type=qx-rewrite&target=surge-module&del=true&jqEnabled=true
-#!category=白糖自用
-#!来源于baby，请自用，不要借此脚本进行牟利
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id1490607195
+#!date= 2025-09-13 18:00:00
+
+#!来源于Baby，请自用，不要借此脚本进行牟利
 
 [Script]
 AppRaven = type=http-response, pattern=https://appraven.net/appraven/graphql, script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Surge/Js/AppRaven.js, requires-body=true, max-size=-1, timeout=60
