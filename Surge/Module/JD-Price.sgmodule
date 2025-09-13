@@ -1,10 +1,16 @@
-#!name=功能｜JD历史价格@灰灰
-#!desc=获取京东历史价格，点击商品名字展开
-#!source=https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
-#!category=白糖自用
+#!name= 京东历史价格@灰灰
+#!desc= 获取京东历史价格，京东商品页面，点击商品名字展开
+#!category= 白糖自用
+#!source= https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id1422581869
+#!date= 2025-09-13 18:00:00
 
 [Script]
-jd_price = type=http-response, pattern=^https?:\/\/api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig), script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js, requires-body=true, max-size=-1, timeout=60
+jd_price = type=http-response, pattern=^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js, requires-body=true, max-size=-1, timeout=60
+
+jd_price = type=http-request, pattern=^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
-hostname = %APPEND% api.m.jd.com
+hostname = %APPEND% in.m.jd.com, apapia-sqk-weblogic.manmanbuy.com
