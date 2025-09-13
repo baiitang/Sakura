@@ -1,12 +1,17 @@
-#!name=酷安净化@ddgksf2013
-#!desc=净化酷安界面 去除广告
-#!source=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
-#!source-hub=http://script.hub/file/_start_/https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js/_end_/coolapk.sgmodule?n=%E2%9C%A8%E9%85%B7%E5%AE%89%E5%87%80%E5%8C%96%40ddgksf2013%2B%E5%87%80%E5%8C%96%E9%85%B7%E5%AE%89%E7%95%8C%E9%9D%A2%20%E5%8E%BB%E9%99%A4%E5%B9%BF%E5%91%8A&type=qx-rewrite&target=surge-module&del=true
-#!category=白糖自用
+#!name= 酷安净化@Ddgksf2013
+#!desc= 净化酷安界面，去除流动广告，评论区广告
+#!category= 白糖自用
+#!source= https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id1422581869
+#!date= 2025-09-13 18:00:00
+
+#!可搭配该模块使用，可自定义是否显示酷安首页流动横幅 https://raw.githubusercontent.com/baiitang/Sakura/main/Surge/Module/MyBlockAds.sgmodule
 
 [Map Local]
 # > 酷安_屏蔽热词@ddgksf2013
-^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch data-type=text data=" " status-code=200
 
 [Script]
 # > 酷安_开屏广告@ddgksf2013
@@ -23,6 +28,9 @@ coolapk = type=http-response, pattern=^https?:\/\/api.coolapk.com\/v6\/feed\/rep
 
 # > 酷安_商品推广@ddgksf2013
 coolapk = type=http-response, pattern=^https?:\/\/api.coolapk.com\/v6\/feed\/detail, script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, max-size=-1, timeout=60
+
+# > 酷安_酷品页推广@ddgksf2013
+coolapk = type=http-response, pattern=https://api.coolapk.com/v6/page/dataList\?.*title=%E9%85, script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
 hostname = %APPEND% api.coolapk.com
