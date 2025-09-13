@@ -1,32 +1,65 @@
-#!name=拼多多净化@怎么肥事
-#!desc=净化拼多多界面 去除广告
-#!source=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Pinduoduo.snippet
-#!source-hub=http://script.hub/file/_start_/https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Pinduoduo.snippet/_end_/Pinduoduo.sgmodule?type=qx-rewrite&target=surge-module&del=true
-#!category=白糖自用
-#!update=2024-08-10 09:33
+#!name= 拼多多净化@怎么肥事
+#!desc= 净化拼多多界面，去除横幅、推荐广告
+#!category= 白糖自用
+#!source= https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Pinduoduo.snippet
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id1422581869
+#!date= 2025-09-13 18:00:00
 
-#!需要搭配相关分流https://raw.githubusercontent.com/ZenmoFeiShi/rule/main/Pinduoduo.list
+#!需要搭配相关分流 https://raw.githubusercontent.com/ZenmoFeiShi/rule/main/Pinduoduo.list
+
+[Rule]
+DOMAIN,sdk.1rtb.net,REJECT
+DOMAIN,titan.pinduoduo.com,REJECT
+IP-CIDR,183.194.214.21/32,REJECT
+IP-CIDR,49.235.102.190/32,REJECT
+IP-CIDR,81.69.116.33/32,REJECT
+IP-CIDR,183.194.214.20/32,REJECT
+IP-CIDR,117.185.244.145/32,REJECT
+IP-CIDR,101.35.204.35/32,REJECT
+IP-CIDR,114.110.97.97/32,REJECT
+IP-CIDR,81.69.104.17/32,REJECT
+IP-CIDR,117.185.242.187/32,REJECT
+IP-CIDR,117.185.242.18/32,REJECT
+IP-CIDR,183.194.214.14/32,REJECT
+IP-CIDR,114.110.96.1/32,REJECT
+IP-CIDR,36.152.46.15/32,REJECT
+IP-CIDR,114.110.97.30/32,REJECT
+IP-CIDR,81.69.130.131/32,REJECT
+IP-CIDR,114.110.96.26/32,REJECT
+IP-CIDR,101.35.212.35/32,REJECT
 
 [Map Local]
-^https:\/\/api\.pinduoduo\.com\/search_hotquery data-type=text data="{}" status-code=200
+^https:\/\/api\.pinduoduo\.com\/api\/aristotle\/unrated_order_for_unreceived_tab data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-^https:\/\/api\.pinduoduo\.com\/api\/zaire_biz\/chat\/resource\/get_list_data data-type=text data="{}" status-code=200
+^https:\/\/api\.pinduoduo\.com\/api\/aristotle\/query_order_list_tabs_element data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-^https:\/\/api\.pinduoduo\.com\/api\/caterham\/v3\/query\/new_chat_group data-type=text data="{}" status-code=200
+^https:\/\/api\.pinduoduo\.com\/api\/aquarius\/hungary\/global\/homepage\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-^https:\/\/api\.pinduoduo\.com\/api\/alexa\/goods\/back_up data-type=text data="{}" status-code=200
+^https:\/\/api\.pinduoduo\.com\/api\/caterham\/v3\/query\/order_express_group data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-^https:\/\/api\.pinduoduo\.com\/api\/caterham\/v3\/query\/personal data-type=text data="{}" status-code=200
+^https:\/\/api\.pinduoduo\.com\/search_hotquery data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-^https:\/\/api\.pinduoduo\.com\/api\/brand-olay\/goods_detail\/bybt_guide data-type=text data="{}" status-code=200
+^https:\/\/api\.pinduoduo\.com\/api\/zaire_biz\/chat\/resource\/get_list_data data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-^https:\/\/api\.pinduoduo\.com\/api\/engels\/reviews\/require\/append data-type=text data="{}" status-code=200
+^https:\/\/api\.pinduoduo\.com\/api\/caterham\/v3\/query\/new_chat_group data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-^https:\/\/api\.pinduoduo\.com\/api\/caterham\/v3\/query\/my_order_group data-type=text data="{}" status-code=200
+^https:\/\/api\.pinduoduo\.com\/api\/alexa\/goods\/back_up data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-^https:\/\/api\.pinduoduo\.com\/api\/caterham\/v3\/query\/likes data-type=text data="{}" status-code=200
+^https:\/\/api\.pinduoduo\.com\/api\/caterham\/v3\/query\/personal data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/api\.pinduoduo\.com\/api\/brand-olay\/goods_detail\/bybt_guide data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/api\.pinduoduo\.com\/api\/engels\/reviews\/require\/append data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/api\.pinduoduo\.com\/api\/caterham\/v3\/query\/my_order_group data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/api\.pinduoduo\.com\/api\/caterham\/v3\/query\/likes data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 [Script]
+Pinduoduo = type=http-response, pattern=^https:\/\/api\.pinduoduo\.com\/search, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Pinduoduo.js, requires-body=true, max-size=-1, timeout=60
+
 Pinduoduo = type=http-response, pattern=^https:\/\/api\.pinduoduo\.com\/api\/philo\/personal\/hub, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Pinduoduo.js, requires-body=true, max-size=-1, timeout=60
 
 Pinduoduo = type=http-response, pattern=^https:\/\/api\.pinduoduo\.com\/api\/alexa\/homepage\/hub, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Pinduoduo.js, requires-body=true, max-size=-1, timeout=60
