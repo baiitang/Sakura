@@ -1,24 +1,31 @@
-#!name=Keep净化@怎么肥事
-#!desc=去除广告，净化相关页面
-#!source=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Keep.snippet
-#!source-hub=http://script.hub/file/_start_/https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Keep.snippet/_end_/Keep.sgmodule?n=%E2%9C%A8Keep%E5%87%80%E5%8C%96%40%E6%80%8E%E4%B9%88%E8%82%A5%E4%BA%8B%2B%E5%8E%BB%E9%99%A4%E5%B9%BF%E5%91%8A%EF%BC%8C%E5%87%80%E5%8C%96%E7%9B%B8%E5%85%B3%E9%A1%B5%E9%9D%A2&type=qx-rewrite&target=surge-module&del=true
-#!category=白糖自用
-#!update=2024-07-31 19.04
+#!name= Keep净化@怎么肥事
+#!desc= 去除广告，净化相关页面
+#!category= 白糖自用
+#!source= https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Keep.snippet
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id1422581869
+#!date= 2025-09-13 18:00:00
+
+[Rule]
+# Keep分流
+DOMAIN,hc-ssp.sm.cn,REJECT
+DOMAIN,httpdns.calorietech.com,REJECT
 
 [Map Local]
-^https:\/\/api\.gotokeep\.com\/messenger\/v\d\/conversations\/unread data-type=text data="{}" status-code=200
+^https:\/\/api\.gotokeep\.com\/messenger\/v\d\/conversations\/unread data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-^https:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v\d\/ad data-type=text data="{}" status-code=200
+^https:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v\d\/ad data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/ad\/preload data-type=text data="{}" status-code=200
+^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/ad\/preload data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-^https:\/\/api\.gotokeep\.com\/search\/v\d\/hotHashtag\/list data-type=text data="{}" status-code=200
+^https:\/\/api\.gotokeep\.com\/search\/v\d\/hotHashtag\/list data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-^https:\/\/api\.gotokeep\.com\/search\/v\d\/hotCourse\/list data-type=text data="{}" status-code=200
+^https:\/\/api\.gotokeep\.com\/search\/v\d\/hotCourse\/list data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-^https:\/\/api\.gotokeep\.com\/search\/v\d\/hotword\/list data-type=text data="{}" status-code=200
+^https:\/\/api\.gotokeep\.com\/search\/v\d\/hotword\/list data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-^https:\/\/api\.gotokeep\.com\/search\/v\d\/default\/keyword\/list data-type=text data="{}" status-code=200
+^https:\/\/api\.gotokeep\.com\/search\/v\d\/default\/keyword\/list data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 [Script]
 Keep = type=http-response, pattern=^https:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Keep.js, requires-body=true, max-size=-1, timeout=60
