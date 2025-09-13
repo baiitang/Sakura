@@ -1,10 +1,11 @@
-#!name=哔哩哔哩净化@整点薯条
-#!desc=BiliBili去广告，需要搭配boxjs使用
-#!category=白糖自用
-#!openUrl=http://boxjs.com/#/app/BiliBili.ADBlock
-#!source=https://github.com/BiliUniverse/ADBlock/releases/latest/download/BiliBili.ADBlock.sgmodule，https://github.com/BiliUniverse/Enhaned/releases/latest/download/BiliBili.Enhaned.sgmodule
-#!arguments=启用广告屏蔽:默认开启, 启用首页设置:默认开启, 动态最常访问:auto, 过滤置顶评论广告:1, 空降助手:bilibili.airborne, 启用屏蔽活动:默认开启, 启用画质解锁:默认开启, 启用皮肤切换:#默认关闭, 启用会员伪装:#默认关闭, B站每日任务签到:#默认关闭, B站Cookie(APP):#默认关闭, B站Cookie(网页):#默认关闭, 签到Cron设置:10 9 * *
-#!arguments-desc=动态最常访问: [true, false, auto]\n- true: 始终显示\n- false: 始终隐藏\n- auto 仅当列表中存在直播状态时显示\n\n过滤置顶评论广告: [1, 0]\n- 1: 开启\n- 0: 关闭\n\n空降助手(beta): 默认开启，配置为"#"时关闭\n\n活动是指右上角消息旁边的活动图标\n画质解锁仅限于粉色哔哩哔哩7.65.0以下版本\nB站每日签到任务默认关闭，请自行输入“任意文字”启用
+#!name= 哔哩哔哩净化@整点薯条
+#!desc= BiliBili去广告，付费皮肤，自动签到，需要搭配boxjs使用
+#!category= 白糖自用
+#!source= https://github.com/BiliUniverse/ADBlock/releases/latest/download/BiliBili.ADBlock.sgmodule，https://github.com/BiliUniverse/Enhaned/releases/latest/download/BiliBili.Enhaned.sgmodule
+#!arguments= 启用广告屏蔽:默认开启, 启用首页设置:默认开启, 动态最常访问:auto, 过滤置顶评论广告:1, 空降助手:bilibili.airborne, 启用屏蔽活动:默认开启, 启用画质解锁:默认开启, 启用皮肤切换:#默认关闭, 启用会员伪装:#默认关闭, B站每日任务签到:#默认关闭, B站Cookie(APP):#默认关闭, B站Cookie(网页):#默认关闭, 签到Cron设置:10 9 * *
+#!arguments-desc= 动态最常访问: [true, false, auto]\n- true: 始终显示\n- false: 始终隐藏\n- auto 仅当列表中存在直播状态时显示\n\n过滤置顶评论广告: [1, 0]\n- 1: 开启\n- 0: 关闭\n\n空降助手(beta): 默认开启，配置为"#"时关闭\n日志等级: [off, error, warn, info, debug]\n\n活动是指右上角消息旁边的活动图标\n画质解锁仅限于粉色哔哩哔哩7.65.0以下版本\nB站每日签到任务默认关闭，请自行输入“任意文字”启用
+#!openUrl= https://apps.apple.com/app/id736536022
+#!date= 2025-09-13 18:00:00
 
 #!需要搭配Boxjs使用
 #!🛡️ ADBlock 和 ⚙ Enhanced的Boxjs @整点薯条
@@ -22,7 +23,7 @@
 #!Bilibili增强
 #!https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/release/surge/module/bilibili.sgmodule
 #! 8.24  10.30  11.3
-#! 5.2
+#! 5.2  9.13
 
 [Rule]
 #!Bilibili增强
@@ -80,8 +81,8 @@ DOMAIN,app.biliapi.net,REJECT,pre-matching
 {{{启用首页设置}}} = type=http-response, pattern=^https:\/\/(grpc|app)\.bili(bili\.com|api\.net)\/bilibili\.main\.community\.reply\.v1\.Reply\/MainList, requires-body=1, binary-body-mode=1, engine=webview, script-path=https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.19/response.bundle.js
 
 #!Bilibili增强
-{{{空降助手}}} = type=http-request,pattern=^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.playerunite\.v1\.Player\/PlayViewUnite$,requires-body=1,binary-body-mode=1,max-size=-1,engine=webview,script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/dist/bilibili.airborne.js
-bilibili.protobuf = type=http-response,pattern=^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.(?:app\.(?:interface\.v1\.(?:Teenagers\/ModeStatus|Search\/DefaultWords)|show\.v1\.Popular\/Index|dynamic\.v2\.Dynamic\/DynAll|view(?:unite)?\.v1\.View\/(?:View|ViewProgress|TFInfo|RelatesFeed)|playurl\.v1\.PlayURL\/PlayView|playerunite\.v1\.Player\/PlayViewUnite)|polymer\.app\.search\.v1\.Search\/SearchAll|community\.service\.dm\.v1\.DM\/DmView|main\.community\.reply\.v1\.Reply\/MainList|pgc\.gateway\.player\.v2\.PlayURL\/PlayView)$,argument="{"showUpList":"{{{动态最常访问}}}","filterTopReplies":{{{过滤置顶评论广告}}}}",requires-body=1,binary-body-mode=1,max-size=-1,engine=webview,script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/dist/bilibili.protobuf.js
+{{{空降助手}}} = type=http-request,pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.community\.service\.dm\.v1\.DM\/DmSegMobile$,argument="{"logLevel":"{{{日志等级}}}"}",requires-body=1,binary-body-mode=1,max-size=-1,engine=webview,script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/dist/bilibili.protobuf.request.js
+bilibili.protobuf = type=http-response,pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.(app\.(show\.v1\.Popular\/Index|dynamic\.v2\.Dynamic\/DynAll|view(unite)?\.v1\.View\/(View|ViewProgress|RelatesFeed)|playurl\.v1\.PlayURL\/PlayView|playerunite\.v1\.Player\/PlayViewUnite)|polymer\.app\.search\.v1\.Search\/SearchAll|community\.service\.dm\.v1\.DM\/DmView|main\.community\.reply\.v1\.Reply\/MainList|pgc\.gateway\.player\.v2\.PlayURL\/PlayView)$,argument="{"showUpList":"auto","purifyTopReplies":1,"airborne":"bilibili.airborne","logLevel":"info"}",requires-body=1,binary-body-mode=1,max-size=-1,engine=webview,script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/dist/bilibili.protobuf.response.js
 
 #!自行启用
 #!屏蔽首页右上活动@ddgksf2013
