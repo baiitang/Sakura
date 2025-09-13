@@ -1,12 +1,11 @@
-#!name=VVebo@suiyuran
-#!desc=修复vvebo 失效的用户时间线和我的页面
-#!category=白糖自用
-#!source=https://kelee.one/Tool/Loon/Plugin/VVebo_repair.plugin
-#!author=suiyuran androidcn
-#!icon=https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/VVebo.png
-#!homepage=https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
-#!date=2024-01-19 22:25:07
-
+#!name= VVebo@iKeLee
+#!desc= 修复vvebo失效的用户时间线和我的页面，不能与微博去广告模块同时启用
+#!category= 白糖自用
+#!source= https://kelee.one/Tool/Loon/Lpx/VVebo_repair.lpx
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id670910957
+#!date= 2025-09-13 18:00:00
 
 [Script]
 修复时间线 = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/users\/show\?, script-path=https://kelee.one/Resource/JavaScript/VVebo/VVebo_repair.js
@@ -21,4 +20,3 @@
 
 [MITM]
 hostname = %APPEND% api.weibo.cn
-
