@@ -2,7 +2,9 @@
 #!desc=解锁会员 非一次性解锁
 #!category=白糖自用
 #!source=https://raw.githubusercontent.com/Yu9191/Rewrite/main/AGC.js
-#!openUrl = 
+#!arguments=
+#!arguments-desc=
+#!openUrl = https://apps.apple.com/app/id6670426427
 #!date= 2024-09-13 18:00:00
 
 #!来源于baby，请自用，不要借此脚本进行牟利
