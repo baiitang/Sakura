@@ -1,11 +1,11 @@
-#!name=爱阅书香跳广告@白糖
-#!desc=卡广告直接领奖励
+#!name=爱阅书香跳广告@Mattraks
+#!desc=卡广告直接领奖励，注意其他去广告模块/分流，避免无法获取广告
 #!category=白糖自用
 #!source=https://gist.githubusercontent.com/Mattraks/cf41ab5f29271cbfc13922075c54523e/raw/iFreeTime.plugin
-#!source-hub=http://script.hub/file/_start_/https://gist.githubusercontent.com/Mattraks/cf41ab5f29271cbfc13922075c54523e/raw/iFreeTime.plugin/_end_/iFreeTime.sgmodule?n=%E2%9C%A8%E7%88%B1%E9%98%85%E8%B7%B3%E5%B9%BF%E5%91%8A%40%E7%99%BD%E7%B3%96%2B%E5%8D%A1%E5%B9%BF%E5%91%8A%E7%9B%B4%E6%8E%A5%E9%A2%86%E5%A5%96%E5%8A%B1&type=loon-plugin&target=surge-module&del=true
-#!openUrl=https://t.me/aiyueshuxiangy
-#!homepage=https://t.me/aiyueshuxiangy
-#!date=2024-01-13 18:00:00
+#!arguments=
+#!arguments-desc=
+#!openUrl=https://apps.apple.com/app/id1137819437
+#!date=2024-09-13 18:00:00
 
 [General]
 skip-proxy = %APPEND% api-access.pangolin-sdk-toutiao.com
