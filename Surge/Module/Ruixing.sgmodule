@@ -1,7 +1,11 @@
-#!name=瑞幸咖啡去广告@Sliverkiss
-#!desc=瑞幸咖啡app去广告，可编辑参数自定义
-#!category=
-#!source=https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/瑞幸咖啡去广告.sgmodule
+#!name= 瑞幸咖啡去广告@Sliverkiss
+#!desc= 瑞幸咖啡app去广告，如需领优惠券请尝试取消该模块
+#!category= 白糖自用
+#!source= https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/瑞幸咖啡去广告.sgmodule
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id1422581869
+#!date= 2025-09-13 18:00:00
 
 [URL Rewrite]
 # 日历
@@ -9,22 +13,18 @@
 
 # 礼品卡
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/promotion\/giftCard\/topPage - reject
-
 # 幸运集杯横幅
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/base\/myLittleLuck - reject
-
 # 新人推荐
 ^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v2\/menu\/ordinaryUserLayeredArea - reject
-
 # 轮播图
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/common\/modules - reject
-
 # 首页商品列表
 ^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v2\/homepage\/homePageCoffeeList - reject
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/eorder\/product\/popAppTagProductList - reject
-
 # 开屏广告
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/app\/adposNew - reject
+
 # ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/home\/ordertips - reject
 
 [MITM]
