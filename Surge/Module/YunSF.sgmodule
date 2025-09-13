@@ -1,22 +1,27 @@
-#!name=云闪付净化@RuCu6
-#!desc=去除广告，净化相关页面，注:需解除软件MITM限制
-#!category=白糖自用
-#!descs=适合解除SSL证书锁定的app。不会注入不建议启用此重写。第三方库仓库: https://github.com/NyaMisty/ssl-kill-switch3
-#!author=https://t.me/Aa28413761/1227
-#!update=2023-12-07 17:55
-##!source=https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/breakssl.snippet
+#!name= 云闪付净化@Walalala
+#!desc= 去除广告，净化相关页面，仅支持云闪付10.1.2版，注:需解除软件MITM限制
+#!category= 白糖自用
+#!source= https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/breakssl.snippet
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id600273928
+#!date= 2025-09-13 18:00:00
+
+#!适合解除SSL证书锁定的app。不会注入不建议启用此重写。第三方库仓库: https://github.com/NyaMisty/ssl-kill-switch3
+#!注入方法 https://t.me/Aa28413761/1227
+#!云闪付9.3.9砸壳 https://t.me/Aa28413761/1223
+
+注：仅学习交流，请下载后24小时内删除
 
 [Rule]
-# 开屏广告
-DOMAIN,ads.95516.com,REJECT
-DOMAIN,switch.cup.com.cn,REJECT
-DOMAIN,tysdk.95516.com,REJECT
+DOMAIN,ads.95516.com,REJECT,extended-matching,pre-matching
+DOMAIN,switch.cup.com.cn,REJECT,extended-matching,pre-matching
+DOMAIN,tysdk.95516.com,REJECT,extended-matching,pre-matching
 
 [URL Rewrite]
 ^https:\/\/wallet\.95516\.com(:10533)?\/s\/wl\/icon\/large\/1 - reject
 
 [Script]
-# 云闪付
 移除云闪付推广 = type=http-response, pattern=^https:\/\/base\.95516\.com\/app\/inApp\/sys\/appShowGroup\/, script-path=https://kelee.one/Resource/Script/UnionPay/UnionPay_remove_ads_with_ssl_unpinning.js, requires-body=true
 
 移除云闪付推广 = type=http-response, pattern=^https:\/\/account\.95516\.com\/fortune\/inApp\/common\/, script-path=https://kelee.one/Resource/Script/UnionPay/UnionPay_remove_ads_with_ssl_unpinning.js, requires-body=true
