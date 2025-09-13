@@ -11,7 +11,7 @@
 #!注入方法 https://t.me/Aa28413761/1227
 #!云闪付9.3.9砸壳 https://t.me/Aa28413761/1223
 
-注：仅学习交流，请下载后24小时内删除
+#!注：仅学习交流，请下载后24小时内删除
 
 [Rule]
 DOMAIN,ads.95516.com,REJECT,extended-matching,pre-matching
