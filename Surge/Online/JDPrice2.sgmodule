@@ -1,6 +1,12 @@
-#!name=京东比价@小白脸
-#!desc=卡片版：拥有更直观的UI风格，支持“明亮”与“暗黑”卡片模式展现。
-#!category=白糖自用
+#!name= 京东比价@小白脸
+#!desc= 卡片版：拥有更直观的UI风格，支持“明亮”与“暗黑”卡片模式展现。
+#!category= 白糖自用
+#!source= https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id414245413
+#!date= 2025-09-13 18:00:00
+
 #!已知问题：卡片“明亮”与“暗黑”模式只能根据系统时间切换，无法根据自定义或主题模式切换（即：早 7 点、晚 7 点自动切换） 
 
 [Script]
