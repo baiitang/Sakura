@@ -1,9 +1,11 @@
-#!name=电信余量(v4)
-#!desc=定时查询 与 Panel 面板
-#!category=面板模块
-#!source=https://github.com/ChinaTelecomOperators/ChinaTelecom
-#!arguments=CRON_EXP:#*/5 * * * *
-#!arguments-desc=CRON_EXP自定义触发时间
+#!name= 电信余量(v4)
+#!desc= 定时查询 与 Panel 面板
+#!category= 面板模块
+#!source= https://github.com/ChinaTelecomOperators/ChinaTelecom
+#!arguments= CRON_EXP:#*/5 * * * 
+#!arguments-desc= CRON_EXP自定义触发时间
+#!openUrl= 
+#!date= 2025-09-13 18:00:00
 
 [Script]
 电信余量 = type=cron,cronexp="{{{CRON_EXP}}}",wake-system=1,script-path=https://github.com/ChinaTelecomOperators/ChinaTelecom/releases/download/Prerelease-Alpha/Tele_Cellular_Auto.js,script-update-interval=0
