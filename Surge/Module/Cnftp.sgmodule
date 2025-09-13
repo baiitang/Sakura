@@ -1,10 +1,13 @@
-#!name=Cnftp爱优腾芒[卸载重装]@walalala
-#!desc=去除爱奇艺 优酷 腾讯 芒果的广告，精简应用
-#!category=白糖自用
-#!source=https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/cnftp.snippet
-#!source-hub=http://script.hub/file/_start_/https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/cnftp.snippet/_end_/cnftp.sgmodule?n=%E2%9C%A8Cnftp%E7%88%B1%E4%BC%98%E8%85%BE%E8%8A%92%5B%E5%8D%B8%E8%BD%BD%E9%87%8D%E8%A3%85%5D%40walalala%2B%E5%8E%BB%E9%99%A4%E7%88%B1%E5%A5%87%E8%89%BA%20%E4%BC%98%E9%85%B7%20%E8%85%BE%E8%AE%AF%20%E8%8A%92%E6%9E%9C%E7%9A%84%E5%B9%BF%E5%91%8A%EF%BC%8C%E7%B2%BE%E7%AE%80%E5%BA%94%E7%94%A8&type=qx-rewrite&target=surge-module&del=true
-#!author=RuCu6
-#!update=2023-12-09 13:30
+#!name= Cnftp爱优腾芒@Walalala
+#!desc= 去除爱奇艺 优酷 腾讯 芒果的广告，精简应用，使用前需要卸载重装
+#!category= 白糖自用
+#!source= https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/cnftp.snippet
+#!arguments=
+#!arguments-desc=
+#!openUrl= 
+#!date= 2023-12-09 13:30:00
+
+#!搭配分流使用味更佳 https://raw.githubusercontent.com/baiitang/Sakura/main/Surge/Rules/MyBlockAds.list
 
 [URL Rewrite]
 # 无用请求
