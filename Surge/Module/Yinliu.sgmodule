@@ -1,9 +1,11 @@
-#!name=音流@osinx
-#!desc=永久解锁VIP，支付宝订单号任意输入恢复购买
-#!category=白糖自用
-#!author=osinx
-#!icon=https://raw.githubusercontent.com/osinx/Script/main/icon/streamMusic.png
-#!homepage=https://github.com/osinx/Script
+#!name= 音流@Osinx
+#!desc= 永久解锁VIP，支付宝订单号任意输入恢复购买
+#!category= 白糖自用
+#!source= https://raw.githubusercontent.com/osinx/Script/main/vip/streamMusic.conf
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id6449966496
+#!date= 2025-09-13 18:00:00
 
 #！正确的恢复内购
 #！购买会员-通过支付宝订单号恢复购买-任意输入确认即可
