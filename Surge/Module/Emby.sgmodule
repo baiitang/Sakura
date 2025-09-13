@@ -1,6 +1,11 @@
-#!name=Emby内购解锁
-#!desc=解锁 Emby Premium权益，非一次性解锁。
-#!category=白糖自用
+#!name= Emby内购解锁@Walalala
+#!desc= 解锁EmbyPremium权益，非一次性解锁
+#!category= 白糖自用
+#!source= 
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id1422581869
+#!date= 2025-09-13 18:00:00
 
 [Script]
 # 播放解锁
