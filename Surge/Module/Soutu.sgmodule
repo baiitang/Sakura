@@ -1,6 +1,11 @@
-#!name=搜图神器@chxm1023
-#!desc=解锁SVIP 会员功能
-#!category=白糖自用
+#!name= 搜图神器@Chxm1023
+#!desc= 解锁SVIP会员功能，需要登录账号，非一次性激活
+#!category= 白糖自用
+#!source= https://raw.githubusercontent.com/chxm1023/Rewrite/main/soutu.js
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id1576499990
+#!date= 2025-09-13 18:00:00
 
 [Script]
 搜图神器 = type=http-response,pattern=^https?:\/\/.*\.soutushenqi\.com\/(api\/.+\/account\/(token|info)|cykj_community|v\d\/home\/dialog),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/soutu.js
