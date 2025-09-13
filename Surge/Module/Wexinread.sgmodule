@@ -1,8 +1,11 @@
-#!name=微信读书@Sliverkiss
-#!desc=点击订阅人数, 解锁下架书籍
-#!category=白糖自用
-#!source=https://gist.githubusercontent.com/Sliverkiss/027bdc166e2e96d66c9f1a48e30db25a/raw/wxread.js
-#!微信读书app 点击订阅人数, 解锁下架书籍
+#!name= 微信读书@Sliverkiss
+#!desc= 点击订阅人数, 解锁下架书籍
+#!category= 白糖自用
+#!source= https://gist.githubusercontent.com/Sliverkiss/027bdc166e2e96d66c9f1a48e30db25a/raw/wxread.js
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id952059546
+#!date= 2025-09-13 18:00:00
 
 [Script]
 微信读书获取书籍 = type=http-request, pattern=^https:\/\/i\.weread\.qq\.com\/subscription\/users\?bookId=.+, script-path=https://gist.githubusercontent.com/Sliverkiss/027bdc166e2e96d66c9f1a48e30db25a/raw/wxread.js, requires-body=true, timeout=60
