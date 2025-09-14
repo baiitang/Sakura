@@ -1,4 +1,4 @@
-#!name= TestFlight自动加入
+#!name= TestFlight自动加入@Alex0510
 #!desc= TF测试未满员时，可自动获取测试资格，打开测试链接自动跳转到TF即可
 #!category= 远程模块
 #!source= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Module/TestFlight.sgmodule
