@@ -1,9 +1,11 @@
-#!name=TestFlight内测切换
-#!desc=点击左上角头像，快速切换TestFlight账号管理会话，下滑刷新
-#!category=远程模块
-#!author=VirgilClyne
-#!arguments=APPIDS:iRingo.TestFlight,ENGINE:auto
-#!arguments-desc=[参数设置]\nAPPIDS: 指定需要切换的应用ID,多个应用ID用英文逗号分隔,默认变量"iRingo.TestFlight"会话切换;\nENGINE: 脚本执行引擎,默认为"auto"自动选择,可选择"auto,jsc,或webview";\n[使用说明]\niOS端点击TestFlight App右上角"图标"触发会话切换,tvOS端点击TestFlight App上右方"设置"触发会话切换;
+#!name= TestFlight内测切换@整点薯条
+#!desc= 点击左上角头像，快速切换TestFlight账号管理会话，下滑刷新
+#!category= 远程模块
+#!source= 
+#!arguments= APPIDS:iRingo.TestFlight,ENGINE:auto
+#!arguments-desc= [参数设置]\nAPPIDS: 指定需要切换的应用ID,多个应用ID用英文逗号分隔,默认变量"iRingo.TestFlight"会话切换;\nENGINE: 脚本执行引擎,默认为"auto"自动选择,可选择"auto,jsc,或webview";\n[使用说明]\niOS端点击TestFlight App右上角"图标"触发会话切换,tvOS端点击TestFlight App上右方"设置"触发会话切换
+#!openUrl= https://apps.apple.com/app/
+#!date= 2025-09-13 18:00:00
 
 [General]
 skip-proxy = %APPEND% iosapps.itunes.apple.com
