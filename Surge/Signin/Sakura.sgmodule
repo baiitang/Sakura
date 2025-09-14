@@ -1,8 +1,11 @@
-#!name=获取Cookie合集
-#!desc=白糖自用获取Cookie信息\n阿里云盘 雨晨 米其林 蜜雪 霸王茶姬 B站 烟花 酷狗
-#!category=签到模块
-#!author=Baitang
-#!update=2024-08-21 16:25
+#!name= 获取Cookie合集@Baiitang
+#!desc= 自用获取Cookie信息合集\n阿里云盘 雨晨 米其林 蜜雪 霸王茶姬 B站 烟花 酷狗
+#!category= 签到模块
+#!source= 
+#!arguments=
+#!arguments-desc=
+#!openUrl= 
+#!date= 2024-08-21 16:25:00
 
 #!arguments=白糖阿里云盘:#,樱花阿里云盘:#
 #!arguments-desc=白糖阿里云盘@Lowking        樱花阿里云盘@Sliverkiss
