@@ -1,8 +1,11 @@
-#!name=米其林轮胎签到@Sliverkiss
-#!desc=米其林轮胎小程序Cookie获取并签到
-#!category=签到模块
-#!arguments=米其林俱乐部签到:默认启用,签到Cookie获取:默认启用,签到Cron设置:0 15 9 * * 1,MITM:hostname
-#!arguments-desc=Cookie和MITM默认启用，输入#即可关闭\n成功获取Cookie后，请关闭获取Cookie脚本，防止产生不必要的mitm
+#!name= 米其林轮胎签到@Sliverkiss
+#!desc= 米其林轮胎小程序Cookie获取并签到
+#!category= 签到模块
+#!source= https://gist.githubusercontent.com/Sliverkiss/7773f83eb14a98c8e24a41f883fca591/raw/michelinV2.js
+#!arguments= 米其林俱乐部签到:默认启用,签到Cookie获取:默认启用,签到Cron设置:0 15 9 * * 1,MITM:hostname
+#!arguments-desc= Cookie和MITM默认启用，输入#即可关闭\n成功获取Cookie后，请关闭获取Cookie脚本，防止产生不必要的mitm
+#!openUrl= 
+#!date= 2025-09-13 18:00:00
 
 #!注意事项
 #!微信小程序 米其林会员俱乐部 v2.0.1 每月能跑积分1500+ 积分兑换实物
