@@ -1,9 +1,11 @@
-#!name=面板-机场信息
-#!desc=流量信息/智能提醒/到期日期
-#!system=ios
-#!category=面板模块
-#!arguments=机场名称1:#, 订阅链接1:#Encode后的订阅链接, 重置日期1:不需要设置, 图标样式1:#tornado, 图标颜色1:#DF4688,机场名称2:#, 订阅链接2:#Encode后的订阅链接, 重置日期2:不需要设置, 图标样式2:#waveform, 图标颜色2:#EF6D20
-#!arguments-desc=可自定义参数：机场名称 图标样式 图标颜色                              订阅链接转换：https://www.urlencoder.org/zh 
+#!name= 面板-机场信息@Cc6
+#!desc= 显示流量信息/智能提醒/到期日期
+#!category= 面板模块
+#!source= https://github.com/cc63/Surge/tree/main/Module/Panel/Sub-info
+#!arguments= 机场名称1:#, 订阅链接1:#Encode后的订阅链接, 重置日期1:不需要设置, 图标样式1:#tornado, 图标颜色1:#DF4688,机场名称2:#, 订阅链接2:#Encode后的订阅链接, 重置日期2:不需要设置, 图标样式2:#waveform, 图标颜色2:#EF6D20
+#!arguments-desc= 可自定义参数：机场名称 图标样式 图标颜色\n订阅链接转换：https://www.urlencoder.org/zh
+#!openUrl= 
+#!date= 2025-09-13 18:00:00
 
 [Panel]
 #手动输入面板
