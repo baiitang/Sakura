@@ -1,8 +1,11 @@
-#!name=阿里云盘签到@lowking
-#!desc=阿里云盘Cookie获取并签到
-#!category=签到模块
-#!arguments=阿里云盘签到:默认启用,签到Cookie获取:默认启用,签到Cron设置:5 0 * * *,MITM:hostname
-#!arguments-desc=Cookie和MITM默认启用，输入#即可关闭\n成功获取Cookie后，请关闭获取Cookie脚本，防止产生不必要的mitm
+#!name= 阿里云盘签到@Lowking
+#!desc= 阿里云盘Cookie获取并签到
+#!category= 签到模块
+#!source= https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
+#!arguments= 阿里云盘签到:默认启用,签到Cookie获取:默认启用,签到Cron设置:5 0 * * *,MITM:hostname
+#!arguments-desc= Cookie和MITM默认启用，输入#即可关闭\n成功获取Cookie后，请关闭获取Cookie脚本，防止产生不必要的mitm
+#!openUrl= https://apps.apple.com/app/id1494661473
+#!date= 2025-09-13 18:00:00
 
 #!注意事项
 #!登录阿里云盘，退出后台重新打开，提示获取cookie成功则可以使用该脚本
