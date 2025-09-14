@@ -1,7 +1,13 @@
-#!name=网上国网
-#!desc=展示使用电量、费用，需要搭配Scriptable
-#!source=https://raw.githubusercontent.com/dompling/Script/master/wsgw/index.js
-#!category=面板模块
+!name= 网上国网@Dompling
+#!desc= 展示使用电量、费用，需要搭配Scriptable
+#!category= 面板模块
+#!source= https://raw.githubusercontent.com/dompling/Script/master/wsgw/index.js
+#!arguments=
+#!arguments-desc=
+#!openUrl= 
+#!date= 2025-09-13 18:00:00
+
+#!BoxJs订阅地址:https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/boxjs.json
 
 [Script]
 接口重写 = type=http-request, pattern=^https?:\/\/api\.wsgw-rewrite\.com\/electricity\/bill\/all, script-path=https://raw.githubusercontent.com/dompling/Script/master/wsgw/index.js, requires-body=true, max-size=-1, timeout=60
