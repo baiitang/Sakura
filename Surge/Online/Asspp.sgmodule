@@ -1,0 +1,16 @@
+#!name= ASSPP增强脚本@Eric
+#!desc= 增加端口同时查询版本号id
+#!category= 白糖自用
+#!source= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Module/asspp.sgmodule
+#!arguments= 
+#!arguments-desc= 
+#!openUrl= 
+#!date= 2025-09-13 18:00:00
+
+#!AssppPro下载：https://t.me/PiBtPi/237
+
+[MITM]
+hostname =  %APPEND% api.timbrd.com
+
+[Script]
+ASSPP = type=http-response,pattern=https://api.timbrd.com/apple/app-version/index.php,requires-body=1,max-size=0,binary-body-mode=0,script-path=https://gist.githubusercontent.com/Alex0510/33b4fbf293d169a3f8516f514b0d8a48/raw/asspp.js
