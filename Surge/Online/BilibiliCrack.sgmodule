@@ -1,22 +1,26 @@
-#!name=哔哩哔哩共享
-#!desc=哔哩哔哩会员共享@Sliverkiss
-#!category=远程模块
-#!source=https://gist.githubusercontent.com/Sliverkiss/479ecf770801bb8d3efa514c56a699e7/raw/bilibiliCrack.js
+#!name= 哔哩哔哩共享@Sliverkiss
+#!desc= 哔哩哔哩会员共享，需要会员数据，提供数据的会员账号在设备上不能退出登录
+#!category= 远程模块
+#!source= https://gist.githubusercontent.com/Sliverkiss/479ecf770801bb8d3efa514c56a699e7/raw/bilibiliCrack.js
+#!arguments=
+#!arguments-desc=
+#!openUrl= 
+#!date= 2025-09-13 18:00:00
 
-# 使用教程：
-# 1.首次使用脚本，需要订阅boxjs，并在boxjs打开获取ck开关
-# 2.打开b站大会员账号，选择一部大会员番剧观看，重写将会自动获取会员数据并弹出相关通知
-# 3.获取ck成功后，在boxjs订阅中手动将获取ck开关关闭，避免产生不必要的麻烦
+#!使用教程：
+#!1.首次使用脚本，需要订阅boxjs，并在boxjs打开获取ck开关
+#!2.打开b站大会员账号，选择一部大会员番剧观看，重写将会自动获取会员数据并弹出相关通知
+#!3.获取ck成功后，在boxjs订阅中手动将获取ck开关关闭，避免产生不必要的麻烦
 
-# 关于大会员如何分享给好友：
-# 1.大会员将脚本拉取到本地，并按照使用教程获取会员数据
-# 2.打开boxjs订阅，复制相关会员数据
-# 3.将相关会员数据填写到被共享用户的boxjs订阅，点击保存
-# 4.被共享用户将脚本添加到重写，即可享受大会员服务
+#!关于大会员如何分享给好友：
+#!1.大会员将脚本拉取到本地，并按照使用教程获取会员数据
+#!2.打开boxjs订阅，复制相关会员数据
+#!3.将相关会员数据填写到被共享用户的boxjs订阅，点击保存
+#!4.被共享用户将脚本添加到重写，即可享受大会员服务
 
-# ps：获取ck默认关闭，可根据需求在boxjs订阅中手动打开
+#!ps：获取ck默认关闭，可根据需求在boxjs订阅中手动打开
 
-# boxjs订阅地址：https://gist.githubusercontent.com/Sliverkiss/479ecf770801bb8d3efa514c56a699e7/raw/boxjs.json
+#!boxjs订阅地址：https://gist.githubusercontent.com/Sliverkiss/479ecf770801bb8d3efa514c56a699e7/raw/boxjs.json
 
 
 [Script]
