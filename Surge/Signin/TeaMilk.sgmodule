@@ -1,8 +1,11 @@
-#!name=奶茶多合一签到@Sliverkiss
-#!desc=霸王茶姬、沪上阿姨、益禾堂等小程序Cookie获取并签到
-#!category=签到模块
-#!arguments=奶茶多合一签到:默认启用,签到Cookie获取:默认启用,签到Cron设置:25 8 * * *,MITM:hostname
-#!arguments-desc=Cookie和MITM默认启用，输入#即可关闭\n成功获取Cookie后，请关闭获取Cookie脚本，防止产生不必要的mitm
+#!name= 奶茶多合一签到@Sliverkiss
+#!desc= 霸王茶姬、沪上阿姨、益禾堂等小程序Cookie获取并签到
+#!category= 签到模块
+#!source= https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js
+#!arguments= 奶茶多合一签到:默认启用,签到Cookie获取:默认启用,签到Cron设置:25 8 * * *,MITM:hostname
+#!arguments-desc= Cookie和MITM默认启用，输入#即可关闭\n成功获取Cookie后，请关闭获取Cookie脚本，防止产生不必要的mitm
+#!openUrl= 
+#!date= 2025-09-13 18:00:00
 
 #!签到脚本使用教程
 #!单账号&多账号：
@@ -12,7 +15,6 @@
 
 #!自动清除无效任务默认关闭，可在boxjs打开
 #!适用于所有企迈小程序，具体名单可查阅https://www.qmai.cn/Case.Html
-
 
 
 [Script]
