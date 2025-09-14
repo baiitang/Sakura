@@ -1,23 +1,22 @@
-#!name=网络测速
-#!desc=花里胡哨才是生产力 测试网络下载速度、延迟并根据速度和延迟
-#!category=面板模块
-#!arguments=面板样式1:不花里胡哨版,面板名称1:网络速率,流量消耗1:3,面板样式2:#花里胡哨版,面板名称2:网络速率,流量消耗2:3
-#!arguments-desc=可自定义修改面板名称\n启用对应的面板样式请输入“启用”\n要关闭面板请在面板样式仅输入#，或者在启用前加#\n流量消耗默认为3MB，最大可修改为4MB
-#!auther=@xream @wuhu_zzz @keywos @整点猫咪 技术指导：整点薯条
-#!source=https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/modules/Panel/Net_Speed/Net_Speed.sgmodule
+#!name= 网络测速@整点薯条
+#!desc= 花里胡哨才是生产力 测试网络下载速度、延迟并根据速度和延迟
+#!category= 面板模块
+#!source= https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/modules/Panel/Net_Speed/Net_Speed.sgmodule
+#!arguments= 面板样式1:不花里胡哨版,面板名称1:网络速率,流量消耗1:3,面板样式2:#花里胡哨版,面板名称2:网络速率,流量消耗2:3
+#!arguments-desc= 可自定义修改面板名称\n启用对应的面板样式请输入“启用”\n要关闭面板请在面板样式仅输入#，或者在启用前加#\n流量消耗默认为3MB，最大可修改为4MB
+#!openUrl= 
+#!date= 2025-09-13 18:00:00
 
-##各种花里胡哨参数，通过argument传入，用=连接key及相应value，用&链接各种key，可以任意选择想填入的参数
-##title：标题
-##mb:流量 默认3MB，最大可发送4MB，参数&mb=4
-##iconfast、iconmid、iconslow 分别对应测速快中慢时的图标（乌龟、兔子还是闪电）
-##colorlow、colormid、colorhigh 分别对应延迟低中高时的图标颜色
-##配置实例：title=花里胡哨才是生产力&iconfast=bird&iconmid=hare&iconslow=tortoise&colorlow=#06D6A0&colormid=#FFD166&colorhigh=#EF476F
+#!各种花里胡哨参数，通过argument传入，用=连接key及相应value，用&链接各种key，可以任意选择想填入的参数
+#!title：标题
+#!mb:流量 默认3MB，最大可发送4MB，参数&mb=4
+#!iconfast、iconmid、iconslow 分别对应测速快中慢时的图标（乌龟、兔子还是闪电）
+#!colorlow、colormid、colorhigh 分别对应延迟低中高时的图标颜色
+#!配置实例：title=花里胡哨才是生产力&iconfast=bird&iconmid=hare&iconslow=tortoise&colorlow=#06D6A0&colormid=#FFD166&colorhigh=#EF476F
 
-##⚠️不想变化多端？？
-##可直接使用最基本的panel参数，title、icon、icon-color
-##配置实例：title=不想花里胡哨了&icon=hare&icon-color=#CDCDCD
-
-
+#!⚠️不想变化多端？？
+#!可直接使用最基本的panel参数，title、icon、icon-color
+#!配置实例：title=不想花里胡哨了&icon=hare&icon-color=#CDCDCD
 
 
 [Panel]
@@ -29,4 +28,4 @@
 [Script]
 {{{面板样式1}}} = type=generic,script-path=https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/modules/Panel/Net_Speed/Net_Speed.js,argument=title={{{面板名称1}}}&icon=hare&icon-color=#CDCDCD&mb={{{流量消耗1}}}
 
-{{{面板样式1}}} = type=generic,script-path=https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/modules/Panel/Net_Speed/Net_Speed.js,argument=title={{{面板名称2}}}&iconfast=bolt&iconmid=hare&iconslow=tortoise&colorlow=#06D6A0&colormid=#FFD166&colorhigh=#EF476F&mb={{{流量消耗1}}}
+{{{面板样式2}}} = type=generic,script-path=https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/modules/Panel/Net_Speed/Net_Speed.js,argument=title={{{面板名称2}}}&iconfast=bolt&iconmid=hare&iconslow=tortoise&colorlow=#06D6A0&colormid=#FFD166&colorhigh=#EF476F&mb={{{流量消耗2}}}
