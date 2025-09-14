@@ -1,9 +1,11 @@
-#!name=BiliBili每日等级任务@MartinsKing
-#!desc=定时任务及Cookie获取,请搭配Boxjs使用
-#!author= MartinsKing（@ClydeTime）
-#!category=签到模块
-#!arguments=B站每日任务签到:默认启用,B站Cookie(APP):默认启用,B站Cookie(网页):默认启用,签到Cron设置:10 9 * * *,MITM:hostname
-#!arguments-desc=Cookie和MITM默认启用，输入#即可关闭\n成功获取Cookie后，请关闭获取Cookie脚本，防止产生不必要的mitm
+#!name= BiliBili每日等级任务@MartinsKing
+#!desc= 定时任务及Cookie获取,请搭配Boxjs使用
+#!category= 签到模块
+#!source= https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js
+#!arguments= B站每日任务签到:默认启用,B站Cookie(APP):默认启用,B站Cookie(网页):默认启用,签到Cron设置:10 9 * * *,MITM:hostname
+#!arguments-desc= Cookie和MITM默认启用，输入#即可关闭\n成功获取Cookie后，请关闭获取Cookie脚本，防止产生不必要的mitm
+#!openUrl= https://apps.apple.com/app/id736536022
+#!date= 2025-09-13 18:00:00
 
 #!现将获取cookie与定时任务合并为一个模块
 #!保持开启,如检测到cookie变更会自动更新,解决cookie经常过期的问题(cookie仍有效不提醒更新)
