@@ -1,6 +1,11 @@
-#!name=预览qx一键导入资源
-#!desc=将qx的一键导入链接复制到Safari打开可以预览
-#!category=订阅管理
+#!name= 预览qx一键导入资源@张佩服
+#!desc= 将qx的一键导入链接复制到Safari打开可以预览
+#!category= 订阅管理
+#!source= https://github.com/chengkongyiban/shadowrocket/raw/main/scripts/qx-resource-preview.js
+#!arguments=
+#!arguments-desc=
+#!openUrl=
+#!date= 2025-09-13 18:00:00
 
 [Script]
 
