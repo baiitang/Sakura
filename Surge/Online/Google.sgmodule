@@ -1,10 +1,15 @@
-#!name= Google搜索重定向
+#!name= Google搜索重定向@Ddgksf2013
 #!desc= 将Google搜索重定向至.com域名
-#!category=远程模块
+#!category= 远程模块
+#!source= https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Html/General.conf
+#!arguments=
+#!arguments-desc=
+#!openUrl= 
+#!date= 2025-09-13 18:00:00
 
-[URL Rewrite]
-^https?://(www.)?g.cn https://www.google.com 302
-^https?://(www.)?google.cn https://www.google.com 302
+[Rewrite]
+# Redirect Google Search Service
+^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
 
 [MITM]
-hostname = %APPEND% www.google.cn, www.g.cn
+hostname = www.google.cn
