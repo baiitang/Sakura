@@ -4,7 +4,7 @@
 #!source= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Module/kugou.sgmodule
 #!arguments= 酷狗领取VIP:默认启用,签到cron设置:10 0 * * *,酷狗Cookie数据获取:默认启用
 #!arguments-desc= 领取VIP和Cookie数据获取默认启用，输入#即可关闭
-#!openUrl= https://apps.apple.com/app/
+#!openUrl= https://apps.apple.com/app/id1480205582
 #!date= 2025-09-13 18:00:00
 
 #!第一次使用打开酷狗概念版天天签到领VIP页面获取参数，提示获取成功即可
