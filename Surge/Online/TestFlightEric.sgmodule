@@ -1,10 +1,11 @@
-#!name=TestFlight自动加入
-#!desc=TF测试未满员时，可自动获取测试资格，打开测试链接自动跳转到TF即可
-#!category=远程模块
-#!arguments=TestFlight_auto:默认开启,TestFlight_cron:默认开启,CRONEXP:*/10 * * * *,MITM:hostname
-#!arguments-desc=TestFlight_auto TF链接参数获取\nTestFlight_cron TF自动加入脚本\nCRONEXP TF自动加入时间\n可搭配boxjs使用，boxjs链接请看注释,相关脚本可加“#”关闭
-
-#!source=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Module/TestFlight.sgmodule
+#!name= TestFlight自动加入
+#!desc= TF测试未满员时，可自动获取测试资格，打开测试链接自动跳转到TF即可
+#!category= 远程模块
+#!source= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Module/TestFlight.sgmodule
+#!arguments= TestFlight_auto:默认开启,TestFlight_cron:默认开启,CRONEXP:*/10 * * * *,MITM:hostname
+#!arguments-desc= TestFlight_auto TF链接参数获取\nTestFlight_cron TF自动加入脚本\nCRONEXP TF自动加入时间\n可搭配boxjs使用，boxjs链接请看注释,相关脚本可加“#”关闭
+#!openUrl= https://apps.apple.com/app/id899247664
+#!date= 2025-09-13 18:00:00
 
 #说明：定时任务需搭配boxjs使用,添加boxjs脚本：https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/testflight.json
 #说明：使用定时任务时需随便找一个TestFlight测试链接获取参数如https://testflight.apple.com/join/5lj0A6y6，在boxjs里面输入测试链接后面的代码5lj0A6y6，支持多个代码写法具体查看boxjs参数说明，输入代码后保存即可无需运行;
