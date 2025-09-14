@@ -2,13 +2,11 @@
 #!desc= 自用获取Cookie信息合集\n阿里云盘 雨晨 米其林 蜜雪 霸王茶姬 B站 烟花 酷狗
 #!category= 签到模块
 #!source= 
-#!arguments=
-#!arguments-desc=
+#!arguments= 白糖阿里云盘:#,樱花阿里云盘:#
+#!arguments-desc= 白糖阿里云盘@Lowking        樱花阿里云盘@Sliverkiss
 #!openUrl= 
 #!date= 2024-08-21 16:25:00
 
-#!arguments=白糖阿里云盘:#,樱花阿里云盘:#
-#!arguments-desc=白糖阿里云盘@Lowking        樱花阿里云盘@Sliverkiss
 
 #按下面配置完之后，打开相应的APP或小程序、网址获取token（如获取不到，等一段时间再打开），下面配置只验证过surge的，其他的自行测试
 #⚠️只测试过surge没有其他app自行测试
