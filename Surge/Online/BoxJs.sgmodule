@@ -1,6 +1,6 @@
 #!name= BoxJs
 #!desc= http://boxjs.com
-#!category= 订阅模块
+#!category= 订阅管理
 #!source= https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.surge.sgmodule
 #!arguments= 
 #!arguments-desc= 
