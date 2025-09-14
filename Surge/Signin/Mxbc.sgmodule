@@ -1,8 +1,11 @@
-#!name=蜜雪冰城签到@Sliverkiss
-#!desc=蜜雪冰城小程序Cookie获取并签到
-#!category=签到模块
-#!arguments=蜜雪冰城签到:默认启用,签到Cookie获取:默认启用,签到Cron设置:22 8 * * *,MITM:hostname
-#!arguments-desc=Cookie和MITM默认启用，输入#即可关闭\n成功获取Cookie后，请关闭获取Cookie脚本，防止产生不必要的mitm
+#!name= 蜜雪冰城签到@Sliverkiss
+#!desc= 蜜雪冰城小程序Cookie获取并签到
+#!category= 签到模块
+#!source= https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js
+#!arguments= 蜜雪冰城签到:默认启用,签到Cookie获取:默认启用,签到Cron设置:22 8 * * *,MITM:hostname
+#!arguments-desc= Cookie和MITM默认启用，输入#即可关闭\n成功获取Cookie后，请关闭获取Cookie脚本，防止产生不必要的mitm
+#!openUrl= 
+#!date= 2025-09-13 18:00:00
 
 #!签到脚本使用教程
 #!单账号&多账号：
