@@ -1,7 +1,11 @@
-#!name=Tg外链直跳Swg
-#!desc=telegram外链直接跳转三方客户端swiftgram
-#!category=远程模块
-#!author=秦城二院彭医生[https://github.com/dcpengx]
+#!name= Tg外链直跳Swg@Dcpengx
+#!desc= Telegram外链直接跳转三方客户端Swiftgram
+#!category= 远程模块
+#!source= https://raw.githubusercontent.com/dcpengx/Loon/refs/heads/main/plugin/TG_url_to_SG/tgurl_to_sg.plugin
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id6471879502
+#!date= 2025-09-13 18:00:00
 
 [URL Rewrite]
 (https:\/\/)?t\.me\/(.+) sg://resolve?domain=$2 302
