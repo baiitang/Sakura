@@ -1,8 +1,11 @@
-#!name=TestFlight自动加入
-#!author=@mcdasheng
-#!category=远程模块
-#!source=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/TestFlight.js
-#!desc=获取自动加入 TestFlight任务所需各项参数的重写文件
+#!name= TestFlight自动加入@Mcdasheng
+#!desc= 获取自动加入TestFlight任务所需各项参数的重写文件
+#!category= 远程模块
+#!source= https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/TestFlight.js
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id899247664
+#!date= 2025-09-13 18:00:00
 
 [Script]
 # 获取自动加入 TestFlight需要的各项参数
