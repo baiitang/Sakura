@@ -1,6 +1,11 @@
-#!name=Skip Proxy And Real-IP Lists
-#!desc=跳过部分应用的代理检测
-#!category=订阅管理
+#!name= Skip Proxy And Real-IP Lists@Mieqq
+#!desc= 跳过部分应用的代理检测
+#!category= 订阅管理
+#!source= https://raw.githubusercontent.com/mieqq/mieqq/master/skip-proxy-lists.sgmodule
+#!arguments=
+#!arguments-desc=
+#!openUrl= 
+#!date= 2025-09-13 18:00:00
 
 [General]
 skip-proxy = %APPEND% www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com,id6.me,gongkaoleida.com
@@ -17,5 +22,4 @@ always-real-ip = %APPEND% easy-login.10099.com.cn,*-update.xoyocdn.com,id6.me,op
 # easy-login.10099.com.cn 中国广电
 # *-update.xoyocdn.com 剑网三无界
 # id6.me 中国电信一键登陆
-# gongkaoleida.com 公考雷达
 
