@@ -1,4 +1,4 @@
-!name= 网上国网@Dompling
+#!name= 网上国网@Dompling
 #!desc= 展示使用电量、费用，需要搭配Scriptable
 #!category= 面板模块
 #!source= https://raw.githubusercontent.com/dompling/Script/master/wsgw/index.js
