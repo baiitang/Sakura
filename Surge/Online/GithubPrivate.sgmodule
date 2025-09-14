@@ -1,9 +1,13 @@
-#!name=Github
-#!desc=允许引用Github私有仓库/Gist中的订阅分流,重写,脚本等配置文件
-#!source=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Surge/module/githubPrivate.sgmodule
-#!category=订阅管理
-#!arguments=username:GITHUB_USERNAME,token:GITHUB_TOKEN
-#!arguments-desc=[参数设置]\nusername: 填入GitHub的用户名\ntoken: 填入GitHub生成的Token\n\n[Token获取方式]\n头像菜单 -> Settings -> Developer settings -> Personal access tokens -> Generate new token -> 在权限列表中找到并勾选 gist 然后提交生成
+#!name= Github私有仓库@Sliverkiss
+#!desc= 允许引用Github私有仓库/Gist中的订阅分流,重写,脚本等配置文件
+#!category= 订阅管理
+#!source= https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Surge/module/githubPrivate.sgmodule
+#!arguments= username:GITHUB_USERNAME,token:GITHUB_TOKEN
+#!arguments-desc= [参数设置]\nusername: 填入GitHub的用户名\ntoken: 填入GitHub生成的Token\n\n[Token获取方式]\n头像菜单 -> Settings -> Developer settings -> Personal access tokens -> Generate new token -> 在权限列表中找到并勾选 gist 然后提交生成
+#!openUrl= 
+#!date= 2025-09-13 18:00:00
+
+#!使用此项目更便捷 https://github.com/baiitang/CF-Workers-Raw
 
 [Header Rewrite]
 http-request ^https?:\/\/(raw|gist)\.githubusercontent\.com\/{{{username}}} header-del Authorization
