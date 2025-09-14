@@ -1,10 +1,10 @@
 #!name= 系统更新屏蔽
 #!desc= 屏蔽 iOS/iPadOS 系统更新
 #!category= 白糖自用
-#!source= https://
+#!source=
 #!arguments= iOS:DOMAIN,iPadOS:hostname
 #!arguments-desc= 可自定义参数：默认启用，输入#关闭系统更新屏蔽
-#!openUrl= https://apps.apple.com/app/
+#!openUrl=
 #!date= 2025-09-13 18:00:00
 
 [Rule]
