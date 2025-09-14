@@ -1,7 +1,11 @@
-#!name=TestFlight区域限制
-#!desc=该模块适用于更新TestFlight App时, 提示"APP不可用"问题.
-#!category=远程模块
-#!source=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Module/TestFlightDownload.sgmodule
+#!name= TestFlight区域限制@NobyDa
+#!desc= 该模块适用于更新TestFlight App时, 提示"APP不可用"问题
+#!category= 远程模块
+#!source= https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Module/TestFlightDownload.sgmodule
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id899247664
+#!date= 2025-09-13 18:00:00
 
 [General]
 skip-proxy = %APPEND% iosapps.itunes.apple.com
