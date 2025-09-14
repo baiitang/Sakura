@@ -1,6 +1,11 @@
-#!name=网易云音乐共享
-#!desc=网易云音乐会员共享，需要黑胶会员数据
-#!category=远程模块
+#!name= 网易云音乐共享@Sliverkiss
+#!desc= 网易云音乐会员共享，需要黑胶会员数据，提供数据的会员账号在设备上不能退出登录
+#!category= 远程模块
+#!source= 
+#!arguments=
+#!arguments-desc=
+#!openUrl= https://apps.apple.com/app/id590338362
+#!date= 2025-09-13 18:00:00
 
 #**************************************
 # 本脚本旨在实现网易云音乐共享 by @Sliverkiss，支持Surge,Loon,QuantumultX，其它软件自行测试
