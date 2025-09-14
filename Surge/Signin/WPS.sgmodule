@@ -1,8 +1,11 @@
-#!name=WPS签到@NobyDa
-#!desc=登录账号后重进WPS客户端即可自动获取Cookie并签到
-#!category=签到模块
-#!arguments=WPS_checkin:默认开启,AK:null,SK:null,MAX_RETRIES:5,TIMEOUT:120,CRONEXP: 0 8 * * *,DAY:1,WPS_Cookie:默认开启,WPS_MITM:hostname
-#!arguments-desc=百度API\nAK - API Key\nSK - Secret Key\nMAX_RETRIES - 最大运行次数\nDAY - 兑换天数 (默认为1)\n不需要获取Cookie时，请将Cookie和MITM输入“#”关闭
+#!name= WPS签到@NobyDa
+#!desc= 登录账号后重进WPS客户端即可自动获取Cookie并签到
+#!category= 签到模块
+#!source= 
+#!arguments= WPS_checkin:默认开启,AK:null,SK:null,MAX_RETRIES:5,TIMEOUT:120,CRONEXP: 0 8 * * *,DAY:1,WPS_Cookie:默认开启,WPS_MITM:hostname
+#!arguments-desc= 百度API\nAK - API Key\nSK - Secret Key\nMAX_RETRIES - 最大运行次数\nDAY - 兑换天数 (默认为1)\n不需要获取Cookie时，请将Cookie和MITM输入“#”关闭
+#!openUrl= https://apps.apple.com/app/id599852710
+#!date= 2025-09-13 18:00:00
 
 [Script]
 {{{WPS_checkin}}} = type=cron,cronexp={{{CRONEXP}}},wake-system=1,timeout={{{TIMEOUT}}},debug=1,script-path=https://raw.githubusercontent.com/baiitang/Sakura/refs/heads/main/Surge/Js/WPS_checkin.js,argument="AK={{{AK}}}&SK={{{SK}}}&MAX_RETRIES={{{MAX_RETRIES}}}&DAY={{{DAY}}}"
