@@ -5,5 +5,6 @@
 
 > 网址：https://surge.qingr.moe
 > GitHub：https://github.com/QingRex/LoonKissSurge
+
 > 注：相关信息请不要在境内传播
 
