@@ -1,0 +1,22 @@
+#!name= 中国联通净化@Wish
+#!desc= 移除中国联通APP开屏广告、搜索框推广、主页浮窗和底部推广以及我的页面钱包模块，后续还将继续完善
+#!category= 白糖自用
+#!source= https://raw.githubusercontent.com/mist-whisper/Loon/master/Lpx/Unicom_remove_ads.lpx
+#!arguments= 
+#!arguments-desc= 
+#!openUrl= https://apps.apple.com/app/id416457422
+#!date= 2025-09-16 16:00:00
+
+[Rule]
+# 开屏广告
+DOMAIN,m1.ad.10010.com,REJECT
+
+[Body Rewrite]
+http-response-jq ^https:\/\/m\.client\.10010\.com\/search_service\/tyfbSearch\/searchDiscoverListExpress '.data = []'
+http-response-jq ^https:\/\/m\.client\.10010\.com\/search_service\/search\/searchScrollWord '.["113000004"] = []'
+http-response-jq ^https:\/\/m\.client\.10010\.com\/clientIndex\/v1\/api\/navHome '.datas.homeTopMenuItems |= map(select(.menuName != "通通" and .menuName != "vowifi" and .menuName != "签到" and .menuName != ""))'
+http-response-jq ^https:\/\/m\.client\.10010\.com\/clientIndex\/homefusion\/fuInter 'del(.["HomeFusion.fuchuangAdv_A8"], .["HomeFusion.bottomLabel"])'
+http-response-jq ^https:\/\/m\.client\.10010\.com\/clientMyPage\/v1\/api\/myWallet '.data.payShowFlag = false'
+
+[MITM]
+hostname = %APPEND% m.client.10010.com
