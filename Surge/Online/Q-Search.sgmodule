@@ -1,0 +1,31 @@
+#!name= TF区域切换@Ddgksf2013
+#!desc= 在Safari浏览器搜索US，即可自动将国区AppStore切换成美区，其他看注释
+#!category= 订阅模块
+#!source= https://raw.githubusercontent.com/ddgksf2013/Modules/refs/heads/main/Q-Search.sgmodule
+#!arguments= 
+#!arguments-desc= 
+#!openUrl= https://apps.apple.com/app/id899247664
+#!date= 2025-09-13 18:00:00
+
+#!需要切换哪个区域，则在在Safari浏览器搜索改区域的英文缩写。如切换美区，就收索US即可
+
+[URL Rewrite]
+# cn  (切换至中国区)
+^https:\/\/duckduckgo.com\/\?q=cn&.+ https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143465&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=cn&urlDesc= 302
+# hk  (切换至香港区)
+^https:\/\/duckduckgo.com\/\?q=hk&.+ https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143463&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=hk&urlDesc= 302
+# tw  (切换至台湾区)
+^https:\/\/duckduckgo.com\/\?q=tw&.+ https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143470&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tw&urlDesc= 302
+# us  (切换至美国区)
+^https:\/\/duckduckgo.com\/\?q=us&.+ https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143441&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=us&urlDesc= 302
+# jp  (切换至日本区)
+^https:\/\/duckduckgo.com\/\?q=jp&.+ https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143462&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=jp&urlDesc= 302
+# kr  (切换至韩国区)
+^https:\/\/duckduckgo.com\/\?q=kr&.+ https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143466&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=kr&urlDesc= 302
+# tr  (切换至土耳其区)
+^https:\/\/duckduckgo.com\/\?q=tr&.+ https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143480&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tr&urlDesc= 302
+# sg  (切换至新加坡区)
+^https:\/\/duckduckgo.com\/\?q=sg&.+ https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143464&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tr&urlDesc= 302
+
+[MITM]
+hostname = %APPEND% duckduckgo.com
