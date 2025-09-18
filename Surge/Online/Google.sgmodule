@@ -5,9 +5,9 @@
 #!arguments=
 #!arguments-desc=
 #!openUrl= 
-#!date= 2025-09-13 18:00:00
+#!date= 2025-09-17 18:00:00
 
-[Rewrite]
+[URL Rewrite]
 # Redirect Google Search Service
 ^https?:\/\/www\.g(oogle)?\.cn https://www.google.com 307
 
