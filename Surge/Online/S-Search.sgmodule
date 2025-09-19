@@ -1,0 +1,33 @@
+#!name= TF区域切换@Ddgksf2013
+#!desc= 在Safari浏览器搜索US，即可自动将国区AppStore切换成美区，其他看注释
+#!category= 订阅管理
+#!source= https://raw.githubusercontent.com/ddgksf2013/Modules/refs/heads/main/Q-Search.sgmodule
+#!arguments= 
+#!arguments-desc= 
+#!openUrl= https://apps.apple.com/app/id899247664
+#!date= 2025-09-18 18:00:00
+
+#!首先需要去设置切换搜索引擎为Google！！！需要切换哪个区域，则在Safari浏览器搜索改区域的英文缩写（小写）。如切换美区，就搜索小写us即可，其他区域同理
+#!如果使用的搜索引擎是duckduckgo，可使用:https://raw.githubusercontent.com/baiitang/Sakura/main/Surge/Online/Q-Search.sgmodule
+
+[URL Rewrite]
+# Google-search -> AppStore区域切换
+# cn (中国)
+^https?:\/\/([a-z0-9-]+\.)?google\.[a-z.]{2,6}\/search\?(?:[^#?]*?&)?q=cn(?:&|$) https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143465&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=cn&urlDesc= 302
+# hk (香港)
+^https?:\/\/([a-z0-9-]+\.)?google\.[a-z.]{2,6}\/search\?(?:[^#?]*?&)?q=hk(?:&|$) https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143463&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=hk&urlDesc= 302
+# tw (台湾)
+^https?:\/\/([a-z0-9-]+\.)?google\.[a-z.]{2,6}\/search\?(?:[^#?]*?&)?q=tw(?:&|$) https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143470&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tw&urlDesc= 302
+# us (美国)
+^https?:\/\/([a-z0-9-]+\.)?google\.[a-z.]{2,6}\/search\?(?:[^#?]*?&)?q=us(?:&|$) https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143441&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=us&urlDesc= 302
+# jp (日本)
+^https?:\/\/([a-z0-9-]+\.)?google\.[a-z.]{2,6}\/search\?(?:[^#?]*?&)?q=jp(?:&|$) https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143462&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=jp&urlDesc= 302
+# kr (韩国)
+^https?:\/\/([a-z0-9-]+\.)?google\.[a-z.]{2,6}\/search\?(?:[^#?]*?&)?q=kr(?:&|$) https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143466&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=kr&urlDesc= 302
+# tr (土耳其)
+^https?:\/\/([a-z0-9-]+\.)?google\.[a-z.]{2,6}\/search\?(?:[^#?]*?&)?q=tr(?:&|$) https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143480&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tr&urlDesc= 302
+# sg (新加坡)
+^https?:\/\/([a-z0-9-]+\.)?google\.[a-z.]{2,6}\/search\?(?:[^#?]*?&)?q=sg(?:&|$) https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143464&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=sg&urlDesc= 302
+
+[MITM]
+hostname = %APPEND% google.com, googleusercontent.com
