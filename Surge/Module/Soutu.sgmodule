@@ -7,6 +7,9 @@
 #!openUrl= https://apps.apple.com/app/id1576499990
 #!date= 2025-09-13 18:00:00
 
+#!搜图神器版本≤1.9.1，需要挂载脚本/模块登录账号后，上滑退出后台，重新打开App即可激活元老会员
+#!无法激活元老会员，可抓包低版本1.9.1进行上述操作后，再更至最新版本
+
 [Script]
 搜图神器 = type=http-response,pattern=^https?:\/\/.*\.soutushenqi\.com\/(api\/.+\/account\/(token|info)|cykj_community|v\d\/home\/dialog),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/soutu.js
 
