@@ -7,10 +7,11 @@
 #!openUrl= https://apps.apple.com/app/id899247664
 #!date= 2025-09-18 18:00:00
 
-#!首先需要去设置切换搜索引擎为duckduckgo！！！需要切换哪个区域，则在Safari浏览器搜索改区域的英文缩写（小写）。如切换美区，就搜索小写us即可，其他区域同理
-#!如果使用的搜索引擎是Google，可使用:
+#!首先需要去设置切换搜索引擎为Duckduckgo！！！需要切换哪个区域，则在Safari浏览器搜索改区域的英文缩写（小写）。如切换美区，就搜索小写us即可，其他区域同理
+#!如果使用的搜索引擎是Google，可使用:https://raw.githubusercontent.com/baiitang/Sakura/main/Surge/Online/S-Search.sgmodule
 
 [URL Rewrite]
+# Duckduckgo-search -> AppStore区域切换
 # cn  (切换至中国区)
 ^https:\/\/duckduckgo.com\/\?q=cn&.+ https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143465&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=cn&urlDesc= 302
 # hk  (切换至香港区)
