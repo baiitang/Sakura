@@ -1,9 +1,8 @@
 #!name=TF区域切换@Ddgksf2013
 #!desc=在Safari浏览器搜索US，即可自动将国区AppStore切换成美区，其他看注释
-#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1022.png
+#!icon=https://raw.githubusercontent.com/baiitang/Sakura/refs/heads/main/Loon/Icons/Plugin/Testflight.png
 #!tag=订阅管理
 #!source=https://raw.githubusercontent.com/ddgksf2013/Modules/refs/heads/main/Q-Search.sgmodule
-#!icon=https://raw.githubusercontent.com/baiitang/Sakura/refs/heads/main/Loon/Icons/Plugin/Testflight.png
 #!openUrl=https://apps.apple.com/app/id899247664
 #!date=2025-09-18 18:00:00
 
