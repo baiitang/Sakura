@@ -1,0 +1,29 @@
+#!name=TF区域切换@Ddgksf2013
+#!desc=在Safari浏览器搜索US，即可自动将国区AppStore切换成美区，其他看注释
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1022.png
+#!tag=订阅管理
+#!source=https://raw.githubusercontent.com/ddgksf2013/Modules/refs/heads/main/Q-Search.sgmodule
+#!icon=https://raw.githubusercontent.com/baiitang/Sakura/refs/heads/main/Loon/Icons/Plugin/Testflight.png
+#!openUrl=https://apps.apple.com/app/id899247664
+#!date=2025-09-18 18:00:00
+
+[Rewrite]
+# cn (中国)
+^https?:\/\/([a-z0-9-]+\.)?google\.[a-z.]{2,6}\/search\?(?:[^#?]*?&)?q=cn(?:&|$) https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143465&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=cn&urlDesc= 302
+# hk (香港)
+^https?:\/\/([a-z0-9-]+\.)?google\.[a-z.]{2,6}\/search\?(?:[^#?]*?&)?q=hk(?:&|$) https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143463&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=hk&urlDesc= 302
+# tw (台湾)
+^https?:\/\/([a-z0-9-]+\.)?google\.[a-z.]{2,6}\/search\?(?:[^#?]*?&)?q=tw(?:&|$) https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143470&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tw&urlDesc= 302
+# us (美国)
+^https?:\/\/([a-z0-9-]+\.)?google\.[a-z.]{2,6}\/search\?(?:[^#?]*?&)?q=us(?:&|$) https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143441&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=us&urlDesc= 302
+# jp (日本)
+^https?:\/\/([a-z0-9-]+\.)?google\.[a-z.]{2,6}\/search\?(?:[^#?]*?&)?q=jp(?:&|$) https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143462&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=jp&urlDesc= 302
+# kr (韩国)
+^https?:\/\/([a-z0-9-]+\.)?google\.[a-z.]{2,6}\/search\?(?:[^#?]*?&)?q=kr(?:&|$) https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143466&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=kr&urlDesc= 302
+# tr (土耳其)
+^https?:\/\/([a-z0-9-]+\.)?google\.[a-z.]{2,6}\/search\?(?:[^#?]*?&)?q=tr(?:&|$) https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143480&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tr&urlDesc= 302
+# sg (新加坡)
+^https?:\/\/([a-z0-9-]+\.)?google\.[a-z.]{2,6}\/search\?(?:[^#?]*?&)?q=sg(?:&|$) https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143464&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=sg&urlDesc= 302
+
+[MITM]
+hostname = google.com, googleusercontent.com
