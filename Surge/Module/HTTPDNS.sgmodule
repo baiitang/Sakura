@@ -1,5 +1,5 @@
 #!name= 拦截HTTPDNS@iKeLee
-#!desc= 拦截常见的HTTPDNS服务，以确保这些请求都能够在Loon的DNS框架下工作
+#!desc= 拦截常见的HTTPDNS服务，以确保这些请求都能够在Surge的DNS框架下工作，此插件要求始终排序在底部
 #!category= 白糖自用
 #!source= https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/拦截HTTPDNS.sgmodule
 #!arguments= 
