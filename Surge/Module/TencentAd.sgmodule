@@ -1,5 +1,5 @@
 #!name= 广告平台拦截器@iKeLee
-#!desc= 此插件是所有去广告插件的基础，只针对广告平台处理。你依然需要安装其他去广告插件来搭配使用，并确保此插件始终排序在顶部
+#!desc= 此插件是所有去广告插件的基础，只针对广告平台处理。需要搭配其他去广告插件使用，并确保此插件始终排序在底部
 #!category= 白糖自用
 #!source= https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/广告平台拦截器.beta.sgmodule
 #!arguments= 
