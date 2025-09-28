@@ -1,0 +1,25 @@
+#!name= 京东去广告@iKeLee
+#!desc= 移除京东开屏广告，精简我的页面产品推广
+#!category= 
+#!source= https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/京东去广告.beta.sgmodule
+#!arguments= 
+#!arguments-desc= 
+#!openUrl= https://apps.apple.com/app/id414245413
+#!date= 2025-09-28 18:00:00
+
+[Rule]
+URL-REGEX,"^http:\/\/\w{32}\.jddebug\.com\/diagnose\?",REJECT,extended-matching
+
+[Body Rewrite]
+http-response-jq ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=basicConfig 'if (getpath(["data","JDMessage","socketmonitor"]) | has("isSocketEstablishedAhead")) then (setpath(["data","JDMessage","socketmonitor","isSocketEstablishedAhead"]; 0)) else . end'
+http-response-jq ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=basicConfig 'if (getpath(["data","JDMessage","socketmonitor"]) | has("isSocketReport")) then (setpath(["data","JDMessage","socketmonitor","isSocketReport"]; 0)) else . end'
+http-response-jq ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=basicConfig 'if (getpath(["data","JDHttpToolKit","httpdns"]) | has("httpdns")) then (setpath(["data","JDHttpToolKit","httpdns","httpdns"]; 0)) else . end'
+
+[Map Local]
+^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(searchBoxWord|stationPullService|uniformRecommend[06]) data-type=text data="{}" status-code=200
+
+[Script]
+移除京东广告 = type=http-response, pattern=^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome), script-path=https://kelee.one/Resource/JavaScript/JD/JD_remove_ads.js, requires-body=true
+
+[MITM]
+hostname = %APPEND% api.m.jd.com
