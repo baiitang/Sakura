@@ -1,0 +1,14 @@
+#!name= Slidebox相册清理@Chxm1023
+#!desc= 解锁会员权益，激活Pro后可取消此模块，永久解锁
+#!category= 白糖自由
+#!source= https://raw.githubusercontent.com/chxm1023/Rewrite/main/slidebox.js
+#!arguments= 
+#!arguments-desc= 
+#!openUrl= https://apps.apple.com/app/id984305203
+#!date= 2025-10-10 18:00:00
+
+[Script]
+slidebox = type=http-response, pattern=^https?:\/\/.*-slidebox-ios-prod\.cloudfunctions\.net\/api_v1, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/slidebox.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% *-slidebox-ios-prod.cloudfunctions.net
