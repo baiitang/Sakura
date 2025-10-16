@@ -8,6 +8,7 @@
 #!date= 2025-10-16 18:00:00
 
 #!第一次使用打开酷狗概念版天天签到领VIP页面获取参数，提示获取成功即可
+#!或者浏览器登陆https://activity.kugou.com/getvips/v-4163b2d0/index.html?should_append_gdt_ua=1获取参数，提示获取成功即可
 
 [Rule]
 URL-REGEX,https://gateway.kugou.com/ads.gateway/.*,REJECT
