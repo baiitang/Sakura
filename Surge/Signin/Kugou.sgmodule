@@ -5,7 +5,7 @@
 #!arguments= 酷狗领取VIP:默认启用,签到cron设置:10 0 * * *,酷狗Cookie数据获取:默认启用
 #!arguments-desc= 领取VIP和Cookie数据获取默认启用，输入#即可关闭
 #!openUrl= https://apps.apple.com/app/id1480205582
-#!date= 2025-09-13 18:00:00
+#!date= 2025-10-16 18:00:00
 
 #!第一次使用打开酷狗概念版天天签到领VIP页面获取参数，提示获取成功即可
 
@@ -33,5 +33,5 @@ DOMAIN-SUFFIX,e.qq.com,REJECT
 hostname =  %APPEND% *.kugou.com
 
 [Script]
-{{{酷狗领取VIP}}} = type=cron,cronexp={{{签到cron设置}}},script-path=https://gist.githubusercontent.com/Alex0510/1c389019c264a7d3ddbe4dbcf77d4295/raw/kugou_auto.js
-{{{酷狗Cookie数据获取}}} = type=http-request,pattern=https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/(recharge/receive_vip_listen_song|activity/get_month_vip_record).*,requires-body=0,script-path=https://gist.githubusercontent.com/Alex0510/1c389019c264a7d3ddbe4dbcf77d4295/raw/kugou.js
+{{{酷狗领取VIP}}} = type=cron,cronexp={{{签到cron设置}}},script-path=https://gist.githubusercontent.com/Alex0510/8b958bcf53ed1271e03bb5130b2206ec/raw/kugou_auto.js
+{{{酷狗Cookie数据获取}}} = type=http-request,pattern=https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/(recharge/receive_vip_listen_song|activity/get_month_vip_record).*,requires-body=0,script-path=https://gist.githubusercontent.com/Alex0510/8b958bcf53ed1271e03bb5130b2206ec/raw/kugou_auto.js
