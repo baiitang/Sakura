@@ -2,7 +2,7 @@
 
 汇集豆瓣、TMDB、IMDB、猫眼等的各类榜单，根据自己的喜好改写
 
-原链接为：https://raw.githubusercontent.com/quantumultxx/FW-Widgets/refs/heads/main/ForwardWidgets.fwd
+原链接为：https://raw.githubusercontent.com/huangxd-/ForwardWidgets/refs/heads/main/widgets.fwd
 
 注意：使用本作品前请您仔细阅读以下条款，使用本作品则表明您已明知并接受这些条款。
 
