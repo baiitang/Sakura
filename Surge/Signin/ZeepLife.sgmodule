@@ -1,0 +1,19 @@
+#!name= 小米刷步@Yuheng0101
+#!desc= 自定义步数，云跑步，这就是我喜欢的运动男孩耶
+#!category= 签到模块
+#!source= https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/step.js
+#!arguments= 签到cron设置:33 8 * * *
+#!arguments-desc= 
+#!openUrl= https://apps.apple.com/app/id938688461
+#!date= 2025-10-16 18:00:00
+
+#!需要搭配Boxjs使用
+#!Boxjs:https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/boxjs.json
+
+#!建议每天调试次数不能超过五次，因为会检查登录ip拉黑，或者把下面登录域名走代理切换ip无限制
+#!如下所示:
+#!DOMAIN,api-user.huami.com,代理
+#!DOMAIN,account.huami.com,代理
+
+[Script]
+小米刷步 = type=cron, cronexp={{{签到cron设置}}}, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/step.js, timeout=120, wake-system=1
