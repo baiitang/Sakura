@@ -7,8 +7,10 @@
 #!openUrl= https://apps.apple.com/app/id6749835845
 #!date= 2025-11-02 18:00:00
 
+#仅供学习交流，请不要在国内传播，并售卖此脚本，觉得好用请支持开发者
+
 [Script]
-飓风相机专业版 = type=http-response,pattern=^https://base\.ysjf\.com/storm_auth/user/self,requires-body=1,max-size=0,binary-body-mode=0,script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/refs/heads/main/Crack-Script/jfxj.js,script-update-interval=0
+飓风相机专业版 = type=http-response,pattern=^https://base\.ysjf\.com/storm_auth/user/self,requires-body=1,max-size=0,binary-body-mode=0,script-path=https://raw.githubusercontent.com/baiitang/Sakura/main/Surge/Js/StormCam.js,script-update-interval=0
 
 [MITM]
 hostname =  %APPEND% base.ysjf.com
