@@ -1,0 +1,14 @@
+#!name= 飓风相机@暗夜
+#!desc= 解锁Pro权限
+#!category= 白糖自用
+#!source= https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/JS/StormCam/StormCam.conf
+#!arguments= 
+#!arguments-desc= 
+#!openUrl= https://apps.apple.com/app/id6749835845
+#!date= 2025-11-02 18:00:00
+
+[Script]
+StormCam = type=http-response, pattern=^https://base\.ysjf\.com/storm_auth/user/self, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/StormCam/JS/StormCam.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% base.ysjf.com
