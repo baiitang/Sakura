@@ -11,6 +11,5 @@
 # > 解锁 Pixiv Premium
 pixiv = type=http-response, pattern=^https:\/\/oauth\.secure\.pixiv\.net\/auth\/token, script-path=https://ruleset.isteed.cc/Script/pixiv_premium.min.js, requires-body=true
 
-
 [MITM]
 hostname = %APPEND% oauth.secure.pixiv.net
