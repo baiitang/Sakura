@@ -1,14 +1,14 @@
-#!name= 飓风相机@暗夜
+#!name= 飓风相机@Anyeyey
 #!desc= 解锁Pro权限
 #!category= 白糖自用
-#!source= https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/JS/StormCam/StormCam.conf
+#!source= https://raw.githubusercontent.com/anyehttp/quantumult-x/e8902547deedbd7ebce5f38482d8166bba19d3f5/Crack-Script/jfxj.sgmodule
 #!arguments= 
 #!arguments-desc= 
 #!openUrl= https://apps.apple.com/app/id6749835845
 #!date= 2025-11-02 18:00:00
 
 [Script]
-StormCam = type=http-response, pattern=^https://base\.ysjf\.com/storm_auth/user/self, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/StormCam/JS/StormCam.js, requires-body=true, max-size=-1, timeout=60
+飓风相机专业版 = type=http-response,pattern=^https://base\.ysjf\.com/storm_auth/user/self,requires-body=1,max-size=0,binary-body-mode=0,script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/refs/heads/main/Crack-Script/jfxj.js,script-update-interval=0
 
 [MITM]
-hostname = %APPEND% base.ysjf.com
+hostname =  %APPEND% base.ysjf.com
