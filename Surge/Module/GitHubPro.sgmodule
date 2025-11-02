@@ -1,10 +1,10 @@
-#!name= GitHub解锁会员@暗夜
-#!desc= 解锁会员权益，自动恢复权益，非一次性解锁
+#!name= GitHub解锁会员@Baby
+#!desc= 解锁会员权益，1.142.1版本除了Ai功能，其他功能都可用，非一次性解锁
 #!category= 白糖自用
 #!source= https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Github/JS/GithubPro.js
 #!arguments= 
 #!arguments-desc= 
-#!openUrl= https://apps.apple.com/app/
+#!openUrl= https://apps.apple.com/app/id1477376905
 #!date= 2025-11-02 18:00:00
 
 [Script]
