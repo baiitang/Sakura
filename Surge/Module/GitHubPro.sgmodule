@@ -1,0 +1,14 @@
+#!name= GitHub解锁会员@暗夜
+#!desc= 解锁会员权益，自动恢复权益，非一次性解锁
+#!category= 白糖自用
+#!source= https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Github/JS/GithubPro.js
+#!arguments= 
+#!arguments-desc= 
+#!openUrl= https://apps.apple.com/app/
+#!date= 2025-11-02 18:00:00
+
+[Script]
+GithubPro = type=http-response, pattern=https://api.github.com/graphql, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Github/JS/GithubPro.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% api.github.com
