@@ -1,0 +1,15 @@
+#!name= Pixiv解锁会员@暗夜
+#!desc= 解锁会员权益，去广告，非一次性解锁
+#!category= 白糖自用
+#!source= https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/JS/Pixiv/Pixiv.plugin
+#!arguments= 
+#!arguments-desc= 
+#!openUrl= https://apps.apple.com/app/id337248563
+#!date= 2025-11-02 18:00:00
+
+[Script]
+# > 解锁 Pixiv Premium
+pixiv = type=http-response, pattern=^https:\/\/oauth\.secure\.pixiv\.net\/auth\/token, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Pixiv/JS/pixiv_premium.min.js, requires-body=true
+
+[MITM]
+hostname = %APPEND% oauth.secure.pixiv.net
