@@ -1,6 +1,6 @@
 #!name= Forest专注森林@Baby
-#!desc= 登录账号，启用此脚本解锁会员即可，禁止创建房间
-#!category= 白天自用
+#!desc= 登录账号，启用此脚本解锁会员即可，禁止创建房间会封号
+#!category= 白糖自用
 #!source= https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/forest.js
 #!arguments= 
 #!arguments-desc= 
