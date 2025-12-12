@@ -1,0 +1,16 @@
+#!name= Forest专注森林@Baby
+#!desc= 登录账号，启用此脚本解锁会员即可，禁止创建房间
+#!category= 白天自用
+#!source= https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/forest.js
+#!arguments= 
+#!arguments-desc= 
+#!openUrl= https://apps.apple.com/app/id866450515
+#!date= 2025-12-12 18:00:00
+
+#!来源于Baby，请自用，不要借此脚本进行牟利
+
+[Script]
+forest = type=http-response, pattern=^https:\/\/forest-api\.upwardsware\.com\/user\/users\/\d+\/service-levels\/status\?.*$, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/forest.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% forest-api.upwardsware.com
