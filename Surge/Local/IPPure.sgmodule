@@ -1,0 +1,17 @@
+#!name= IP-Pure@Likhixang
+#!desc= 节点 IP 纯净度检测（IPPure）,请先在参数内选择策略组
+#!category= 面板模块
+#!source= https://raw.githubusercontent.com/Likhixang/Egerny/refs/heads/main/sgmodule/IPPure.sgmodule
+#!arguments= Proxy:DIRECT
+#!arguments-desc= Proxy: 选择策略组,默认DIRECT  @from wish
+#!openUrl= 
+#!date= 2025-12-15 18:00:00
+
+[Rule]
+DOMAIN-SUFFIX,ippure.com,{{{Proxy}}}
+
+[Panel]
+IP-Pure = script-name=IP-Pure, title=IP 纯净度, content=刷新中…, style=info, update-interval=300
+
+[Script]
+IP-Pure = type=generic, timeout=5, script-path=https://raw.githubusercontent.com/Likhixang/Egerny/refs/heads/main/js/IPPure.js
