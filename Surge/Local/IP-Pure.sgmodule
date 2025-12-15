@@ -1,9 +1,9 @@
 #!name= IP-Pure@Likhixang
-#!desc= 节点 IP 纯净度检测（IPPure）,请先在参数内选择策略组
+#!desc= 节点 IP 纯净度检测（IPPure），请先在参数内选择策略组
 #!category= 面板模块
 #!source= https://raw.githubusercontent.com/Likhixang/Egerny/refs/heads/main/sgmodule/IPPure.sgmodule
 #!arguments= Proxy:DIRECT
-#!arguments-desc= Proxy: 选择策略组,默认DIRECT  @from wish
+#!arguments-desc= Proxy: 选择策略组，默认DIRECT  @from wish
 #!openUrl= 
 #!date= 2025-12-15 18:00:00
 
