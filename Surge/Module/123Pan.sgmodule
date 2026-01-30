@@ -1,0 +1,21 @@
+#!name=  123云盘去广告解限制@iKeLee
+#!desc=  过滤123云盘应用端及网页端广告，解除网页端流量1G下载限制，请单文件下载，不要文件夹或多文件下载
+#!category=  白糖自用
+#!source= https://kelee.one/Tool/Loon/Lpx/123NetWorkDisk_remove_ads.lpx
+#!arguments=  
+#!arguments-desc=  
+#!openUrl= https://apps.apple.com/app/id1597682672
+#!date= 2026-01-30 18:00:00
+
+# Windows可用油猴插件 https://greasyfork.org/zh-CN/scripts/513528
+
+[Map Local]
+# 横幅广告
+^https:\/\/www\.123pan\.com\/api\/config\/get data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[Script]
+123云盘移除广告 = type=http-response, pattern=^https?:\/\/www\.123pan\.com\/s\/[0-9a-zA-Z=_/-]+\.html, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/123Pan/JS/123Pan.js, requires-body=true, timeout=60
+123云盘解除下载限制 = type=http-request, pattern=^https?:\/\/www\.123pan\.com\/b\/api\/share\/download\/info, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/123Pan/JS/123Pan.js, timeout=60
+
+[MITM]
+hostname = %APPEND% www.123pan.com
