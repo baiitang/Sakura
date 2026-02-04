@@ -28,3 +28,16 @@ DOMAIN,v66-ad.ndcjl.com,REJECT
 DOMAIN,api-events.8ziben.com,REJECT
 DOMAIN-SUFFIX,yximgs.com,REJECT
 DOMAIN-SUFFIX,adkwai.com,REJECT
+
+#!红果短剧
+DOMAIN-SUFFIX,enrichchgw.1001010.com
+DOMAIN-SUFFIX,auth.wosomsms.cn
+DOMAIN-SUFFIX,timon.zijieapi.com
+DOMAIN-SUFFIX,feedback-c.zijieapi.com
+DOMAIN-SUFFIX,whohoami.akamai.net
+DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com
+DOMAIN-SUFFIX,p3-ad-sign.bytemeimg.com
+DOMAIN-SUFFIX,frontier100-toutiao-lf.fqnovel.com
+DOMAIN-SUFFIX,ads3-normal-lf.zijieapi.com
+DOMAIN-SUFFIX,dig.bdurl.net
+DOMAIN-SUFFIX,i.snsssdk.com
