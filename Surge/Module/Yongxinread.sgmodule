@@ -1,0 +1,17 @@
+#!name= 用心阅读@Baby
+#!desc= 解锁会员权益，非一次性解锁，食用方法见注释
+#!category= 白糖自用
+#!source= https://mock.parsingbook.workers.dev/parsingbook/parsingbook.sgmodule
+#!arguments= 
+#!arguments-desc= 
+#!openUrl= https://apps.apple.com/app/id1569793141
+#!date= 2026-05-01 18:00:00
+
+#!用心读书 2.6.3（美区）
+#!食用方法：安装脚本-用心读书App我的-右上角激活码管理-点击显示"免费的"-然后使用激活码绑定。如果显示月卡切换头衔即可
+
+[URL Rewrite]
+^https://api\.07book\.com/v2/(member/info|titles(?!/)|authority/(list|devices|verify|checking)) {{{Mock}}}/v2/$1 header
+
+[MITM]
+hostname = %INSERT% api.07book.com
